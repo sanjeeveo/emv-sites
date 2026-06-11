@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aquire Websites — Buyer-Side Website Acquisitions, Diligence-First</title>
+<meta name="description" content="Thesis-driven website buying for serious operators. Define your buy box with the criteria builder, screen content, e-commerce and productized-service sites, then run the diligence stack: traffic verification, P&L rebuild, escrow-backed transfer. Buy the asset, not the story.">
+<link rel="canonical" href="https://aquirewebsites.com/">
+<meta property="og:title" content="Aquire Websites — Buy the Asset, Not the Story">
+<meta property="og:description" content="Buyer-side website acquisition built on evidence: criteria-first search, traffic verification, P&L rebuilds and escrow-backed transfers — for first deals and full portfolios.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aquirewebsites.com/">
+<meta property="og:site_name" content="Aquire Websites">
+<meta name="twitter:card" content="summary">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Aquire Websites",
+  "url": "https://aquirewebsites.com",
+  "email": "info@aquirewebsites.com",
+  "telephone": "+1-213-788-1919",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9461 Charleville Blvd",
+    "addressLocality": "Beverly Hills",
+    "addressRegion": "CA",
+    "postalCode": "90212",
+    "addressCountry": "US"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "EMV Global Holdings",
+    "url": "https://emv.io"
+  }
+}
+</script>
+<style>
+:root{
+  --cobalt:#2746B0;
+  --cobalt-deep:#1B3079;
+  --cobalt-soft:#E5EAFB;
+  --mint:#BFE8D2;
+  --mint-deep:#1E6B45;
+  --bg:#F6F8FB;
+  --white:#FFFFFF;
+  --ink:#16213D;
+  --muted:#54607C;
+  --line:#DCE3F0;
+  --radius:12px;
+  --shadow:0 12px 32px rgba(22,33,61,.08);
+  --font:"Hanken Grotesk",sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:var(--font);font-size:1rem;line-height:1.65;color:var(--ink);background:var(--bg)}
+h1,h2,h3,h4{line-height:1.15;margin:0 0 .5em;font-weight:800;letter-spacing:-.015em}
+p{margin:0 0 1em}
+a{color:var(--cobalt)}
+ul,ol{padding:0;margin:0}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--cobalt);color:#fff;padding:10px 16px;font-weight:700;z-index:99;border-radius:0 0 8px 0}
+.skip-link:focus{left:0}
+.container{width:min(1150px,92%);margin-inline:auto}
+.section{padding:90px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.16em;font-size:.73rem;font-weight:800;color:var(--cobalt);margin-bottom:14px}
+.eyebrow::before{content:"";width:20px;height:12px;background:linear-gradient(115deg,transparent 44%,var(--cobalt) 44% 56%,transparent 56%),linear-gradient(115deg,transparent 68%,var(--cobalt) 68% 80%,transparent 80%)}
+.section-head{max-width:700px;margin-bottom:46px}
+.section-head h2{font-size:clamp(1.7rem,3.4vw,2.4rem)}
+.lede{font-size:1.08rem;color:var(--muted);font-weight:400}
+.btn{display:inline-block;font-weight:700;font-size:.98rem;padding:13px 26px;border-radius:9px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:var(--font);transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-cobalt{background:var(--cobalt);color:#fff}
+.btn-cobalt:hover{box-shadow:0 10px 26px rgba(39,70,176,.35)}
+.btn-outline{background:transparent;color:var(--cobalt);border-color:var(--cobalt)}
+.btn-mint{background:var(--mint);color:#123524}
+/* ---------- Header ---------- */
+.site-head{position:sticky;top:0;z-index:60;background:rgba(246,248,251,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-head.scrolled{box-shadow:0 8px 24px rgba(22,33,61,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:1.1rem;color:var(--ink)}
+.logo svg{border-radius:6px}
+.logo .accent{color:var(--cobalt)}
+.nav-links{display:flex;align-items:center;gap:24px;list-style:none}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.94rem}
+.nav-links a:hover{color:var(--cobalt)}
+.nav-links .btn{padding:10px 18px;color:#fff}
+.nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.nav-toggle span{display:block;width:24px;height:2.5px;background:var(--ink);margin:5px 0;transition:transform .25s ease,opacity .25s ease}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:96px 0 100px;overflow:hidden;background:
+  linear-gradient(115deg,transparent 72%,rgba(39,70,176,.06) 72% 74%,transparent 74%),
+  linear-gradient(115deg,transparent 80%,rgba(30,107,69,.07) 80% 82.5%,transparent 82.5%),
+  radial-gradient(820px 420px at 90% -10%,rgba(191,232,210,.5),transparent 65%),var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5vw,3.4rem)}
+.hero h1 .accent{color:var(--cobalt)}
+.hero .sub{font-size:1.12rem;color:var(--muted);max-width:540px;margin-bottom:30px}
+.search-mock{max-width:560px}
+.search-bar{display:flex;align-items:center;gap:10px;background:var(--white);border:1.5px solid var(--line);border-radius:12px;padding:8px 8px 8px 16px;box-shadow:var(--shadow)}
+.search-bar svg{flex:none;color:var(--cobalt)}
+.search-bar input{flex:1;min-width:0;background:transparent;border:0;color:var(--ink);font-family:var(--font);font-size:1rem;padding:10px 4px}
+.search-bar input::placeholder{color:#93A0BC}
+.search-bar input:focus{outline:none}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.chip{font-weight:600;font-size:.85rem;color:var(--ink);background:var(--white);border:1.5px solid var(--line);border-radius:999px;padding:7px 15px;cursor:pointer;font-family:var(--font);transition:all .18s ease}
+.chip:hover{border-color:var(--cobalt)}
+.chip[aria-pressed="true"]{background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+.search-note{margin-top:14px;font-size:.88rem;color:var(--muted)}
+.scorecard{background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);clip-path:polygon(0 0,100% 0,100% calc(100% - 26px),calc(100% - 26px) 100%,0 100%)}
+.scorecard h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-bottom:18px}
+.score-row{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:12px 0;border-top:1px dashed var(--line);font-size:.92rem;font-weight:600}
+.score-row:first-of-type{border-top:0}
+.score-row .ok{color:var(--mint-deep);font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.score-bar{height:7px;border-radius:99px;background:var(--cobalt-soft);overflow:hidden}
+.score-bar span{display:block;height:100%;background:linear-gradient(90deg,var(--cobalt),var(--mint-deep))}
+.scorecard .foot{margin:14px 0 0;font-size:.8rem;color:var(--muted)}
+/* ---------- Listings ---------- */
+.band-white{background:var(--white)}
+.tag-sample{display:inline-block;background:var(--ink);color:var(--mint);font-weight:800;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:6px;margin-bottom:14px}
+.grid-listings{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:12px;transition:transform .2s ease,box-shadow .2s ease,opacity .25s ease,filter .25s ease}
+.band-white .card{background:var(--bg)}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card.dim{opacity:.32;filter:grayscale(.7)}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.asset-type{font-weight:800;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;color:var(--cobalt);background:var(--cobalt-soft);padding:5px 10px;border-radius:6px}
+.badge-verified{display:inline-flex;align-items:center;gap:6px;font-size:.77rem;font-weight:800;color:var(--mint-deep);background:var(--mint);border-radius:999px;padding:5px 11px}
+.card h3{font-size:1.1rem;font-weight:700;margin:0}
+.card-desc{font-size:.92rem;color:var(--muted);margin:0}
+.card-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;margin:4px 0 0;border-top:1px dashed var(--line);padding-top:14px}
+.card-stats div{margin:0}
+.card-stats dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.card-stats dd{margin:2px 0 0;font-weight:800;font-size:1.02rem}
+.listings-foot{margin-top:26px;font-size:.88rem;color:var(--muted)}
+/* ---------- Approach ---------- */
+.approach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.approach{background:var(--white);border:1.5px solid var(--line);border-left:5px solid var(--cobalt);border-radius:var(--radius);padding:28px 26px}
+.approach h3{font-size:1.14rem}
+.approach p{font-size:.95rem;color:var(--muted);margin:0}
+/* ---------- Criteria builder ---------- */
+.criteria-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
+.builder{background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.builder h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-bottom:16px}
+.builder .chips{margin:0 0 26px}
+.ctrl{margin-bottom:24px}
+.ctrl label{display:flex;justify-content:space-between;align-items:baseline;font-weight:700;font-size:.92rem;margin-bottom:10px}
+.ctrl output{font-weight:800;color:var(--cobalt);font-variant-numeric:tabular-nums}
+.ctrl input[type="range"]{width:100%;accent-color:var(--cobalt);height:28px}
+.fit-line{border-top:2px solid var(--ink);padding-top:18px;font-size:1.04rem;font-weight:800}
+.fit-line strong{color:var(--cobalt);font-size:1.5rem}
+.builder .foot{margin:10px 0 0;font-size:.8rem;color:var(--muted);font-weight:400}
+/* ---------- Diligence ---------- */
+.band-ink{background:var(--ink);color:#E8EDF8}
+.band-ink h2{color:#fff}
+.band-ink .lede{color:#ABB7D2}
+.band-ink .eyebrow{color:var(--mint)}
+.band-ink .eyebrow::before{background:linear-gradient(115deg,transparent 44%,var(--mint) 44% 56%,transparent 56%),linear-gradient(115deg,transparent 68%,var(--mint) 68% 80%,transparent 80%)}
+.grid-diligence{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px}
+.dcard{background:#1F2C50;border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:28px 26px;position:relative;overflow:hidden}
+.dcard::after{content:"";position:absolute;top:-14px;right:-24px;width:64px;height:64px;background:linear-gradient(115deg,transparent 46%,rgba(191,232,210,.3) 46% 54%,transparent 54%)}
+.dcard .icon{width:46px;height:46px;border-radius:11px;background:var(--mint);color:#123524;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.dcard h3{color:#fff;font-size:1.12rem}
+.dcard p{font-size:.92rem;color:#ABB7D2;margin:0}
+/* ---------- Steps ---------- */
+.steps{list-style:none;counter-reset:step;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.steps li{counter-increment:step;background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);padding:24px 20px}
+.steps li::before{content:"0" counter(step);font-weight:800;font-size:.84rem;color:var(--cobalt);display:block;margin-bottom:10px;border-bottom:2px solid var(--mint);width:max-content;padding-bottom:2px}
+.steps h3{font-size:1.02rem}
+.steps p{font-size:.88rem;color:var(--muted);margin:0}
+/* ---------- Portfolio / broker ---------- */
+.portfolio-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
+.check-list{list-style:none;display:grid;gap:13px;margin-top:8px}
+.check-list li{display:flex;gap:12px;align-items:flex-start;font-size:.96rem}
+.check-list svg{flex:none;color:var(--mint-deep);margin-top:4px}
+.team-card{background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.team-card h3{font-size:1.1rem;margin-bottom:16px}
+.tc-row{display:flex;gap:14px;padding:14px 0;border-top:1px dashed var(--line)}
+.tc-row:first-of-type{border-top:0}
+.tc-dot{flex:none;width:34px;height:34px;border-radius:9px;background:var(--cobalt-soft);color:var(--cobalt);font-weight:800;display:flex;align-items:center;justify-content:center;transform:skewX(-8deg)}
+.tc-row h4{font-size:.96rem;margin:0 0 2px}
+.tc-row p{font-size:.86rem;color:var(--muted);margin:0}
+/* ---------- Team ---------- */
+.grid-team{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px}
+.member{background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);padding:30px 26px;text-align:center;box-shadow:var(--shadow)}
+.avatar{width:118px;height:118px;margin:0 auto 18px;display:block}
+.member h3{font-size:1.14rem;margin-bottom:2px}
+.member .role{font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--cobalt);margin-bottom:12px}
+.member .bio{font-size:.92rem;color:var(--muted)}
+.member-email{font-size:.9rem;font-weight:700;color:var(--cobalt);text-decoration:none;border-bottom:2px solid var(--mint)}
+/* ---------- CTA band ---------- */
+.cta-band{background:linear-gradient(115deg,var(--cobalt-deep) 45%,var(--cobalt));color:#fff;text-align:center;padding:84px 0;position:relative;overflow:hidden}
+.cta-band::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 64%,rgba(191,232,210,.18) 64% 66%,transparent 66%),linear-gradient(115deg,transparent 72%,rgba(255,255,255,.1) 72% 73.5%,transparent 73.5%)}
+.cta-band h2{font-size:clamp(1.7rem,3.6vw,2.5rem);max-width:680px;margin:0 auto 14px;position:relative}
+.cta-band p{color:#C9D4F2;margin-bottom:30px;position:relative}
+.cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+.cta-band .btn-outline{color:#fff;border-color:rgba(255,255,255,.6)}
+.cta-band .btn-outline:hover{border-color:var(--mint);color:var(--mint)}
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.contact-card{background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.contact-card dl{margin:0;display:grid;gap:18px}
+.contact-card dt{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:800}
+.contact-card dd{margin:3px 0 0;font-weight:700;font-size:1.05rem}
+.contact-card a{color:var(--ink);text-decoration:none;border-bottom:2px solid var(--mint)}
+.forward-note{margin-top:20px;padding:12px 16px;background:var(--cobalt-soft);border-left:4px solid var(--cobalt);font-size:.9rem;color:var(--muted)}
+/* ---------- Footer ---------- */
+.site-foot{background:var(--ink);color:#ABB7D2;padding:64px 0 30px;font-size:.92rem}
+.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1.1fr;gap:44px}
+.emv-attr{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#fff;font-weight:800;letter-spacing:.06em}
+.emv-attr svg{outline:1px solid rgba(255,255,255,.25);border-radius:4px}
+.footer-line{margin-top:16px;font-size:.9rem}
+.site-foot a{color:var(--mint)}
+.site-foot h4{color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px}
+.net-list{list-style:none;columns:2;column-gap:26px}
+.net-list li{margin-bottom:8px;break-inside:avoid}
+.net-list a{color:#ABB7D2;text-decoration:none}
+.net-list a:hover{color:var(--mint)}
+.footer-contact p{margin:0 0 8px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:46px;padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.86rem}
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.reveal.in{opacity:1;transform:none}
+/* ---------- Responsive ---------- */
+@media (max-width:960px){
+  .hero-grid,.criteria-wrap,.portfolio-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:880px){
+  .nav-toggle{display:block}
+  .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:var(--white);border-bottom:1px solid var(--line);padding:10px 4%;display:none;box-shadow:0 18px 30px rgba(22,33,61,.12)}
+  .nav-links.open{display:flex}
+  .nav-links li{width:100%}
+  .nav-links a{display:block;padding:13px 4px;font-size:1.02rem}
+  .nav-links .btn{margin:10px 0 14px}
+}
+@media (max-width:640px){
+  .section{padding:64px 0}
+  .hero{padding:64px 0 76px}
+  .search-bar{flex-wrap:wrap;padding:10px}
+  .search-bar .btn{width:100%}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn,.card{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-head" id="top">
+  <div class="container nav">
+    <a class="logo" href="#top" aria-label="Aquire Websites home">
+      <svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true"><rect width="48" height="48" fill="#000"/><path d="M27 10l3 28M42 9L31.5 38" stroke="#fff" stroke-width="2.6" fill="none"/></svg>
+      <span>Aquire<span class="accent">Websites</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#listings">Listings</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#criteria">Criteria builder</a></li>
+        <li><a href="#diligence">Diligence</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn btn-cobalt" href="#criteria">Build your buy box</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Buyer-side website acquisition</p>
+        <h1 id="hero-title">Buy the asset,<br>not the <span class="accent">story</span>.</h1>
+        <p class="sub">Sellers sell narratives. We buy spreadsheets, server logs and payout reports. Define your thesis, screen the market, and acquire websites on numbers that survive diligence.</p>
+        <form class="search-mock" role="search" aria-label="Website search demo">
+          <div class="search-bar">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input id="q" type="text" placeholder="Search by niche, model or monthly profit…" aria-label="Search websites for sale">
+            <button type="submit" class="btn btn-cobalt">Screen</button>
+          </div>
+          <div class="chips" role="group" aria-label="Website categories">
+            <button type="button" class="chip" aria-pressed="true">All websites</button>
+            <button type="button" class="chip" aria-pressed="false">Content</button>
+            <button type="button" class="chip" aria-pressed="false">Affiliate</button>
+            <button type="button" class="chip" aria-pressed="false">E-commerce</button>
+            <button type="button" class="chip" aria-pressed="false">Productized service</button>
+          </div>
+          <p class="search-note" id="search-note" aria-live="polite">Every result is screened against your saved criteria before it reaches you.</p>
+        </form>
+      </div>
+      <div class="scorecard reveal" aria-label="Example diligence scorecard">
+        <h2>Diligence scorecard — every deal</h2>
+        <div class="score-row"><span>Traffic verified</span><span class="score-bar"><span style="width:96%"></span></span><span class="ok">Pass</span></div>
+        <div class="score-row"><span>P&amp;L rebuilt</span><span class="score-bar"><span style="width:92%"></span></span><span class="ok">Pass</span></div>
+        <div class="score-row"><span>Revenue traced to source</span><span class="score-bar"><span style="width:98%"></span></span><span class="ok">Pass</span></div>
+        <div class="score-row"><span>Transfer &amp; escrow plan</span><span class="score-bar"><span style="width:100%"></span></span><span class="ok">Set</span></div>
+        <p class="foot">Illustrative scorecard. No deal advances on seller claims alone.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Listings -->
+  <section class="section band-white" id="listings" aria-labelledby="listings-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag-sample">Sample listings</span>
+        <p class="eyebrow">On the screen right now</p>
+        <h2 id="listings-title">The kinds of websites we put through the stack</h2>
+        <p class="lede">Placeholder examples showing the stat block every deal gets. Tune the criteria builder below and watch which of these survive your buy box.</p>
+      </div>
+      <div class="grid-listings" id="listing-grid">
+        <article class="card reveal" data-type="content" data-price="87000" data-multiple="2.9" data-profit="2500">
+          <div class="card-top">
+            <span class="asset-type">Content site</span>
+            <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+          </div>
+          <h3>Outdoor Gear Review &amp; How-To Site</h3>
+          <p class="card-desc">Six years old, 62% organic traffic; 21 money pages carry most of the revenue.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$87,000</dd></div>
+            <div><dt>Multiple</dt><dd>2.9&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$2,900</dd></div>
+            <div><dt>Monthly profit</dt><dd>$2,500</dd></div>
+          </dl>
+        </article>
+        <article class="card reveal" data-type="affiliate" data-price="156000" data-multiple="3.1" data-profit="4200">
+          <div class="card-top">
+            <span class="asset-type">Affiliate site</span>
+            <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+          </div>
+          <h3>B2B Software Comparison Affiliate</h3>
+          <p class="card-desc">High-intent keywords, recurring-commission programs, diversified across 14 partners.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$156,000</dd></div>
+            <div><dt>Multiple</dt><dd>3.1&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$4,600</dd></div>
+            <div><dt>Monthly profit</dt><dd>$4,200</dd></div>
+          </dl>
+        </article>
+        <article class="card reveal" data-type="ecommerce" data-price="212000" data-multiple="2.6" data-profit="6800">
+          <div class="card-top">
+            <span class="asset-type">E-commerce</span>
+            <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+          </div>
+          <h3>Ergonomic Pet Accessories Store</h3>
+          <p class="card-desc">Own-brand products, two 3PL warehouses, email list drives 24% of orders.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$212,000</dd></div>
+            <div><dt>Multiple</dt><dd>2.6&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$28,500</dd></div>
+            <div><dt>Monthly profit</dt><dd>$6,800</dd></div>
+          </dl>
+        </article>
+        <article class="card reveal" data-type="service" data-price="135000" data-multiple="2.4" data-profit="4700">
+          <div class="card-top">
+            <span class="asset-type">Productized service</span>
+            <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+          </div>
+          <h3>Flat-Rate Logo &amp; Brand-Kit Studio</h3>
+          <p class="card-desc">Subscription design service with documented SOPs and a contractor bench of eight.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$135,000</dd></div>
+            <div><dt>Multiple</dt><dd>2.4&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$9,800</dd></div>
+            <div><dt>Monthly profit</dt><dd>$4,700</dd></div>
+          </dl>
+        </article>
+        <article class="card reveal" data-type="content" data-price="64000" data-multiple="2.8" data-profit="1900">
+          <div class="card-top">
+            <span class="asset-type">Content site</span>
+            <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+          </div>
+          <h3>Home-Coffee Brewing Publication</h3>
+          <p class="card-desc">Display ads plus equipment affiliates; 480 indexed articles, steady seasonal pattern.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$64,000</dd></div>
+            <div><dt>Multiple</dt><dd>2.8&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$2,200</dd></div>
+            <div><dt>Monthly profit</dt><dd>$1,900</dd></div>
+          </dl>
+        </article>
+        <article class="card reveal" data-type="ecommerce" data-price="98000" data-multiple="2.4" data-profit="3400">
+          <div class="card-top">
+            <span class="asset-type">E-commerce</span>
+            <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+          </div>
+          <h3>Print-on-Demand Wall-Art Store</h3>
+          <p class="card-desc">Zero inventory, automated fulfillment, organic Pinterest as the main acquisition channel.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$98,000</dd></div>
+            <div><dt>Multiple</dt><dd>2.4&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$11,700</dd></div>
+            <div><dt>Monthly profit</dt><dd>$3,400</dd></div>
+          </dl>
+        </article>
+      </div>
+      <p class="listings-foot reveal">Sample listings with placeholder data, shown to illustrate our deal format. Active mandates are shared privately with qualified buyers.</p>
+    </div>
+  </section>
+  <!-- Approach -->
+  <section class="section" id="approach" aria-labelledby="approach-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The Aquire approach</p>
+        <h2 id="approach-title">Thesis first. Evidence always.</h2>
+        <p class="lede">A website acquisition is a capital allocation decision. We treat it like one — three habits separate our buyers from the browsing crowd.</p>
+      </div>
+      <div class="approach-grid">
+        <article class="approach reveal">
+          <h3>Start from a thesis, not a feed</h3>
+          <p>Scrolling listings breeds impulse buys. Our buyers write a buy box first — niche, model, budget, multiple ceiling — and only ever evaluate deals that clear it.</p>
+        </article>
+        <article class="approach reveal">
+          <h3>Discount the narrative</h3>
+          <p>"Huge untapped potential" is not a line item. We price what the asset earns today, verified at the source, and treat upside as your reward — not the seller's premium.</p>
+        </article>
+        <article class="approach reveal">
+          <h3>Walk-away discipline</h3>
+          <p>The diligence stack exists to kill bad deals cheaply. Roughly a third of the work we do is talking buyers out of acquisitions — that discipline is the product.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- Criteria builder -->
+  <section class="section band-white" id="criteria" aria-labelledby="criteria-title">
+    <div class="container criteria-wrap">
+      <div class="reveal">
+        <p class="eyebrow">Acquisition criteria builder</p>
+        <h2 id="criteria-title">Set your buy box. We screen everything against it.</h2>
+        <p class="lede">This demo wires the controls to the six sample listings above — drag the sliders and watch deals fall in and out of your box. The live version saves your criteria and alerts you the moment a fitting mandate appears.</p>
+        <p>A tight buy box is the single best diligence tool a buyer has: it makes "no" automatic and saves your attention for the deals that deserve it.</p>
+        <a class="btn btn-outline" href="#contact">Save a real buy box with us</a>
+      </div>
+      <form class="builder reveal" aria-label="Acquisition criteria builder demo">
+        <h3>Your criteria</h3>
+        <div class="chips" role="group" aria-label="Niche filters">
+          <button type="button" class="nchip chip" data-type="content" aria-pressed="true">Content</button>
+          <button type="button" class="nchip chip" data-type="affiliate" aria-pressed="true">Affiliate</button>
+          <button type="button" class="nchip chip" data-type="ecommerce" aria-pressed="true">E-commerce</button>
+          <button type="button" class="nchip chip" data-type="service" aria-pressed="true">Productized service</button>
+        </div>
+        <div class="ctrl">
+          <label for="budget">Max budget <output id="budget-out">$250,000</output></label>
+          <input type="range" id="budget" min="50000" max="400000" step="10000" value="250000">
+        </div>
+        <div class="ctrl">
+          <label for="multiple">Max multiple <output id="multiple-out">3.0&times;</output></label>
+          <input type="range" id="multiple" min="1.5" max="4" step="0.1" value="3">
+        </div>
+        <div class="ctrl">
+          <label for="profit">Min monthly profit <output id="profit-out">$1,500</output></label>
+          <input type="range" id="profit" min="0" max="8000" step="250" value="1500">
+        </div>
+        <p class="fit-line" aria-live="polite"><strong id="fit-count">5</strong> of 6 sample listings fit your buy box</p>
+        <p class="foot">Demo only — placeholder listings, real logic.</p>
+      </form>
+    </div>
+  </section>
+  <!-- Diligence stack -->
+  <section class="section band-ink" id="diligence" aria-labelledby="diligence-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The diligence stack</p>
+        <h2 id="diligence-title">Three layers between you and a bad buy</h2>
+        <p class="lede">Every deal that clears your criteria gets the same treatment. No exceptions for charming sellers.</p>
+      </div>
+      <div class="grid-diligence">
+        <article class="dcard reveal">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M3 20h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 20V12M10 20V7M15 20v-9M20 20V4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Traffic verification</h3>
+          <p>Read-only analytics access, never screenshots. We segment by source, flag paid traffic dressed up as organic, and stress-test the handful of pages that carry the revenue.</p>
+        </article>
+        <article class="dcard reveal">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>P&amp;L rebuild</h3>
+          <p>We reconstruct the profit and loss from payout reports, invoices and ad spend — line by line — so the multiple you pay sits on numbers we can defend, not the seller's spreadsheet.</p>
+        </article>
+        <article class="dcard reveal">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2l8 2.6v5.6c0 5.2-3.3 8.7-8 11-4.7-2.3-8-5.8-8-11V4.6z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 12l2.4 2.4 4.6-4.8" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Transfer &amp; escrow</h3>
+          <p>Funds sit in escrow while domain, code, content, accounts and supplier relationships move. Nothing releases until every box on the transfer checklist is green.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- Process -->
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">How a deal runs</p>
+        <h2 id="process-title">The acquisition, run like an audit</h2>
+        <p class="lede">Five stages, each with a defined exit gate. You always know where the deal stands and what kills it.</p>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><h3>Define the thesis</h3><p>Buy box on paper: niche, model, budget, multiple ceiling, the hours you'll really commit.</p></li>
+        <li class="reveal"><h3>Screen the market</h3><p>Listed deals and quiet mandates filtered against your criteria — you see fits, not feeds.</p></li>
+        <li class="reveal"><h3>Run the stack</h3><p>Traffic verified, P&amp;L rebuilt, risks memo'd. A third of deals die here. Good.</p></li>
+        <li class="reveal"><h3>Negotiate on evidence</h3><p>Findings become leverage: price adjustments, holdbacks and earn-outs grounded in the rebuild.</p></li>
+        <li class="reveal"><h3>Escrow &amp; transfer</h3><p>Asset-by-asset migration with escrowed funds and a structured seller handover window.</p></li>
+      </ol>
+    </div>
+  </section>
+  <!-- Portfolio + broker support -->
+  <section class="section band-white" id="portfolio" aria-labelledby="portfolio-title">
+    <div class="container portfolio-grid">
+      <div class="reveal">
+        <p class="eyebrow">For repeat buyers</p>
+        <h2 id="portfolio-title">One website is a purchase. Five is a portfolio.</h2>
+        <p class="lede">Most of our buyers come back. We help them sequence acquisitions so cash flow from the first funds the second — and operations get cheaper with every add.</p>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 8.5L6 12l8-8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Portfolio mapping</strong> — what to buy next so niches hedge, not stack, your risk.</span></li>
+          <li><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 8.5L6 12l8-8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Hold / improve / exit reviews</strong> — an annual look at every asset against today's multiples.</span></li>
+          <li><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 8.5L6 12l8-8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Shared operations playbooks</strong> — consolidate hosting, content and ops across sites.</span></li>
+        </ul>
+      </div>
+      <div class="team-card reveal">
+        <h3>The deal team on every acquisition</h3>
+        <div class="tc-row">
+          <span class="tc-dot" aria-hidden="true">A</span>
+          <div><h4>Acquisition lead</h4><p>Owns your buy box, sources fits, and runs the negotiation from first contact to signed agreement.</p></div>
+        </div>
+        <div class="tc-row">
+          <span class="tc-dot" aria-hidden="true">D</span>
+          <div><h4>Diligence analyst</h4><p>Executes the stack and writes the findings memo — the document your final price stands on.</p></div>
+        </div>
+        <div class="tc-row">
+          <span class="tc-dot" aria-hidden="true">T</span>
+          <div><h4>Transfer coordinator</h4><p>Manages escrow, migration checklist and the handover window so day one runs without surprises.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Team -->
+  <section class="section" id="team" aria-labelledby="team-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The team</p>
+        <h2 id="team-title">The people who hold the line on diligence</h2>
+        <p class="lede">Acquisitions, diligence and portfolio strategy each have a named owner. Write to them directly.</p>
+      </div>
+      <div class="grid-team">
+        <article class="member reveal">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated avatar of Natalie Pierce, a white woman with a dark ponytail">
+            <defs><clipPath id="av-natalie"><circle cx="60" cy="60" r="58"/></clipPath></defs>
+            <circle cx="60" cy="60" r="58" fill="#DCEFE4"/>
+            <g clip-path="url(#av-natalie)">
+              <path d="M78 36c9 7 12 18 9 30-2 9-7 16-13 19 4-8 6-15 6-22 0-10-2-19-7-25z" fill="#2E2218"/>
+              <path d="M18 124c3-24 20-34 42-34s39 10 42 34z" fill="#2746B0"/>
+              <rect x="53" y="74" width="14" height="12" rx="5" fill="#E0B26C"/>
+              <circle cx="60" cy="52" r="23" fill="#F1C27D"/>
+              <path d="M37 52c-2-19 9-29 23-29s25 10 23 29c-1-7-5-12-9-13 1-2 1-4 0-5-4 3-9 4-14 4s-10-1-14-4c-1 1-1 3 0 5-4 1-8 6-9 13z" fill="#2E2218"/>
+              <circle cx="52" cy="53" r="2.5" fill="#26303E"/>
+              <circle cx="68" cy="53" r="2.5" fill="#26303E"/>
+              <path d="M47 46c3-2 7-2.2 10-.8" stroke="#2E2218" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M63 45.2c3-1.4 7-1.2 10 .8" stroke="#2E2218" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M60 54c-.8 2.4-1.2 4 .4 5" stroke="#D19A57" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M53 63c4 3 10 3 14 0" stroke="#B85F50" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+              <circle cx="38" cy="61" r="2" fill="#2746B0"/>
+              <circle cx="82" cy="61" r="2" fill="#2746B0"/>
+            </g>
+          </svg>
+          <h3>Natalie Pierce</h3>
+          <p class="role">Head of Acquisitions</p>
+          <p class="bio">Natalie turns buyer theses into closed website deals, from first screen to signed agreement. She keeps every acquisition anchored to the buy box you wrote on day one — not the story a listing tells on day thirty.</p>
+          <a class="member-email" href="mailto:natalie@aquirewebsites.com">natalie@aquirewebsites.com</a>
+        </article>
+        <article class="member reveal">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated avatar of Sam Whitfield, a Black man with short hair and round glasses">
+            <defs><clipPath id="av-sam"><circle cx="60" cy="60" r="58"/></clipPath></defs>
+            <circle cx="60" cy="60" r="58" fill="#E3E9F8"/>
+            <g clip-path="url(#av-sam)">
+              <path d="M18 124c3-24 20-34 42-34s39 10 42 34z" fill="#1B3079"/>
+              <path d="M50 90h20v6H50z" fill="#BFE8D2"/>
+              <rect x="53" y="74" width="14" height="12" rx="5" fill="#7A481E"/>
+              <circle cx="60" cy="52" r="23" fill="#8D5524"/>
+              <path d="M39 44c1-13 9-20 21-20s20 7 21 20c0 2-2 3-3 1-4-6-11-9-18-9s-14 3-18 9c-1 2-3 1-3-1z" fill="#14100E"/>
+              <circle cx="52" cy="53" r="7.5" fill="none" stroke="#1E2630" stroke-width="2.2"/>
+              <circle cx="68" cy="53" r="7.5" fill="none" stroke="#1E2630" stroke-width="2.2"/>
+              <path d="M59.5 51.5c.4-.5.7-.5 1 0" stroke="#1E2630" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M44.5 51l-5-2M75.5 51l5-2" stroke="#1E2630" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <circle cx="52" cy="53" r="2.4" fill="#0E0B08"/>
+              <circle cx="68" cy="53" r="2.4" fill="#0E0B08"/>
+              <path d="M47 42c3-1.8 7-2 10-.8" stroke="#14100E" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+              <path d="M63 41.2c3-1.2 7-1 10 .8" stroke="#14100E" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+              <path d="M60 55c-.8 2.2-1.2 3.8.4 4.8" stroke="#5E3414" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M53 64c4 3 10 3 14 0" stroke="#3A2009" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <h3>Sam Whitfield</h3>
+          <p class="role">Due Diligence Lead</p>
+          <p class="bio">Sam runs the diligence stack — traffic verification, analytics audits, and the P&amp;L rebuild that replaces seller spreadsheets with evidence. His findings memos are the reason our buyers renegotiate, or walk, with total confidence.</p>
+          <a class="member-email" href="mailto:sam@aquirewebsites.com">sam@aquirewebsites.com</a>
+        </article>
+        <article class="member reveal">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated avatar of Ingrid Larsen, a Norwegian woman with a short gray-blonde crop">
+            <defs><clipPath id="av-ingrid"><circle cx="60" cy="60" r="58"/></clipPath></defs>
+            <circle cx="60" cy="60" r="58" fill="#EAF0E8"/>
+            <g clip-path="url(#av-ingrid)">
+              <path d="M18 124c3-24 20-34 42-34s39 10 42 34z" fill="#4A66C9"/>
+              <rect x="53" y="74" width="14" height="12" rx="5" fill="#EBC096"/>
+              <circle cx="60" cy="52" r="23" fill="#F7D7B6"/>
+              <path d="M37 47c0-15 9-24 23-24 13 0 22 8 23 22 0 3-2 4-3 2-2-4-5-7-9-8 2 3 1 5 0 6-6-5-13-3-19-1-6 2-9 4-10 7-1 2-5 1-5-4z" fill="#D8CCB4"/>
+              <path d="M40 36c4-6 11-9 17-9-7 3-13 5-17 9z" fill="#C8BBA0"/>
+              <circle cx="52" cy="53" r="2.5" fill="#3A4254"/>
+              <circle cx="68" cy="53" r="2.5" fill="#3A4254"/>
+              <path d="M47 46c3-2 7-2.2 10-.8" stroke="#B0A186" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M63 45.2c3-1.4 7-1.2 10 .8" stroke="#B0A186" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M60 54c-.8 2.4-1.2 4 .4 5" stroke="#DCAE7E" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M53 63c4 3 10 3 14 0" stroke="#BC6A57" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+              <circle cx="38" cy="60" r="2.2" fill="#C9A227"/>
+              <circle cx="82" cy="60" r="2.2" fill="#C9A227"/>
+            </g>
+          </svg>
+          <h3>Ingrid Larsen</h3>
+          <p class="role">Portfolio Advisor</p>
+          <p class="bio">Ingrid advises repeat buyers building website portfolios, sequencing acquisitions so cash flow from one funds the next. She's the steady voice on hold-versus-exit, niche concentration, and when consolidation beats another purchase.</p>
+          <a class="member-email" href="mailto:ingrid@aquirewebsites.com">ingrid@aquirewebsites.com</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- CTA band -->
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="container">
+      <h2 id="cta-title">Write the thesis. We'll find the website that survives diligence.</h2>
+      <p>Start with a buy box, not a browse. The first conversation costs nothing but sharpens everything.</p>
+      <div class="cta-actions">
+        <a class="btn btn-mint" href="#criteria">Build your buy box</a>
+        <a class="btn btn-outline" href="#contact">Talk to acquisitions</a>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Bring us a thesis — or just a budget</h2>
+        <p class="lede">Tell us what you want to own and the evidence you'd need to feel safe buying it. An acquisition lead replies within one business day.</p>
+        <a class="btn btn-cobalt" href="mailto:info@aquirewebsites.com">Email the deal team</a>
+      </div>
+      <div class="contact-card reveal">
+        <dl>
+          <div><dt>Phone</dt><dd><a href="tel:+12137881919">213-788-1919</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:info@aquirewebsites.com">info@aquirewebsites.com</a></dd></div>
+          <div><dt>Office</dt><dd>9461 Charleville Blvd, Beverly Hills, CA 90212</dd></div>
+        </dl>
+        <p class="forward-note">All email forwards to info@emv.io.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-foot">
+  <div class="container footer-grid">
+    <div>
+      <a class="emv-attr" href="https://emv.io">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><rect width="48" height="48" fill="#000"/><path d="M27 10l3 28M42 9L31.5 38" stroke="#fff" stroke-width="2.6" fill="none"/></svg>
+        <span>by EMV GLOBAL HOLDINGS</span>
+      </a>
+      <p class="footer-line">Part of the <a href="https://emv.io">Exchange Media Ventures</a> portfolio. Founded by <a href="https://sanjeevnachiappan.com">Sanjeev Nachiappan</a>.</p>
+      <p class="footer-line">Aquire Websites is the diligence-first, buyer-side website acquisition practice of the EMV family.</p>
+    </div>
+    <nav aria-label="EMV Network">
+      <h4>EMV Network</h4>
+      <ul class="net-list">
+        <li><a href="https://emv.io">emv.io</a></li>
+        <li><a href="https://dexits.com">dexits.com</a></li>
+        <li><a href="https://scaleuni.com">scaleuni.com</a></li>
+        <li><a href="https://scaleverticals.com">scaleverticals.com</a></li>
+        <li><a href="https://scalifty.com">scalifty.com</a></li>
+        <li><a href="https://itscaled.com">itscaled.com</a></li>
+        <li><a href="https://exitwebsites.com">exitwebsites.com</a></li>
+        <li><a href="https://onlinexit.com">onlinexit.com</a></li>
+        <li><a href="https://wexits.com">wexits.com</a></li>
+        <li><a href="https://aquireonline.com">aquireonline.com</a></li>
+        <li><a href="https://aquirewebsites.com">aquirewebsites.com</a></li>
+        <li><a href="https://onlineaquisition.com">onlineaquisition.com</a></li>
+        <li><a href="https://sanjeevnachiappan.com">sanjeevnachiappan.com</a></li>
+      </ul>
+    </nav>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><a href="tel:+12137881919">213-788-1919</a></p>
+      <p>9461 Charleville Blvd, Beverly Hills, CA 90212</p>
+      <p><a href="mailto:info@aquirewebsites.com">info@aquirewebsites.com</a></p>
+      <p>All email forwards to info@emv.io.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Aquire Websites. An EMV Global Holdings company.</p>
+    <p>Sample listings are placeholders, not active offers.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  "use strict";
+  /* Mobile nav */
+  var toggle=document.querySelector(".nav-toggle");
+  var menu=document.getElementById("nav-menu");
+  toggle.addEventListener("click",function(){
+    var open=menu.classList.toggle("open");
+    toggle.setAttribute("aria-expanded",open?"true":"false");
+  });
+  menu.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click",function(){
+      menu.classList.remove("open");
+      toggle.setAttribute("aria-expanded","false");
+    });
+  });
+  /* Sticky header shadow */
+  var head=document.querySelector(".site-head");
+  window.addEventListener("scroll",function(){
+    head.classList.toggle("scrolled",window.scrollY>8);
+  },{passive:true});
+  /* Hero category chips (single select) */
+  var heroChips=document.querySelectorAll(".search-mock .chip");
+  var note=document.getElementById("search-note");
+  heroChips.forEach(function(chip){
+    chip.addEventListener("click",function(){
+      heroChips.forEach(function(c){c.setAttribute("aria-pressed","false");});
+      chip.setAttribute("aria-pressed","true");
+      note.textContent="Screening "+chip.textContent.toLowerCase()+" against your saved criteria.";
+    });
+  });
+  /* Hero search mock */
+  document.querySelector(".search-mock").addEventListener("submit",function(e){
+    e.preventDefault();
+    var q=document.getElementById("q").value.trim();
+    note.textContent=q
+      ?"Sample screen for “"+q+"” — live screening activates once your buy box is saved."
+      :"Sample screen — set a buy box below to make this real.";
+    document.getElementById("listings").scrollIntoView({behavior:"smooth"});
+  });
+  /* Criteria builder */
+  var cards=Array.prototype.slice.call(document.querySelectorAll("#listing-grid .card"));
+  var nchips=document.querySelectorAll(".nchip");
+  var budget=document.getElementById("budget");
+  var multiple=document.getElementById("multiple");
+  var profit=document.getElementById("profit");
+  var budgetOut=document.getElementById("budget-out");
+  var multipleOut=document.getElementById("multiple-out");
+  var profitOut=document.getElementById("profit-out");
+  var fitCount=document.getElementById("fit-count");
+  function money(n){return "$"+Number(n).toLocaleString("en-US");}
+  function activeTypes(){
+    var t=[];
+    nchips.forEach(function(c){
+      if(c.getAttribute("aria-pressed")==="true"){t.push(c.getAttribute("data-type"));}
+    });
+    return t;
+  }
+  function applyCriteria(){
+    budgetOut.textContent=money(budget.value);
+    multipleOut.textContent=Number(multiple.value).toFixed(1)+"×";
+    profitOut.textContent=money(profit.value);
+    var types=activeTypes(),fits=0;
+    cards.forEach(function(card){
+      var ok=types.indexOf(card.getAttribute("data-type"))>-1
+        && Number(card.getAttribute("data-price"))<=Number(budget.value)
+        && Number(card.getAttribute("data-multiple"))<=Number(multiple.value)
+        && Number(card.getAttribute("data-profit"))>=Number(profit.value);
+      card.classList.toggle("dim",!ok);
+      if(ok){fits++;}
+    });
+    fitCount.textContent=fits;
+  }
+  nchips.forEach(function(c){
+    c.addEventListener("click",function(){
+      var pressed=c.getAttribute("aria-pressed")==="true";
+      c.setAttribute("aria-pressed",pressed?"false":"true");
+      applyCriteria();
+    });
+  });
+  [budget,multiple,profit].forEach(function(r){r.addEventListener("input",applyCriteria);});
+  applyCriteria();
+  /* Reveal on scroll */
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}
+      });
+    },{threshold:.12});
+    document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll(".reveal").forEach(function(el){el.classList.add("in");});
+  }
+})();
+</script>
+
+<!-- ===== EMV Analytics Layer v1 (PostHog + Clarity) =====
+     Dormant until keys are set. To go live:
+     1. Replace phc_vs8vnsgAWgfqcH5BCYn85vNGr7rzCFLaKJvkGz7qJ9z3 with your PostHog project API key (SAME key on all 13 sites).
+     2. Replace CLARITY_REPLACE_ME with this site's Microsoft Clarity project ID (UNIQUE per site).
+     Docs: sites/analytics/TRACKING-SCHEMA.md -->
+<script>
+(function(){
+"use strict";
+try{
+var CFG={
+  site:"aquirewebsites.com",
+  category:"ma_buyer",
+  posthogKey:"phc_vs8vnsgAWgfqcH5BCYn85vNGr7rzCFLaKJvkGz7qJ9z3",
+  posthogHost:"https://us.i.posthog.com",
+  clarityId:"CLARITY_REPLACE_ME",
+  conversions:[{"selector": "#listings a", "event": "listing_inquiry", "value": 60}, {"selector": "a[href^=\"mailto:info@aquirewebsites.com\"]", "event": "buyer_inquiry", "value": 40}],
+  formRules:[{"selector": ".search-mock", "event": "marketplace_search", "value": 5}, {"selector": ".builder", "event": "criteria_submitted", "value": 45}]
+};
+var NETWORK={"emv.io":"hub","dexits.com":"saas","scaleuni.com":"consulting","scaleverticals.com":"consulting","scalifty.com":"consulting","itscaled.com":"consulting","exitwebsites.com":"ma_seller","onlinexit.com":"ma_seller","wexits.com":"ma_seller","aquireonline.com":"ma_buyer","aquirewebsites.com":"ma_buyer","onlineaquisition.com":"ma_buyer","sanjeevnachiappan.com":"personal"};
+var dormantPH=/REPLACE/.test(CFG.posthogKey);
+var dormantCL=/REPLACE/.test(CFG.clarityId);
+if(dormantPH){try{console.info("[EMV analytics] dormant - set PostHog key in EMV Analytics Layer snippet");}catch(e){}}
+
+function cap(ev,props){try{if(window.posthog&&!dormantPH){props=props||{};if(typeof props.value==="undefined"){props.value=0;}window.posthog.capture(ev,props);}}catch(e){}}
+function loc(el){try{if(el.closest("footer"))return "footer";if(el.closest("nav,header"))return "nav";if(el.closest(".ticker"))return "ticker";return "body";}catch(e){return "body";}}
+function txt(a){return ((a.textContent||"").replace(/\s+/g," ").trim()).slice(0,80);}
+
+/* --- PostHog loader (official array.js stub) --- */
+if(!dormantPH){
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+window.posthog.init(CFG.posthogKey,{
+  api_host:CFG.posthogHost,
+  autocapture:false,
+  capture_pageview:true,
+  capture_pageleave:true,
+  disable_session_recording:true,
+  persistence:"localStorage+cookie",
+  loaded:function(ph){
+    try{
+      ph.register({site:CFG.site,category:CFG.category});
+      var p=new URLSearchParams(location.search);
+      var did=p.get("ph_did");
+      if(did&&did!==ph.get_distinct_id()){ph.identify(did);}
+      if(did){p.delete("ph_did");var q=p.toString();history.replaceState(null,"",location.pathname+(q?"?"+q:"")+location.hash);}
+    }catch(e){}
+  }
+});
+}
+
+/* --- Microsoft Clarity loader --- */
+if(!dormantCL){
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script",CFG.clarityId);
+}
+
+/* --- cross-site decoration + click conversions --- */
+function decorateMaybe(a){
+  try{
+    var href=a.getAttribute("href")||"";
+    if(!/^https?:\/\//i.test(href))return;
+    var u=new URL(href);
+    var host=u.hostname.replace(/^www\./,"");
+    if(host===CFG.site||!(host in NETWORK))return;
+    cap("cross_site_click",{target_site:host,target_category:NETWORK[host],link_location:loc(a),link_text:txt(a),value:15});
+    if(window.posthog&&!dormantPH){
+      u.searchParams.set("utm_source","emv_network");
+      u.searchParams.set("utm_medium","cross_site");
+      u.searchParams.set("utm_campaign",CFG.site);
+      u.searchParams.set("utm_content",loc(a));
+      u.searchParams.set("ph_did",window.posthog.get_distinct_id());
+      a.href=u.toString();
+    }
+  }catch(e){}
+}
+document.addEventListener("click",function(e){
+  try{
+    var a=e.target&&e.target.closest?e.target.closest("a[href]"):null;
+    if(!a)return;
+    var href=a.getAttribute("href")||"";
+    for(var i=0;i<CFG.conversions.length;i++){
+      var c=CFG.conversions[i];
+      try{
+        if(a.matches(c.selector)){
+          cap(c.event,{value:c.value,link_location:loc(a),link_text:txt(a)});
+          decorateMaybe(a);
+          return;
+        }
+      }catch(err){}
+    }
+    if(/^mailto:/i.test(href)){cap("contact_email_click",{address:href.slice(7).split("?")[0],link_location:loc(a),value:5});return;}
+    if(/^tel:/i.test(href)){cap("phone_click",{link_location:loc(a),value:10});return;}
+    decorateMaybe(a);
+  }catch(err){}
+},true);
+
+/* --- forms: start + submit (with per-site renames) --- */
+document.addEventListener("submit",function(e){
+  try{
+    var f=e.target;
+    if(!f||f.tagName!=="FORM")return;
+    var name=f.id||f.getAttribute("aria-label")||"form";
+    for(var i=0;i<CFG.formRules.length;i++){
+      var r=CFG.formRules[i];
+      try{if(f.matches(r.selector)){cap(r.event,{form:name,value:r.value});return;}}catch(err){}
+    }
+    cap("lead_form_submit",{form:name,value:40});
+  }catch(err){}
+},true);
+document.addEventListener("focusin",function(e){
+  try{
+    var f=e.target&&e.target.form;
+    if(!f||f.__emvStarted)return;
+    f.__emvStarted=true;
+    cap("form_start",{form:f.id||f.getAttribute("aria-label")||"form",value:1});
+  }catch(err){}
+},true);
+
+/* --- engagement: one-shot 75% scroll --- */
+var fired75=false;
+window.addEventListener("scroll",function(){
+  try{
+    if(fired75)return;
+    var h=document.documentElement;
+    if(h.scrollHeight<=0)return;
+    if((h.scrollTop+window.innerHeight)/h.scrollHeight>=0.75){fired75=true;cap("scroll_depth_75",{value:2});}
+  }catch(e){}
+},{passive:true});
+
+/* --- escape hatch: any site JS can fire a conversion --- */
+document.addEventListener("emv:conversion",function(e){
+  try{
+    var d=(e&&e.detail)||{};
+    if(d.event){var p=d.props||{};if(typeof p.value==="undefined"){p.value=d.value||0;}cap(d.event,p);}
+  }catch(err){}
+});
+}catch(e){}
+})();
+</script>
+<!-- ===== /EMV Analytics Layer ===== -->
+
+</body>
+</html>

@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online Aquisition — Buy a Business With a Broker at Your Side</title>
+<meta name="description" content="A buyer's marketplace built for first-time and time-poor buyers. Get matched with a broker who guides search, offers, diligence and closing — and follow every deal you're weighing in your personal Acquisition Tracker, complete with broker notes and next steps.">
+<link rel="canonical" href="https://onlineaquisition.com/">
+<meta property="og:title" content="Online Aquisition — The Guided Way to Buy an Online Business">
+<meta property="og:description" content="First acquisition? Short on time? A matched broker runs the search, the offer, the diligence and the close — while your Acquisition Tracker keeps every deal, note and next step on one calm page.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://onlineaquisition.com/">
+<meta property="og:site_name" content="Online Aquisition">
+<meta name="twitter:card" content="summary">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Online Aquisition",
+  "url": "https://onlineaquisition.com",
+  "email": "info@onlineaquisition.com",
+  "telephone": "+1-213-788-1919",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9461 Charleville Blvd",
+    "addressLocality": "Beverly Hills",
+    "addressRegion": "CA",
+    "postalCode": "90212",
+    "addressCountry": "US"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "EMV Global Holdings",
+    "url": "https://emv.io"
+  }
+}
+</script>
+<style>
+:root{
+  --graphite:#2B2B2B;
+  --graphite-2:#3A3733;
+  --amber:#E09F1F;
+  --amber-deep:#9C6A06;
+  --amber-soft:#F8ECD4;
+  --bg:#FAF8F4;
+  --white:#FFFFFF;
+  --ink:#2B2B2B;
+  --muted:#6B6257;
+  --line:#E7E0D2;
+  --cream:#F4EFE6;
+  --radius:14px;
+  --shadow:0 14px 34px rgba(58,49,33,.10);
+  --font-sans:"Instrument Sans",sans-serif;
+  --font-serif:"Instrument Serif",serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+body{margin:0;font-family:var(--font-sans);font-size:1rem;line-height:1.68;color:var(--ink);background:var(--bg)}
+h1,h2,h3,h4{line-height:1.14;margin:0 0 .5em;font-weight:700;letter-spacing:-.015em}
+.serif{font-family:var(--font-serif);font-style:italic;font-weight:400;letter-spacing:0}
+p{margin:0 0 1em}
+a{color:var(--amber-deep)}
+ul,ol{padding:0;margin:0}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--amber);color:var(--graphite);padding:10px 16px;font-weight:700;z-index:99;border-radius:0 0 8px 0}
+.skip-link:focus{left:0}
+.container{width:min(1140px,92%);margin-inline:auto}
+.section{padding:90px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.16em;font-size:.73rem;font-weight:700;color:var(--amber-deep);margin-bottom:14px}
+.eyebrow::before{content:"";width:20px;height:12px;background:linear-gradient(115deg,transparent 44%,var(--amber) 44% 56%,transparent 56%),linear-gradient(115deg,transparent 68%,var(--amber) 68% 80%,transparent 80%)}
+.section-head{max-width:700px;margin-bottom:46px}
+.section-head h2{font-size:clamp(1.7rem,3.4vw,2.45rem)}
+.lede{font-size:1.08rem;color:var(--muted)}
+.btn{display:inline-block;font-weight:700;font-size:.98rem;padding:13px 26px;border-radius:10px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:var(--font-sans);transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-amber{background:var(--amber);color:var(--graphite)}
+.btn-amber:hover{box-shadow:0 10px 26px rgba(224,159,31,.4)}
+.btn-dark{background:var(--graphite);color:var(--cream)}
+.btn-outline{background:transparent;color:var(--graphite);border-color:var(--graphite)}
+/* ---------- Header ---------- */
+.site-head{position:sticky;top:0;z-index:60;background:rgba(250,248,244,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-head.scrolled{box-shadow:0 8px 24px rgba(58,49,33,.1)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:1.16rem;color:var(--ink)}
+.logo svg{border-radius:6px}
+.logo .accent{font-family:var(--font-serif);font-style:italic;font-weight:400;color:var(--amber-deep);margin-left:3px}
+.nav-links{display:flex;align-items:center;gap:24px;list-style:none}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.94rem}
+.nav-links a:hover{color:var(--amber-deep)}
+.nav-links .btn{padding:10px 18px}
+.nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.nav-toggle span{display:block;width:24px;height:2.5px;background:var(--ink);margin:5px 0;transition:transform .25s ease,opacity .25s ease}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:96px 0 104px;overflow:hidden;background:
+  linear-gradient(115deg,transparent 76%,rgba(224,159,31,.1) 76% 78%,transparent 78%),
+  linear-gradient(115deg,transparent 84%,rgba(43,43,43,.05) 84% 86.5%,transparent 86.5%),
+  radial-gradient(840px 460px at 86% -12%,rgba(224,159,31,.16),transparent 65%),var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:54px;align-items:center}
+.hero h1{font-size:clamp(2.25rem,5vw,3.5rem);font-weight:700}
+.hero h1 .serif{color:var(--amber-deep);font-size:1.04em}
+.hero .sub{font-size:1.12rem;color:var(--muted);max-width:560px;margin-bottom:30px}
+.search-mock{max-width:580px}
+.search-bar{display:flex;align-items:center;gap:10px;background:var(--white);border:1.5px solid var(--line);border-radius:14px;padding:8px 8px 8px 16px;box-shadow:var(--shadow)}
+.search-bar svg{flex:none;color:var(--amber-deep)}
+.search-bar input{flex:1;min-width:0;background:transparent;border:0;color:var(--ink);font-family:var(--font-sans);font-size:1rem;padding:10px 4px}
+.search-bar input::placeholder{color:#A89B87}
+.search-bar input:focus{outline:none}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.chip{font-weight:600;font-size:.85rem;color:var(--ink);background:var(--white);border:1.5px solid var(--line);border-radius:999px;padding:7px 15px;cursor:pointer;font-family:var(--font-sans);transition:all .18s ease}
+.chip:hover{border-color:var(--amber)}
+.chip[aria-pressed="true"]{background:var(--graphite);border-color:var(--graphite);color:var(--cream)}
+.search-note{margin-top:14px;font-size:.9rem;color:var(--muted)}
+.search-note a{font-weight:700}
+.broker-intro{background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);position:relative}
+.broker-intro::before{content:"";position:absolute;top:0;left:26px;right:26px;height:4px;background:linear-gradient(115deg,var(--amber) 60%,transparent 60%),linear-gradient(115deg,transparent 66%,var(--amber) 66% 72%,transparent 72%)}
+.broker-intro h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:8px 0 18px}
+.bi-row{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-top:1px dashed var(--line);font-size:.93rem}
+.bi-row:first-of-type{border-top:0}
+.bi-num{flex:none;width:30px;height:30px;border-radius:9px;background:var(--amber-soft);color:var(--amber-deep);font-weight:700;display:flex;align-items:center;justify-content:center;transform:skewX(-8deg)}
+.bi-row strong{display:block}
+.bi-row span{color:var(--muted)}
+/* ---------- Listings ---------- */
+.band-white{background:var(--white)}
+.tag-sample{display:inline-block;background:var(--graphite);color:var(--amber);font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:6px;margin-bottom:14px}
+.grid-listings{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{background:var(--bg);border:1.5px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:12px;transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.asset-type{font-weight:700;font-size:.75rem;letter-spacing:.07em;text-transform:uppercase;color:var(--graphite);background:var(--cream);border:1px solid var(--line);padding:5px 10px;border-radius:6px}
+.badge-verified{display:inline-flex;align-items:center;gap:6px;font-size:.77rem;font-weight:700;color:#1E6B45;background:#DDEFE3;border-radius:999px;padding:5px 11px}
+.badge-broker{display:inline-flex;align-items:center;gap:6px;font-size:.77rem;font-weight:700;color:var(--graphite);background:var(--amber);border-radius:999px;padding:5px 11px}
+.card h3{font-size:1.1rem;margin:0}
+.card-desc{font-size:.92rem;color:var(--muted);margin:0}
+.card-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;margin:4px 0 0;border-top:1px dashed var(--line);padding-top:14px}
+.card-stats div{margin:0}
+.card-stats dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.card-stats dd{margin:2px 0 0;font-weight:700;font-size:1.02rem}
+.listings-foot{margin-top:26px;font-size:.88rem;color:var(--muted)}
+/* ---------- Why / comparison ---------- */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.cmp{border-radius:var(--radius);padding:30px 28px}
+.cmp-alone{background:var(--cream);border:1.5px solid var(--line)}
+.cmp-guided{background:var(--graphite);color:var(--cream)}
+.cmp h3{font-size:1.16rem;margin-bottom:18px}
+.cmp-guided h3 .serif{color:var(--amber)}
+.cmp ul{list-style:none;display:grid;gap:13px}
+.cmp li{display:flex;gap:11px;align-items:flex-start;font-size:.95rem}
+.cmp-alone li{color:var(--muted)}
+.cmp-guided li{color:#E9E2D4}
+.cmp svg{flex:none;margin-top:4px}
+.cmp-alone svg{color:#B0533B}
+.cmp-guided svg{color:var(--amber)}
+/* ---------- Tracker ---------- */
+.tracker-section{background:var(--cream)}
+.tracker{background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.tracker-bar{display:flex;align-items:center;gap:14px;background:var(--graphite);color:var(--cream);padding:13px 20px;font-size:.9rem;font-weight:600}
+.tracker-bar .dots{display:flex;gap:6px}
+.tracker-bar .dots span{width:10px;height:10px;border-radius:50%;background:#5A554D}
+.tracker-bar .dots span:first-child{background:var(--amber)}
+.tracker-bar .count{margin-left:auto;font-weight:400;color:#BDB5A6;font-size:.84rem}
+.tracker-tabs{display:flex;flex-wrap:wrap;gap:8px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.ttab{font-family:var(--font-sans);font-weight:600;font-size:.84rem;color:var(--muted);background:var(--bg);border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
+.ttab[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:var(--graphite)}
+.trow{display:grid;grid-template-columns:1.25fr .7fr 1.45fr 1fr;gap:16px;padding:18px 20px;border-bottom:1px solid var(--line);align-items:start;font-size:.92rem}
+.trow:last-child{border-bottom:0}
+.trow[hidden]{display:none}
+.trow .biz strong{display:block;font-size:.98rem}
+.trow .biz span{color:var(--muted);font-size:.82rem}
+.stage{display:inline-block;font-size:.76rem;font-weight:700;letter-spacing:.04em;border-radius:999px;padding:4px 12px;white-space:nowrap}
+.stage-evaluating{background:#EFE9DD;color:#6B6257}
+.stage-offer{background:#FCEBC8;color:#8A5E00}
+.stage-diligence{background:#E3EAF5;color:#33567E}
+.stage-closing{background:#DDEFE3;color:#1E6B45}
+.trow .note{color:var(--muted)}
+.trow .note::before{content:"Broker note";display:block;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#A89B87;margin-bottom:2px}
+.trow .next{font-weight:600}
+.trow .next::before{content:"Next step";display:block;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#A89B87;margin-bottom:2px}
+.tracker-foot{padding:14px 20px;font-size:.82rem;color:var(--muted);background:var(--bg)}
+/* ---------- Steps ---------- */
+.steps{list-style:none;counter-reset:step;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.steps li{counter-increment:step;background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);padding:24px 20px;position:relative;overflow:hidden}
+.steps li::before{content:"0" counter(step);font-weight:700;font-size:.84rem;color:var(--amber-deep);display:block;margin-bottom:10px}
+.steps li::after{content:"";position:absolute;top:-14px;right:-24px;width:62px;height:62px;background:linear-gradient(115deg,transparent 46%,rgba(224,159,31,.25) 46% 54%,transparent 54%)}
+.steps h3{font-size:1.02rem}
+.steps p{font-size:.88rem;color:var(--muted);margin:0}
+/* ---------- Broker support ---------- */
+.support-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
+.check-list{list-style:none;display:grid;gap:13px;margin-top:8px}
+.check-list li{display:flex;gap:12px;align-items:flex-start;font-size:.96rem}
+.check-list svg{flex:none;color:var(--amber-deep);margin-top:4px}
+.week-card{background:var(--graphite);color:var(--cream);border-radius:var(--radius);padding:30px;position:relative;overflow:hidden}
+.week-card::after{content:"";position:absolute;top:-16px;right:-26px;width:80px;height:80px;background:linear-gradient(115deg,transparent 46%,rgba(224,159,31,.35) 46% 54%,transparent 54%)}
+.week-card h3{color:#fff;font-size:1.1rem;margin-bottom:16px}
+.week-card h3 .serif{color:var(--amber)}
+.wk-row{display:flex;gap:14px;padding:12px 0;border-top:1px dashed rgba(255,255,255,.16);font-size:.92rem}
+.wk-row:first-of-type{border-top:0}
+.wk-day{flex:none;width:46px;font-weight:700;color:var(--amber)}
+.wk-row p{margin:0;color:#D9D2C4}
+/* ---------- Team ---------- */
+.grid-team{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px}
+.member{background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);padding:30px 26px;text-align:center;box-shadow:var(--shadow)}
+.avatar{width:118px;height:118px;margin:0 auto 18px;display:block}
+.member h3{font-size:1.14rem;margin-bottom:2px}
+.member .role{font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--amber-deep);margin-bottom:12px}
+.member .bio{font-size:.92rem;color:var(--muted)}
+.member-email{font-size:.9rem;font-weight:700;color:var(--amber-deep);text-decoration:none;border-bottom:2px solid var(--amber)}
+/* ---------- CTA band ---------- */
+.cta-band{background:linear-gradient(115deg,var(--graphite) 55%,var(--graphite-2));color:var(--cream);text-align:center;padding:84px 0;position:relative;overflow:hidden}
+.cta-band::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 64%,rgba(224,159,31,.16) 64% 66%,transparent 66%),linear-gradient(115deg,transparent 72%,rgba(224,159,31,.24) 72% 73.5%,transparent 73.5%)}
+.cta-band h2{font-size:clamp(1.7rem,3.6vw,2.5rem);max-width:680px;margin:0 auto 14px;position:relative;color:#fff}
+.cta-band h2 .serif{color:var(--amber)}
+.cta-band p{color:#BDB5A6;margin-bottom:30px;position:relative}
+.cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+.cta-band .btn-outline{color:var(--cream);border-color:rgba(255,255,255,.55)}
+.cta-band .btn-outline:hover{border-color:var(--amber);color:var(--amber)}
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.contact-card{background:var(--white);border:1.5px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.contact-card dl{margin:0;display:grid;gap:18px}
+.contact-card dt{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.contact-card dd{margin:3px 0 0;font-weight:700;font-size:1.05rem}
+.contact-card a{color:var(--ink);text-decoration:none;border-bottom:2px solid var(--amber)}
+.forward-note{margin-top:20px;padding:12px 16px;background:var(--amber-soft);border-left:4px solid var(--amber);font-size:.9rem;color:var(--muted)}
+/* ---------- Footer ---------- */
+.site-foot{background:var(--graphite);color:#BDB5A6;padding:64px 0 30px;font-size:.92rem}
+.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1.1fr;gap:44px}
+.emv-attr{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#fff;font-weight:700;letter-spacing:.06em}
+.emv-attr svg{outline:1px solid rgba(255,255,255,.25);border-radius:4px}
+.footer-line{margin-top:16px;font-size:.9rem}
+.site-foot a{color:var(--amber)}
+.site-foot h4{color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px}
+.net-list{list-style:none;columns:2;column-gap:26px}
+.net-list li{margin-bottom:8px;break-inside:avoid}
+.net-list a{color:#BDB5A6;text-decoration:none}
+.net-list a:hover{color:var(--amber)}
+.footer-contact p{margin:0 0 8px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:46px;padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.86rem}
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.reveal.in{opacity:1;transform:none}
+/* ---------- Responsive ---------- */
+@media (max-width:960px){
+  .hero-grid,.support-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
+  .compare{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .trow{grid-template-columns:1fr 1fr;gap:12px}
+}
+@media (max-width:880px){
+  .nav-toggle{display:block}
+  .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:var(--white);border-bottom:1px solid var(--line);padding:10px 4%;display:none;box-shadow:0 18px 30px rgba(58,49,33,.12)}
+  .nav-links.open{display:flex}
+  .nav-links li{width:100%}
+  .nav-links a{display:block;padding:13px 4px;font-size:1.02rem}
+  .nav-links .btn{margin:10px 0 14px}
+}
+@media (max-width:640px){
+  .section{padding:64px 0}
+  .hero{padding:64px 0 76px}
+  .search-bar{flex-wrap:wrap;padding:10px}
+  .search-bar .btn{width:100%}
+  .footer-grid{grid-template-columns:1fr}
+  .trow{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn,.card{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-head" id="top">
+  <div class="container nav">
+    <a class="logo" href="#top" aria-label="Online Aquisition home">
+      <svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true"><rect width="48" height="48" fill="#000"/><path d="M27 10l3 28M42 9L31.5 38" stroke="#fff" stroke-width="2.6" fill="none"/></svg>
+      <span>Online<span class="accent">Aquisition</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#listings">Listings</a></li>
+        <li><a href="#why">Why guided</a></li>
+        <li><a href="#tracker">Tracker</a></li>
+        <li><a href="#process">How it works</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn btn-amber" href="#contact">Match me with a broker</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">For first-time &amp; time-poor buyers</p>
+        <h1 id="hero-title">Buy an online business with a broker <span class="serif">holding the thread</span>.</h1>
+        <p class="sub">You bring the ambition and the budget. Your matched broker brings the shortlist, the offer strategy, the diligence questions you didn't know to ask — and the patience to walk you through all of it.</p>
+        <form class="search-mock" role="search" aria-label="Business search demo">
+          <div class="search-bar">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input id="q" type="text" placeholder="What would you love to own? e.g. &ldquo;a calm $150k e-commerce brand&rdquo;" aria-label="Search businesses for sale">
+            <button type="submit" class="btn btn-dark">Explore</button>
+          </div>
+          <div class="chips" role="group" aria-label="Business categories">
+            <button type="button" class="chip" aria-pressed="true">Show me everything</button>
+            <button type="button" class="chip" aria-pressed="false">E-commerce</button>
+            <button type="button" class="chip" aria-pressed="false">SaaS</button>
+            <button type="button" class="chip" aria-pressed="false">Content &amp; newsletters</button>
+            <button type="button" class="chip" aria-pressed="false">Services</button>
+          </div>
+          <p class="search-note" id="search-note" aria-live="polite">Not sure what to type? That's what brokers are for — <a href="#contact">get matched instead</a>.</p>
+        </form>
+      </div>
+      <div class="broker-intro reveal" aria-label="How broker matching works">
+        <h2>Matched in three moves</h2>
+        <div class="bi-row">
+          <span class="bi-num" aria-hidden="true">1</span>
+          <div><strong>Tell us your shape</strong><span>Budget, hours per week, risk comfort, and what "a good life" looks like after the deal.</span></div>
+        </div>
+        <div class="bi-row">
+          <span class="bi-num" aria-hidden="true">2</span>
+          <div><strong>Meet your broker</strong><span>One named person — not a queue — who has guided buyers like you before.</span></div>
+        </div>
+        <div class="bi-row">
+          <span class="bi-num" aria-hidden="true">3</span>
+          <div><strong>Open your tracker</strong><span>Every business you're weighing, with broker notes and a single next step. Always.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Listings -->
+  <section class="section band-white" id="listings" aria-labelledby="listings-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag-sample">Sample listings</span>
+        <p class="eyebrow">From recent shortlists</p>
+        <h2 id="listings-title">The variety a broker can put in front of you</h2>
+        <p class="lede">Placeholder examples of how deals appear in your shortlist — including the ones your broker flags as an especially good fit for <em>you</em>.</p>
+      </div>
+      <div class="grid-listings">
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="asset-type">Micro-SaaS</span>
+            <span class="badge-broker"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M8 1.5l1.9 4 4.4.5-3.3 3 .9 4.3L8 11.1l-3.9 2.2.9-4.3-3.3-3 4.4-.5z" fill="currentColor"/></svg>Broker-recommended</span>
+          </div>
+          <h3>InvoicePilot — Invoicing Tool for Trades</h3>
+          <p class="card-desc">Boring-in-the-best-way SaaS; 510 subscribers who'd rather pay than switch.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$189,000</dd></div>
+            <div><dt>Multiple</dt><dd>2.8&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$6,300</dd></div>
+            <div><dt>Monthly profit</dt><dd>$5,600</dd></div>
+          </dl>
+          <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+        </article>
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="asset-type">Content + newsletter</span>
+          </div>
+          <h3>Weeknight Meal-Prep Site &amp; Newsletter</h3>
+          <p class="card-desc">Recipe library with display ads plus a 19k-reader newsletter; five quiet hours a week.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$72,000</dd></div>
+            <div><dt>Multiple</dt><dd>2.5&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$2,700</dd></div>
+            <div><dt>Monthly profit</dt><dd>$2,400</dd></div>
+          </dl>
+          <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+        </article>
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="asset-type">Shopify brand</span>
+            <span class="badge-broker"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M8 1.5l1.9 4 4.4.5-3.3 3 .9 4.3L8 11.1l-3.9 2.2.9-4.3-3.3-3 4.4-.5z" fill="currentColor"/></svg>Broker-recommended</span>
+          </div>
+          <h3>Cedar &amp; Wick — Home Fragrance Brand</h3>
+          <p class="card-desc">Two-person operation, 41% repeat orders, gift-season tailwinds already in the numbers.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$243,000</dd></div>
+            <div><dt>Multiple</dt><dd>2.5&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$31,200</dd></div>
+            <div><dt>Monthly profit</dt><dd>$8,100</dd></div>
+          </dl>
+          <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+        </article>
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="asset-type">Amazon FBA</span>
+          </div>
+          <h3>FBA Kitchen-Organization Brand</h3>
+          <p class="card-desc">Eleven SKUs, two reliable suppliers, and a review moat that took five years to build.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$311,000</dd></div>
+            <div><dt>Multiple</dt><dd>2.4&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$42,800</dd></div>
+            <div><dt>Monthly profit</dt><dd>$10,800</dd></div>
+          </dl>
+          <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+        </article>
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="asset-type">Lead generation</span>
+            <span class="badge-broker"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M8 1.5l1.9 4 4.4.5-3.3 3 .9 4.3L8 11.1l-3.9 2.2.9-4.3-3.3-3 4.4-.5z" fill="currentColor"/></svg>Broker-recommended</span>
+          </div>
+          <h3>Local-Services Lead-Gen Trio</h3>
+          <p class="card-desc">Three small sites selling plumber and roofer leads; priced honestly for its single-channel risk.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$57,000</dd></div>
+            <div><dt>Multiple</dt><dd>2.2&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$2,350</dd></div>
+            <div><dt>Monthly profit</dt><dd>$2,150</dd></div>
+          </dl>
+          <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+        </article>
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="asset-type">Subscription box</span>
+          </div>
+          <h3>Single-Origin Coffee Club</h3>
+          <p class="card-desc">740 active subscribers, a roaster partnership with room to grow, and churn under control.</p>
+          <dl class="card-stats">
+            <div><dt>Asking price</dt><dd>$128,000</dd></div>
+            <div><dt>Multiple</dt><dd>2.7&times;</dd></div>
+            <div><dt>Monthly revenue</dt><dd>$14,600</dd></div>
+            <div><dt>Monthly profit</dt><dd>$3,950</dd></div>
+          </dl>
+          <span class="badge-verified"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1l6 2v4c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V3z" fill="currentColor" opacity=".22"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Revenue</span>
+        </article>
+      </div>
+      <p class="listings-foot reveal">Sample listings with placeholder figures, shown to illustrate the shortlist format. Your broker shares live deals after your matching call.</p>
+    </div>
+  </section>
+  <!-- Why guided -->
+  <section class="section" id="why" aria-labelledby="why-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Why guided buying</p>
+        <h2 id="why-title">Buying a business shouldn't feel like <span class="serif">doing it alone at midnight</span></h2>
+        <p class="lede">Marketplaces hand you ten thousand listings and a login. We hand you a person whose job is your deal.</p>
+      </div>
+      <div class="compare">
+        <div class="cmp cmp-alone reveal">
+          <h3>Buying solo on a big marketplace</h3>
+          <ul>
+            <li><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Endless scrolling with no way to know what's actually good</span></li>
+            <li><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Seller-written numbers you're left to take on faith</span></li>
+            <li><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Drafting your first LOI from a blog post at 1 a.m.</span></li>
+            <li><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Deal threads scattered across email, DMs and spreadsheets</span></li>
+          </ul>
+        </div>
+        <div class="cmp cmp-guided reveal">
+          <h3>Buying with <span class="serif">Online Aquisition</span></h3>
+          <ul>
+            <li><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2 8.5L6 12l8-8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A matched broker curates a shortlist sized to your life, not the feed</span></li>
+            <li><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2 8.5L6 12l8-8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verified Revenue checks before any deal earns your weekend</span></li>
+            <li><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2 8.5L6 12l8-8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Offers, diligence and escrow run by someone who's done it before</span></li>
+            <li><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2 8.5L6 12l8-8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One Acquisition Tracker holding every deal, note and next step</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Acquisition Tracker -->
+  <section class="section tracker-section" id="tracker" aria-labelledby="tracker-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The Acquisition Tracker</p>
+        <h2 id="tracker-title">Every deal you're weighing, on <span class="serif">one calm page</span></h2>
+        <p class="lede">Your tracker is a living pipeline your broker keeps current with you: stage, candid notes from calls, and the single next step. No fifteen-tab spreadsheet. No "wait, where were we?"</p>
+      </div>
+      <div class="tracker reveal" aria-label="Demo of the Acquisition Tracker dashboard">
+        <div class="tracker-bar">
+          <span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>Acquisition Tracker — your pipeline</span>
+          <span class="count" id="tracker-count">5 deals shown</span>
+        </div>
+        <div class="tracker-tabs" role="group" aria-label="Filter deals by stage">
+          <button type="button" class="ttab" data-stage="all" aria-pressed="true">All</button>
+          <button type="button" class="ttab" data-stage="evaluating" aria-pressed="false">Evaluating</button>
+          <button type="button" class="ttab" data-stage="offer" aria-pressed="false">Offer sent</button>
+          <button type="button" class="ttab" data-stage="diligence" aria-pressed="false">In diligence</button>
+          <button type="button" class="ttab" data-stage="closing" aria-pressed="false">Closing</button>
+        </div>
+        <div class="trow" data-stage="diligence">
+          <div class="biz"><strong>Cedar &amp; Wick Candle Co.</strong><span>Shopify brand · $243,000 ask</span></div>
+          <div><span class="stage stage-diligence">In diligence</span></div>
+          <p class="note">Inventory counts reconciled. Reviewing the supplier contract renewal before we sign off.</p>
+          <p class="next">Review Q2 P&amp;L together — Thursday</p>
+        </div>
+        <div class="trow" data-stage="offer">
+          <div class="biz"><strong>InvoicePilot</strong><span>Micro-SaaS · $189,000 ask</span></div>
+          <div><span class="stage stage-offer">Offer sent</span></div>
+          <p class="note">Seller countered at 3.0&times;. The churn data says hold at 2.8&times; — I'd let this one breathe.</p>
+          <p class="next">Counter-offer call — tomorrow, 10am</p>
+        </div>
+        <div class="trow" data-stage="evaluating">
+          <div class="biz"><strong>Single-Origin Coffee Club</strong><span>Subscription box · $128,000 ask</span></div>
+          <div><span class="stage stage-evaluating">Evaluating</span></div>
+          <p class="note">Churn is trending the right way, but I want the cohort export before we get excited.</p>
+          <p class="next">Request cohort data from seller</p>
+        </div>
+        <div class="trow" data-stage="evaluating">
+          <div class="biz"><strong>BrightNest Lead-Gen Trio</strong><span>Lead generation · $57,000 ask</span></div>
+          <div><span class="stage stage-evaluating">Evaluating</span></div>
+          <p class="note">Single-channel SEO risk, and the price already reflects it. Fine purchase if you accept the swing.</p>
+          <p class="next">Decide: shortlist or pass by Friday</p>
+        </div>
+        <div class="trow" data-stage="closing">
+          <div class="biz"><strong>Kyoto Stationery Studio</strong><span>E-commerce · $96,000 ask</span></div>
+          <div><span class="stage stage-closing">Closing</span></div>
+          <p class="note">Escrow funded and the transfer checklist is at 80%. Smooth so far — keep Friday free.</p>
+          <p class="next">Domain &amp; store handover — Friday</p>
+        </div>
+        <p class="tracker-foot">Demo data. Your real tracker is private to you and your broker, and updated after every call.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Process -->
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">How it works</p>
+        <h2 id="process-title">Five steps, never alone at any of them</h2>
+        <p class="lede">The same arc every successful acquisition follows — with your broker carrying the heavy parts.</p>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><h3>Meet your broker</h3><p>A matching call about budget, hours and goals pairs you with one named broker — yours for the whole journey.</p></li>
+        <li class="reveal"><h3>Shortlist together</h3><p>Your broker screens the market and brings you a handful of real fits, each with an honest first-pass read.</p></li>
+        <li class="reveal"><h3>Offer with backup</h3><p>Pricing, terms and the LOI drafted with you — and a steady voice when the negotiation gets noisy.</p></li>
+        <li class="reveal"><h3>Diligence, translated</h3><p>Verification runs in the background; your broker turns findings into plain-English decisions.</p></li>
+        <li class="reveal"><h3>Close, then land</h3><p>Escrowed funds, guided transfer, and a 30-day handover window so week one feels like week ten.</p></li>
+      </ol>
+    </div>
+  </section>
+  <!-- Broker support -->
+  <section class="section band-white" id="support" aria-labelledby="support-title">
+    <div class="container support-grid">
+      <div class="reveal">
+        <p class="eyebrow">Broker support</p>
+        <h2 id="support-title">What "matched broker" <span class="serif">actually</span> means</h2>
+        <p class="lede">Not a chat widget. Not a rotating queue. One person who knows your budget, your blind spots, and the names of the businesses keeping you up at night.</p>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 8.5L6 12l8-8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Buyer-side only</strong> — your broker negotiates against the seller, never for them.</span></li>
+          <li><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 8.5L6 12l8-8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Plain-English everything</strong> — multiples, add-backs and escrow explained like a friend would.</span></li>
+          <li><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 8.5L6 12l8-8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Honest "pass" advice</strong> — the cheapest deal is the bad one you never buy.</span></li>
+          <li><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 8.5L6 12l8-8" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Financing &amp; deal support</strong> — seller notes, earn-outs and funding paths structured for you.</span></li>
+        </ul>
+      </div>
+      <div class="week-card reveal">
+        <h3>A week with your broker, <span class="serif">roughly</span></h3>
+        <div class="wk-row"><span class="wk-day">Mon</span><p>Shortlist review: two new fits, one removed — with reasons you can sanity-check.</p></div>
+        <div class="wk-row"><span class="wk-day">Wed</span><p>Seller-call debrief: what they said, what the numbers say, where those differ.</p></div>
+        <div class="wk-row"><span class="wk-day">Fri</span><p>Tracker update: every stage current, one next step per deal, nothing floating.</p></div>
+        <div class="wk-row"><span class="wk-day">Any</span><p>The "is this normal?" text message. Yes, you can send it. Everyone does.</p></div>
+      </div>
+    </div>
+  </section>
+  <!-- Team -->
+  <section class="section" id="team" aria-labelledby="team-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The team</p>
+        <h2 id="team-title">The people who'll be <span class="serif">in your corner</span></h2>
+        <p class="lede">Brokerage, research and financing — each owned by someone you can email today.</p>
+      </div>
+      <div class="grid-team">
+        <article class="member reveal">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated avatar of Robert Hayes, a white man with salt-and-pepper hair and beard">
+            <defs><clipPath id="av-robert"><circle cx="60" cy="60" r="58"/></clipPath></defs>
+            <circle cx="60" cy="60" r="58" fill="#F3E7D3"/>
+            <g clip-path="url(#av-robert)">
+              <path d="M18 124c3-24 20-34 42-34s39 10 42 34z" fill="#2B2B2B"/>
+              <path d="M70 92l8-2v6l-8 2z" fill="#E09F1F"/>
+              <rect x="53" y="74" width="14" height="12" rx="5" fill="#E0B26C"/>
+              <circle cx="60" cy="52" r="23" fill="#F1C27D"/>
+              <path d="M38 46c1-14 9-22 22-22s21 8 22 22c0 2-2 3-3 1-4-6-11-9-19-9s-15 3-19 9c-1 2-3 1-3-1z" fill="#8E8E93"/>
+              <path d="M46 28c4-3 9-4 14-4-6 2-10 3-14 4z" fill="#C9CDD1"/>
+              <path d="M39 52c-1 14 6 25 21 25s22-11 21-25l-5 1c0 11-6 19-16 19s-16-8-16-19z" fill="#8E8E93"/>
+              <path d="M52 60c3-2 13-2 16 0l-1 3c-4.5-1.8-9.5-1.8-14 0z" fill="#9CA0A6"/>
+              <path d="M54 65c3.5 2.2 8.5 2.2 12 0" stroke="#5F6368" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+              <circle cx="52" cy="51" r="2.6" fill="#33393F"/>
+              <circle cx="68" cy="51" r="2.6" fill="#33393F"/>
+              <path d="M47 44c3-2 7-2.2 10-1" stroke="#7C7F85" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+              <path d="M63 43c3-1.2 7-1 10 1" stroke="#7C7F85" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+              <path d="M60 52c-1 2.4-1.4 4.2.5 5.2" stroke="#D19A57" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <h3>Robert Hayes</h3>
+          <p class="role">Senior Acquisition Broker</p>
+          <p class="bio">Robert is the broker first-time buyers ask for: patient on the phone, blunt about risk, and calm in a negotiation. He'll tell you when to walk away from a deal — which is exactly why buyers trust him when he says stay.</p>
+          <a class="member-email" href="mailto:robert@onlineaquisition.com">robert@onlineaquisition.com</a>
+        </article>
+        <article class="member reveal">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated avatar of Mei Tanaka, a Japanese woman with long black hair">
+            <defs><clipPath id="av-mei"><circle cx="60" cy="60" r="58"/></clipPath></defs>
+            <circle cx="60" cy="60" r="58" fill="#F7E9E4"/>
+            <g clip-path="url(#av-mei)">
+              <path d="M33 94V50c0-19 12-29 27-29s27 10 27 29v44c0 5-7 5-7 0V58c-1-4-3-7-5-9v45c0 5-6 5-6 0z" fill="#161219"/>
+              <path d="M31 96V52c0-12 4-21 11-26-3 8-4 16-4 24v46c0 5-7 5-7 0z" fill="#161219"/>
+              <path d="M18 124c3-24 20-34 42-34s39 10 42 34z" fill="#3A3733"/>
+              <path d="M48 92h24v5H48z" fill="#E09F1F"/>
+              <rect x="53" y="74" width="14" height="12" rx="5" fill="#E9BE8E"/>
+              <circle cx="60" cy="52" r="23" fill="#F5D0A9"/>
+              <path d="M38 48c0-16 9-25 22-25s22 9 22 25c0 2-2 3-3 1-2-5-5-8-9-9l2 6c-8-4-16-4-24 0l2-6c-4 1-7 4-9 9-1 2-3 1-3-1z" fill="#161219"/>
+              <circle cx="52" cy="53" r="2.5" fill="#241B20"/>
+              <circle cx="68" cy="53" r="2.5" fill="#241B20"/>
+              <path d="M47 46.5c3-1.8 7-2 10-.8" stroke="#161219" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M63 45.7c3-1.2 7-1 10 .8" stroke="#161219" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M60 54c-.8 2.4-1.2 4 .4 5" stroke="#D8A878" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M53 63c4 3 10 3 14 0" stroke="#C2705F" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+              <circle cx="37.5" cy="60" r="2" fill="#E09F1F"/>
+              <circle cx="82.5" cy="60" r="2" fill="#E09F1F"/>
+            </g>
+          </svg>
+          <h3>Mei Tanaka</h3>
+          <p class="role">Buyer Research Lead</p>
+          <p class="bio">Mei turns your goals, budget and weekly hours into a shortlist worth your weekend. Every business that reaches your Acquisition Tracker got there because her research team screened it first — and wrote down why.</p>
+          <a class="member-email" href="mailto:mei@onlineaquisition.com">mei@onlineaquisition.com</a>
+        </article>
+        <article class="member reveal">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated avatar of Daniel Adeyemi, a Nigerian man with short coiled hair">
+            <defs><clipPath id="av-daniel"><circle cx="60" cy="60" r="58"/></clipPath></defs>
+            <circle cx="60" cy="60" r="58" fill="#EFE4D2"/>
+            <g clip-path="url(#av-daniel)">
+              <path d="M18 124c3-24 20-34 42-34s39 10 42 34z" fill="#2B2B2B"/>
+              <path d="M44 94l6-2v6l-6 2z" fill="#E09F1F"/>
+              <rect x="53" y="74" width="14" height="12" rx="5" fill="#4E3119"/>
+              <circle cx="60" cy="52" r="23" fill="#5C3B1E"/>
+              <path d="M39 44c1-13 9-20 21-20s20 7 21 20c0 2-2 3-3 1-4-6-11-9-18-9s-14 3-18 9c-1 2-3 1-3-1z" fill="#14100D"/>
+              <circle cx="46" cy="30" r="2.4" fill="#211A14"/>
+              <circle cx="54" cy="26.5" r="2.4" fill="#211A14"/>
+              <circle cx="62" cy="25.5" r="2.4" fill="#211A14"/>
+              <circle cx="70" cy="27.5" r="2.4" fill="#211A14"/>
+              <circle cx="77" cy="32" r="2.4" fill="#211A14"/>
+              <circle cx="52" cy="52" r="2.6" fill="#0E0B08"/>
+              <circle cx="68" cy="52" r="2.6" fill="#0E0B08"/>
+              <path d="M47 45c3-2 7-2.2 10-1" stroke="#14100D" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+              <path d="M63 44c3-1.2 7-1 10 1" stroke="#14100D" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+              <path d="M60 53c-1 2.4-1.4 4.2.5 5.2" stroke="#3F2812" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M52 62.5c4.5 3.5 11.5 3.5 16 0" stroke="#2E1D0C" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <h3>Daniel Adeyemi</h3>
+          <p class="role">Financing &amp; Deal Support</p>
+          <p class="bio">Daniel structures the money side of guided buying — financing conversations, seller notes, earn-outs and escrow logistics. His brief is simple: funding should never kill a deal you've already won on the merits.</p>
+          <a class="member-email" href="mailto:daniel@onlineaquisition.com">daniel@onlineaquisition.com</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- CTA band -->
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="container">
+      <h2 id="cta-title">Your first acquisition deserves <span class="serif">a second pair of eyes</span>.</h2>
+      <p>One matching call. One named broker. One tracker that keeps the whole thing calm.</p>
+      <div class="cta-actions">
+        <a class="btn btn-amber" href="#contact">Get matched with a broker</a>
+        <a class="btn btn-outline" href="#listings">See sample listings</a>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Start with a conversation, <span class="serif">not a commitment</span></h2>
+        <p class="lede">Tell us where you are — just curious, actively searching, or already eyeing a specific business. A broker replies within one business day, jargon-free.</p>
+        <a class="btn btn-amber" href="mailto:info@onlineaquisition.com">Email the brokerage</a>
+      </div>
+      <div class="contact-card reveal">
+        <dl>
+          <div><dt>Phone</dt><dd><a href="tel:+12137881919">213-788-1919</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:info@onlineaquisition.com">info@onlineaquisition.com</a></dd></div>
+          <div><dt>Office</dt><dd>9461 Charleville Blvd, Beverly Hills, CA 90212</dd></div>
+        </dl>
+        <p class="forward-note">All email forwards to info@emv.io.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-foot">
+  <div class="container footer-grid">
+    <div>
+      <a class="emv-attr" href="https://emv.io">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><rect width="48" height="48" fill="#000"/><path d="M27 10l3 28M42 9L31.5 38" stroke="#fff" stroke-width="2.6" fill="none"/></svg>
+        <span>by EMV GLOBAL HOLDINGS</span>
+      </a>
+      <p class="footer-line">Part of the <a href="https://emv.io">Exchange Media Ventures</a> portfolio. Founded by <a href="https://sanjeevnachiappan.com">Sanjeev Nachiappan</a>.</p>
+      <p class="footer-line">Online Aquisition is the guided buyer's marketplace of the EMV family — a matched broker and a living Acquisition Tracker on every search.</p>
+    </div>
+    <nav aria-label="EMV Network">
+      <h4>EMV Network</h4>
+      <ul class="net-list">
+        <li><a href="https://emv.io">emv.io</a></li>
+        <li><a href="https://dexits.com">dexits.com</a></li>
+        <li><a href="https://scaleuni.com">scaleuni.com</a></li>
+        <li><a href="https://scaleverticals.com">scaleverticals.com</a></li>
+        <li><a href="https://scalifty.com">scalifty.com</a></li>
+        <li><a href="https://itscaled.com">itscaled.com</a></li>
+        <li><a href="https://exitwebsites.com">exitwebsites.com</a></li>
+        <li><a href="https://onlinexit.com">onlinexit.com</a></li>
+        <li><a href="https://wexits.com">wexits.com</a></li>
+        <li><a href="https://aquireonline.com">aquireonline.com</a></li>
+        <li><a href="https://aquirewebsites.com">aquirewebsites.com</a></li>
+        <li><a href="https://onlineaquisition.com">onlineaquisition.com</a></li>
+        <li><a href="https://sanjeevnachiappan.com">sanjeevnachiappan.com</a></li>
+      </ul>
+    </nav>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><a href="tel:+12137881919">213-788-1919</a></p>
+      <p>9461 Charleville Blvd, Beverly Hills, CA 90212</p>
+      <p><a href="mailto:info@onlineaquisition.com">info@onlineaquisition.com</a></p>
+      <p>All email forwards to info@emv.io.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Online Aquisition. An EMV Global Holdings company.</p>
+    <p>Sample listings and tracker contents are placeholders, not active offers.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  "use strict";
+  /* Mobile nav */
+  var toggle=document.querySelector(".nav-toggle");
+  var menu=document.getElementById("nav-menu");
+  toggle.addEventListener("click",function(){
+    var open=menu.classList.toggle("open");
+    toggle.setAttribute("aria-expanded",open?"true":"false");
+  });
+  menu.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click",function(){
+      menu.classList.remove("open");
+      toggle.setAttribute("aria-expanded","false");
+    });
+  });
+  /* Sticky header shadow */
+  var head=document.querySelector(".site-head");
+  window.addEventListener("scroll",function(){
+    head.classList.toggle("scrolled",window.scrollY>8);
+  },{passive:true});
+  /* Hero category chips */
+  var chips=document.querySelectorAll(".search-mock .chip");
+  var note=document.getElementById("search-note");
+  chips.forEach(function(chip){
+    chip.addEventListener("click",function(){
+      chips.forEach(function(c){c.setAttribute("aria-pressed","false");});
+      chip.setAttribute("aria-pressed","true");
+      note.textContent="Noted — your broker starts with "+chip.textContent.toLowerCase()+".";
+    });
+  });
+  /* Search mock */
+  document.querySelector(".search-mock").addEventListener("submit",function(e){
+    e.preventDefault();
+    var q=document.getElementById("q").value.trim();
+    note.textContent=q
+      ?"Lovely brief: “"+q+"”. Here's the shortlist format your broker would use."
+      :"Here's the shortlist format your broker would use.";
+    document.getElementById("listings").scrollIntoView({behavior:"smooth"});
+  });
+  /* Acquisition Tracker tabs */
+  var tabs=document.querySelectorAll(".ttab");
+  var rows=document.querySelectorAll(".trow");
+  var countEl=document.getElementById("tracker-count");
+  tabs.forEach(function(tab){
+    tab.addEventListener("click",function(){
+      tabs.forEach(function(t){t.setAttribute("aria-pressed","false");});
+      tab.setAttribute("aria-pressed","true");
+      var stage=tab.getAttribute("data-stage"),shown=0;
+      rows.forEach(function(row){
+        var show=stage==="all"||row.getAttribute("data-stage")===stage;
+        row.hidden=!show;
+        if(show){shown++;}
+      });
+      countEl.textContent=shown+(shown===1?" deal shown":" deals shown");
+    });
+  });
+  /* Reveal on scroll */
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}
+      });
+    },{threshold:.12});
+    document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll(".reveal").forEach(function(el){el.classList.add("in");});
+  }
+})();
+</script>
+
+<!-- ===== EMV Analytics Layer v1 (PostHog + Clarity) =====
+     Dormant until keys are set. To go live:
+     1. Replace phc_vs8vnsgAWgfqcH5BCYn85vNGr7rzCFLaKJvkGz7qJ9z3 with your PostHog project API key (SAME key on all 13 sites).
+     2. Replace CLARITY_REPLACE_ME with this site's Microsoft Clarity project ID (UNIQUE per site).
+     Docs: sites/analytics/TRACKING-SCHEMA.md -->
+<script>
+(function(){
+"use strict";
+try{
+var CFG={
+  site:"onlineaquisition.com",
+  category:"ma_buyer",
+  posthogKey:"phc_vs8vnsgAWgfqcH5BCYn85vNGr7rzCFLaKJvkGz7qJ9z3",
+  posthogHost:"https://us.i.posthog.com",
+  clarityId:"CLARITY_REPLACE_ME",
+  conversions:[{"selector": "#listings a", "event": "listing_inquiry", "value": 60}, {"selector": "a[href^=\"mailto:info@onlineaquisition.com\"]", "event": "buyer_inquiry", "value": 40}],
+  formRules:[{"selector": ".search-mock", "event": "marketplace_search", "value": 5}]
+};
+var NETWORK={"emv.io":"hub","dexits.com":"saas","scaleuni.com":"consulting","scaleverticals.com":"consulting","scalifty.com":"consulting","itscaled.com":"consulting","exitwebsites.com":"ma_seller","onlinexit.com":"ma_seller","wexits.com":"ma_seller","aquireonline.com":"ma_buyer","aquirewebsites.com":"ma_buyer","onlineaquisition.com":"ma_buyer","sanjeevnachiappan.com":"personal"};
+var dormantPH=/REPLACE/.test(CFG.posthogKey);
+var dormantCL=/REPLACE/.test(CFG.clarityId);
+if(dormantPH){try{console.info("[EMV analytics] dormant - set PostHog key in EMV Analytics Layer snippet");}catch(e){}}
+
+function cap(ev,props){try{if(window.posthog&&!dormantPH){props=props||{};if(typeof props.value==="undefined"){props.value=0;}window.posthog.capture(ev,props);}}catch(e){}}
+function loc(el){try{if(el.closest("footer"))return "footer";if(el.closest("nav,header"))return "nav";if(el.closest(".ticker"))return "ticker";return "body";}catch(e){return "body";}}
+function txt(a){return ((a.textContent||"").replace(/\s+/g," ").trim()).slice(0,80);}
+
+/* --- PostHog loader (official array.js stub) --- */
+if(!dormantPH){
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+window.posthog.init(CFG.posthogKey,{
+  api_host:CFG.posthogHost,
+  autocapture:false,
+  capture_pageview:true,
+  capture_pageleave:true,
+  disable_session_recording:true,
+  persistence:"localStorage+cookie",
+  loaded:function(ph){
+    try{
+      ph.register({site:CFG.site,category:CFG.category});
+      var p=new URLSearchParams(location.search);
+      var did=p.get("ph_did");
+      if(did&&did!==ph.get_distinct_id()){ph.identify(did);}
+      if(did){p.delete("ph_did");var q=p.toString();history.replaceState(null,"",location.pathname+(q?"?"+q:"")+location.hash);}
+    }catch(e){}
+  }
+});
+}
+
+/* --- Microsoft Clarity loader --- */
+if(!dormantCL){
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script",CFG.clarityId);
+}
+
+/* --- cross-site decoration + click conversions --- */
+function decorateMaybe(a){
+  try{
+    var href=a.getAttribute("href")||"";
+    if(!/^https?:\/\//i.test(href))return;
+    var u=new URL(href);
+    var host=u.hostname.replace(/^www\./,"");
+    if(host===CFG.site||!(host in NETWORK))return;
+    cap("cross_site_click",{target_site:host,target_category:NETWORK[host],link_location:loc(a),link_text:txt(a),value:15});
+    if(window.posthog&&!dormantPH){
+      u.searchParams.set("utm_source","emv_network");
+      u.searchParams.set("utm_medium","cross_site");
+      u.searchParams.set("utm_campaign",CFG.site);
+      u.searchParams.set("utm_content",loc(a));
+      u.searchParams.set("ph_did",window.posthog.get_distinct_id());
+      a.href=u.toString();
+    }
+  }catch(e){}
+}
+document.addEventListener("click",function(e){
+  try{
+    var a=e.target&&e.target.closest?e.target.closest("a[href]"):null;
+    if(!a)return;
+    var href=a.getAttribute("href")||"";
+    for(var i=0;i<CFG.conversions.length;i++){
+      var c=CFG.conversions[i];
+      try{
+        if(a.matches(c.selector)){
+          cap(c.event,{value:c.value,link_location:loc(a),link_text:txt(a)});
+          decorateMaybe(a);
+          return;
+        }
+      }catch(err){}
+    }
+    if(/^mailto:/i.test(href)){cap("contact_email_click",{address:href.slice(7).split("?")[0],link_location:loc(a),value:5});return;}
+    if(/^tel:/i.test(href)){cap("phone_click",{link_location:loc(a),value:10});return;}
+    decorateMaybe(a);
+  }catch(err){}
+},true);
+
+/* --- forms: start + submit (with per-site renames) --- */
+document.addEventListener("submit",function(e){
+  try{
+    var f=e.target;
+    if(!f||f.tagName!=="FORM")return;
+    var name=f.id||f.getAttribute("aria-label")||"form";
+    for(var i=0;i<CFG.formRules.length;i++){
+      var r=CFG.formRules[i];
+      try{if(f.matches(r.selector)){cap(r.event,{form:name,value:r.value});return;}}catch(err){}
+    }
+    cap("lead_form_submit",{form:name,value:40});
+  }catch(err){}
+},true);
+document.addEventListener("focusin",function(e){
+  try{
+    var f=e.target&&e.target.form;
+    if(!f||f.__emvStarted)return;
+    f.__emvStarted=true;
+    cap("form_start",{form:f.id||f.getAttribute("aria-label")||"form",value:1});
+  }catch(err){}
+},true);
+
+/* --- engagement: one-shot 75% scroll --- */
+var fired75=false;
+window.addEventListener("scroll",function(){
+  try{
+    if(fired75)return;
+    var h=document.documentElement;
+    if(h.scrollHeight<=0)return;
+    if((h.scrollTop+window.innerHeight)/h.scrollHeight>=0.75){fired75=true;cap("scroll_depth_75",{value:2});}
+  }catch(e){}
+},{passive:true});
+
+/* --- escape hatch: any site JS can fire a conversion --- */
+document.addEventListener("emv:conversion",function(e){
+  try{
+    var d=(e&&e.detail)||{};
+    if(d.event){var p=d.props||{};if(typeof p.value==="undefined"){p.value=d.value||0;}cap(d.event,p);}
+  }catch(err){}
+});
+}catch(e){}
+})();
+</script>
+<!-- ===== /EMV Analytics Layer ===== -->
+
+</body>
+</html>

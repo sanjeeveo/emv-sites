@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wexits — We Prep. We List. We Negotiate. You Exit. | Concierge Website Brokerage</title>
+<meta name="description" content="Wexits is the concierge brokerage for online business sellers: one dedicated broker preps, lists, negotiates, and closes while you do roughly three things. Weekly progress notes, no exclusivity lock-in.">
+<link rel="canonical" href="https://wexits.com/">
+<meta property="og:title" content="Wexits — We Prep. We List. We Negotiate. You Exit.">
+<meta property="og:description" content="Concierge website brokerage. You do 3 things; we do the other 47. One dedicated broker per deal and a progress note every Friday.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wexits.com/">
+<meta property="og:site_name" content="Wexits">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1C1C22">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48'/%3E%3Cpath d='M27 10l3 28M42 9L31.5 38' stroke='%23fff' stroke-width='2.6' fill='none'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Wexits",
+  "url": "https://wexits.com/",
+  "description": "Concierge website and online business brokerage. One dedicated broker preps, lists, negotiates, and closes the sale while the seller approves three key decisions.",
+  "telephone": "+1-213-788-1919",
+  "email": "info@wexits.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9461 Charleville Blvd",
+    "addressLocality": "Beverly Hills",
+    "addressRegion": "CA",
+    "postalCode": "90212",
+    "addressCountry": "US"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "EMV Global Holdings",
+    "url": "https://emv.io"
+  }
+}
+</script>
+<style>
+:root{
+  --ink:#1C1C22; --ink-2:#121217; --accent:#C16E4F; --accent-deep:#9A4A2D;
+  --bg:#FAF6F2; --paper:#FFFFFF; --muted:#5C5A57; --line:#E8E0D6; --ivory:#F4ECE3;
+  --display:'Bricolage Grotesque',system-ui,sans-serif; --sans:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.65;font-size:1rem;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:var(--ink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:2px}
+.container{width:min(1150px,92%);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:.6em 1.2em;z-index:99;border-radius:6px}
+.skip:focus{left:8px}
+h1,h2,h3{font-family:var(--display);line-height:1.08;font-weight:700;letter-spacing:-.015em}
+h2{font-size:clamp(1.9rem,3.8vw,2.7rem);margin:.4em 0 .5em}
+.eyebrow{font:700 .76rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--accent-deep);display:flex;align-items:center;gap:.6em}
+.eyebrow::before{content:"";width:24px;height:9px;background:var(--accent);transform:skewX(-20deg)}
+.lede{color:var(--muted);max-width:60ch;font-size:1.04rem}
+section{padding:88px 0}
+.btn{display:inline-flex;align-items:center;gap:.5em;font:700 .96rem var(--sans);text-decoration:none;border:0;cursor:pointer;padding:.9em 1.7em;border-radius:999px;transition:transform .15s ease,background .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-copper{background:var(--accent);color:#fff}
+.btn-copper:hover{background:var(--accent-deep)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:#000}
+.btn-line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn-line.inv{color:#fff;box-shadow:inset 0 0 0 2px #fff}
+.reveal{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{transition:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(250,246,242,.93);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{display:flex;align-items:center;gap:.6em;text-decoration:none;font:800 1.3rem var(--display);letter-spacing:-.02em}
+.brand span i{font-style:normal;color:var(--accent-deep)}
+.nav-links{display:flex;align-items:center;gap:1.45em;list-style:none}
+.nav-links a:not(.btn){text-decoration:none;font:600 .92rem var(--sans);color:var(--ink);padding:.3em 0;border-bottom:2px solid transparent}
+.nav-links a:not(.btn):hover{border-bottom-color:var(--accent)}
+.nav-links .btn{padding:.55em 1.25em}
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;background:none;border:0;cursor:pointer;padding:10px}
+.nav-toggle span{display:block;height:2.5px;background:var(--ink);border-radius:2px;transition:transform .25s ease,opacity .2s ease}
+.nav-open .nav-toggle span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.nav-open .nav-toggle span:nth-child(2){opacity:0}
+.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+@media (max-width:940px){
+  .nav-toggle{display:flex}
+  .nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:var(--bg);flex-direction:column;align-items:flex-start;padding:1.2em 4%;gap:1.1em;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(18,18,23,.14)}
+  .nav-open .nav-links{display:flex}
+}
+/* ---------- hero ---------- */
+.hero{background:var(--ink);color:#F6EFE8;padding:104px 0 150px;clip-path:polygon(0 0,100% 0,100% calc(100% - 64px),0 100%);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-20%;right:6%;width:120px;height:150%;background:rgba(193,110,79,.16);transform:skewX(-18deg)}
+.hero::after{content:"";position:absolute;top:-20%;right:16%;width:34px;height:150%;background:rgba(193,110,79,.28);transform:skewX(-18deg)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero .eyebrow{color:var(--accent)}
+.manifesto{font-size:clamp(2.6rem,6vw,4.3rem);margin:.3em 0 .35em}
+.manifesto span{display:block}
+.manifesto .you{color:var(--accent)}
+.hero .lede{color:#C9C2BA}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9em;margin-top:1.8em}
+.hero-fine{margin-top:1.4em;font-size:.85rem;color:#9D968E}
+/* split visual */
+.split{display:grid;gap:16px}
+.panel{border-radius:14px;padding:24px 24px 22px}
+.panel-you{background:var(--bg);color:var(--ink)}
+.panel-you h2{font-size:1.2rem;margin:0 0 .7em}
+.panel-you ol{list-style:none;display:grid;gap:.7em}
+.panel-you li{display:flex;gap:.8em;align-items:baseline;font-size:.95rem}
+.panel-you li b{flex:none;font:800 .85rem var(--display);color:#fff;background:var(--accent);width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;transform:translateY(.2em)}
+.panel-we{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:#EDE6DE}
+.panel-we h2{font-size:1.2rem;margin:0 0 .8em;color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:7px;list-style:none}
+.chips li{font:600 .76rem var(--sans);padding:.42em .85em;border:1px solid rgba(255,255,255,.22);border-radius:999px;color:#D9D2C9}
+.chips .more{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+/* ---------- capability strip ---------- */
+.strip{background:var(--accent);padding:54px 0;margin-top:-1px}
+.strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.stat .num{font:800 2.5rem/1.05 var(--display);color:#fff}
+.stat .lbl{font-size:.9rem;color:#3B1E12;margin-top:.35em;font-weight:600}
+/* ---------- how it works ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:2.5em}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px 22px;position:relative}
+.step .big{font:800 2.6rem/1 var(--display);color:transparent;-webkit-text-stroke:1.6px var(--accent);letter-spacing:0}
+.step h3{font-size:1.18rem;margin:.5em 0 .35em}
+.step p{font-size:.93rem;color:var(--muted)}
+.step .who{display:inline-block;margin-top:.8em;font:700 .72rem var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:.35em .8em;border-radius:999px}
+.step .who.we{background:var(--ink);color:#fff}
+.step .who.you{background:var(--ivory);color:var(--accent-deep)}
+/* ---------- services ---------- */
+.svc-band{background:var(--ivory)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:2.4em}
+.svc{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 24px;position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;top:0;right:-26px;width:54px;height:10px;background:var(--accent);transform:skewX(-24deg);opacity:0;transition:opacity .3s ease,right .3s ease}
+.svc:hover::before{opacity:1;right:-12px}
+.svc h3{font-size:1.16rem;margin-bottom:.4em}
+.svc p{font-size:.92rem;color:var(--muted)}
+.svc .tag{font:700 .7rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent-deep)}
+/* ---------- asymmetry ---------- */
+.asym{background:var(--ink);color:#EDE6DE;clip-path:polygon(0 44px,100% 0,100% 100%,0 100%);padding:124px 0 96px}
+.asym h2{color:#fff}
+.asym .eyebrow{color:var(--accent)}
+.asym-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.asym .lede{color:#C9C2BA}
+.hours{display:flex;gap:18px;margin-top:1.8em;align-items:stretch}
+.hr-card{border-radius:12px;padding:20px 22px;flex:1}
+.hr-card.you{background:var(--accent);color:#fff}
+.hr-card.we{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16)}
+.hr-card .n{font:800 2.1rem/1 var(--display)}
+.hr-card .t{font-size:.84rem;margin-top:.3em;opacity:.92}
+/* friday note */
+.note{background:var(--bg);color:var(--ink);border-radius:14px;padding:28px 26px;box-shadow:0 34px 60px -30px rgba(0,0,0,.5);transform:rotate(1.2deg)}
+.note-head{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--ink);padding-bottom:.7em;margin-bottom:1em}
+.note-head h3{font-size:1.05rem;letter-spacing:.02em}
+.note-head span{font:700 .68rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-deep)}
+.note dl{display:grid;gap:.85em}
+.note dt{font:700 .74rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.note dd{font-size:.93rem;margin:.15em 0 0}
+.note dd.zero{font:700 1rem var(--sans);color:var(--accent-deep)}
+.note-foot{margin-top:1.2em;font-size:.78rem;color:var(--muted);font-style:italic}
+/* ---------- team ---------- */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:2.5em}
+.member{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:32px 26px;text-align:center}
+.member .avatar{width:118px;height:118px;margin:0 auto 1.15em}
+.member h3{font-size:1.3rem}
+.member .role{font:700 .76rem var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--accent-deep);margin:.3em 0 .85em}
+.member p{font-size:.91rem;color:var(--muted);text-align:left}
+.member .mail{display:inline-block;margin-top:1em;font:700 .88rem var(--sans);color:var(--ink)}
+/* ---------- faq ---------- */
+.faq-wrap{max-width:780px;margin:2.3em auto 0}
+.faq-item{border:1px solid var(--line);border-radius:12px;background:var(--paper);margin-bottom:12px}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1em;text-align:left;background:none;border:0;cursor:pointer;padding:1.15em 1.3em;font:700 1.04rem var(--display);letter-spacing:-.01em;color:var(--ink)}
+.faq-q .chev{flex:none;width:13px;height:13px;border-right:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:rotate(45deg);transition:transform .3s ease;margin-top:-4px}
+.faq-item.open .faq-q .chev{transform:rotate(225deg);margin-top:4px}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s ease}
+.faq-a>div{overflow:hidden;visibility:hidden;transition:visibility .32s}
+.faq-item.open .faq-a{grid-template-rows:1fr}
+.faq-item.open .faq-a>div{visibility:visible}
+.faq-a p{padding:0 1.3em 1.2em;color:var(--muted);font-size:.95rem}
+/* ---------- cta band ---------- */
+.cta-band{background:var(--ink);color:#fff;text-align:center;padding:100px 0;position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;top:-30%;left:8%;width:90px;height:160%;background:rgba(193,110,79,.18);transform:skewX(-18deg)}
+.cta-band h2{font-size:clamp(2.1rem,4.6vw,3.2rem)}
+.cta-band h2 i{font-style:normal;color:var(--accent)}
+.cta-band p{color:#C9C2BA;max-width:50ch;margin:0 auto 2em}
+.cta-band .btn{position:relative;z-index:1}
+/* ---------- contact ---------- */
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:2.3em}
+.c-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 24px}
+.c-card h3{font-size:1rem;margin-bottom:.45em}
+.c-card a{font:700 1.06rem var(--sans);color:var(--accent-deep);text-decoration:none}
+.c-card a:hover{text-decoration:underline}
+.c-card p{font-size:.92rem;color:var(--muted)}
+.forward-note{margin-top:1.7em;font-size:.9rem;color:var(--muted);border-left:3px solid var(--accent);padding-left:1.1em}
+/* ---------- footer ---------- */
+footer{background:var(--ink-2);color:#B9B3AC;padding:64px 0 28px;font-size:.92rem}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:44px}
+.foot-attr{display:inline-flex;align-items:center;gap:.6em;text-decoration:none;color:#fff;font:700 .92rem var(--sans);letter-spacing:.07em}
+.foot-line{margin-top:1.1em;line-height:1.75}
+.foot-line a{color:#E2A285;text-decoration:none}
+.foot-line a:hover{text-decoration:underline}
+footer h3{font:700 .78rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#fff;margin-bottom:1em}
+.net-list{list-style:none;columns:2;gap:2em}
+.net-list li{margin-bottom:.55em;break-inside:avoid}
+.net-list a,.foot-contact a{color:#B9B3AC;text-decoration:none}
+.net-list a:hover,.foot-contact a:hover{color:#E2A285;text-decoration:underline}
+.foot-contact p{margin-bottom:.6em}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.13);margin-top:46px;padding-top:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1em;font-size:.85rem;color:#8B857E}
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .hero-grid,.asym-grid{grid-template-columns:1fr;gap:44px}
+  .steps,.svc-grid,.team-grid,.contact-grid{grid-template-columns:1fr 1fr}
+  .strip-grid{grid-template-columns:1fr 1fr;gap:26px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  section{padding:64px 0}
+  .hero{padding:68px 0 110px}
+  .steps,.svc-grid,.team-grid,.contact-grid,.strip-grid,.foot-grid{grid-template-columns:1fr}
+  .hours{flex-direction:column}
+  .note{transform:none}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <nav class="nav container" aria-label="Primary">
+    <a class="brand" href="#main" aria-label="Wexits home">
+      <svg viewBox="0 0 48 48" width="24" height="24" aria-hidden="true"><rect width="48" height="48" fill="#000"/><path d="M27 10l3 28M42 9L31.5 38" stroke="#fff" stroke-width="2.6" fill="none"/></svg>
+      <span>W<i>exits</i></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="#promise">The Promise</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#services">What We Handle</a></li>
+      <li><a href="#asymmetry">The Asymmetry</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn btn-copper" href="#contact">Hand It Off</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="promise" aria-label="Hero">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Concierge Website Brokerage</p>
+        <h1 class="manifesto">
+          <span>We prep.</span>
+          <span>We list.</span>
+          <span>We negotiate.</span>
+          <span class="you">You exit.</span>
+        </h1>
+        <p class="lede">Selling a website is a second full-time job — so give it to someone whose first job it is. One dedicated Wexits broker runs your entire sale while you keep running the business, or the rest of your life.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-copper" href="#contact">Book the handoff call</a>
+          <a class="btn btn-line inv" href="#how">See what we take over</a>
+        </div>
+        <p class="hero-fine">Flat success fee. No exclusivity lock-in. A progress note every Friday.</p>
+      </div>
+      <div class="split reveal" aria-label="The division of labor">
+        <div class="panel panel-you">
+          <h2>You do 3 things</h2>
+          <ol>
+            <li><b>1</b>Take one onboarding call, so we know the business and your floor price</li>
+            <li><b>2</b>Approve the listing — and later, the offer worth taking</li>
+            <li><b>3</b>Sign at closing and watch the wire land</li>
+          </ol>
+        </div>
+        <div class="panel panel-we">
+          <h2>We do the other 47</h2>
+          <ul class="chips">
+            <li>Valuation &amp; pricing</li>
+            <li>Recast P&amp;L</li>
+            <li>Add-back schedule</li>
+            <li>Listing copy</li>
+            <li>Metric verification</li>
+            <li>Marketplace placement</li>
+            <li>Buyer outreach</li>
+            <li>NDA management</li>
+            <li>Buyer vetting</li>
+            <li>Proof-of-funds checks</li>
+            <li>Q&amp;A handling</li>
+            <li>Call scheduling</li>
+            <li>Offer comparison</li>
+            <li>Negotiation</li>
+            <li>LOI coordination</li>
+            <li>Escrow setup</li>
+            <li class="more">+ 31 more, handled</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITY STRIP -->
+  <section class="strip" aria-label="Capabilities">
+    <div class="container strip-grid">
+      <div class="stat reveal"><p class="num">1</p><p class="lbl">Dedicated concierge broker on your deal — the same person, start to wire</p></div>
+      <div class="stat reveal"><p class="num">3</p><p class="lbl">Things you do from handoff to closing: a call, approvals, a signature</p></div>
+      <div class="stat reveal"><p class="num">47</p><p class="lbl">Tasks we own so you never have to learn what an add-back schedule is</p></div>
+      <div class="stat reveal"><p class="num">Fri</p><p class="lbl">Your progress note lands every week — you never have to chase us</p></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" aria-label="How it works">
+    <div class="container">
+      <p class="eyebrow reveal">How It Works</p>
+      <h2 class="reveal">Four moves. You're present for two of them.</h2>
+      <p class="lede reveal">The whole model in one sentence: you make the decisions, we do the work between them.</p>
+      <div class="steps">
+        <article class="step reveal">
+          <p class="big">01</p>
+          <h3>The handoff call</h3>
+          <p>One structured hour. We learn the business, your numbers, your floor, and your timeline. You hand over read-only access — and that's most of your job done.</p>
+          <span class="who you">You + Us</span>
+        </article>
+        <article class="step reveal">
+          <p class="big">02</p>
+          <h3>We build &amp; list</h3>
+          <p>Valuation, recast financials, listing copy, metric verification, anonymized placement where the right buyers already look. You approve the final listing with one reply.</p>
+          <span class="who we">Us</span>
+        </article>
+        <article class="step reveal">
+          <p class="big">03</p>
+          <h3>We screen &amp; negotiate</h3>
+          <p>NDAs out, tire-kickers filtered, proof of funds verified, questions answered from the pack we built. Offers arrive summarized and compared, with our recommendation attached.</p>
+          <span class="who we">Us</span>
+        </article>
+        <article class="step reveal">
+          <p class="big">04</p>
+          <h3>You sign. We close.</h3>
+          <p>You accept the offer worth taking. We run escrow, asset migration, and the handover period until the funds clear and the keys are theirs.</p>
+          <span class="who you">You sign · We finish</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="svc-band" id="services" aria-label="What we handle">
+    <div class="container">
+      <p class="eyebrow reveal">What We Handle</p>
+      <h2 class="reveal">The 47, organized into six jobs</h2>
+      <div class="svc-grid">
+        <article class="svc reveal">
+          <p class="tag">Prep</p>
+          <h3>Deal Prep &amp; Financial Pack</h3>
+          <p>Valuation, recast P&amp;L, add-back schedule, and verified metrics — the documents that make buyers move fast and negotiate fairly.</p>
+        </article>
+        <article class="svc reveal">
+          <p class="tag">Market</p>
+          <h3>Listing &amp; Placement</h3>
+          <p>Copy that sells the business without exposing it, placed anonymously where serious acquirers of your kind of asset already browse.</p>
+        </article>
+        <article class="svc reveal">
+          <p class="tag">Screen</p>
+          <h3>Buyer Screening &amp; NDAs</h3>
+          <p>Every enquiry vetted, every NDA executed, proof of funds confirmed before anyone sees your name or your numbers. Your inbox stays yours.</p>
+        </article>
+        <article class="svc reveal">
+          <p class="tag">Negotiate</p>
+          <h3>Negotiation &amp; Structuring</h3>
+          <p>We run the back-and-forth, compare offers on price and terms, and structure earnouts or transitions so the headline number survives the fine print.</p>
+        </article>
+        <article class="svc reveal">
+          <p class="tag">Close</p>
+          <h3>Escrow &amp; Closing Coordination</h3>
+          <p>Escrow setup, LOI-to-close checklist, and document choreography — managed to the wire so nothing stalls in the final stretch.</p>
+        </article>
+        <article class="svc reveal">
+          <p class="tag">Hand over</p>
+          <h3>Migration &amp; Handover</h3>
+          <p>Domains, accounts, integrations, and a structured transition for the new owner — so the deal that closed stays closed.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASYMMETRY -->
+  <section class="asym" id="asymmetry" aria-label="The effort asymmetry">
+    <div class="container asym-grid">
+      <div class="reveal">
+        <p class="eyebrow">The Asymmetry</p>
+        <h2>Your side of the ledger is almost empty. That's the product.</h2>
+        <p class="lede">Most sellers spend their evenings answering buyer emails and their weekends rebuilding spreadsheets. At Wexits the effort sits on our side of the table — and every Friday you get a note proving it moved.</p>
+        <div class="hours">
+          <div class="hr-card you"><p class="n">≈3 hrs</p><p class="t">Your total commitment: one call, your approvals, one signature</p></div>
+          <div class="hr-card we"><p class="n">The rest</p><p class="t">Ours: prep, listing, screening, negotiation, escrow, migration</p></div>
+        </div>
+      </div>
+      <div class="note reveal" aria-label="Sample Friday progress note">
+        <div class="note-head">
+          <h3>Friday Note — Week 4</h3>
+          <span>Wexits Concierge</span>
+        </div>
+        <dl>
+          <dt>What moved</dt>
+          <dd>Listing approved and live. Buyer Q&amp;A round one answered from the prep pack — nothing needed from you.</dd>
+          <dt>Buyer pipeline</dt>
+          <dd>New enquiries screened; NDAs executed with qualified parties; first calls scheduled for next week.</dd>
+          <dt>Next week</dt>
+          <dd>Buyer calls, second Q&amp;A round, early interest compared against your floor.</dd>
+          <dt>Decisions needed from you</dt>
+          <dd class="zero">None. Enjoy your weekend.</dd>
+        </dl>
+        <p class="note-foot">Illustrative sample — your note covers your actual deal, every Friday.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" aria-label="Team">
+    <div class="container">
+      <p class="eyebrow reveal">The Concierge Desk</p>
+      <h2 class="reveal">The people doing your other 47</h2>
+      <div class="team-grid">
+        <article class="member reveal">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated portrait of Victor Lane">
+            <defs><clipPath id="wx-av1"><circle cx="60" cy="60" r="58"/></clipPath></defs>
+            <circle cx="60" cy="60" r="58" fill="#EFE5DA"/>
+            <g clip-path="url(#wx-av1)">
+              <circle cx="37" cy="53" r="4.5" fill="#8D5524"/><circle cx="83" cy="53" r="4.5" fill="#8D5524"/>
+              <circle cx="60" cy="52" r="23" fill="#8D5524"/>
+              <path d="M38 46c-1-14 9-23 22-23s23 9 22 23c-2-6-5-9-8-10-3 2-8 3-14 3s-11-1-14-3c-3 1-6 4-8 10z" fill="#15161A"/>
+              <path d="M46 31q4-2 8 0M58 28.5q4-2 8 0M52 35.5q4-2 8 0M64 34q4-2 8 0" fill="none" stroke="#2E3138" stroke-width="1.7" stroke-linecap="round"/>
+              <path d="M46 44q4.5-2.8 9 0M65 44q4.5-2.8 9 0" fill="none" stroke="#15110C" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="51" cy="50" r="2.5" fill="#15110C"/><circle cx="69" cy="50" r="2.5" fill="#15110C"/>
+              <g fill="none" stroke="#1C1C22" stroke-width="2"><rect x="43.5" y="44.5" width="13" height="10.5" rx="2.5"/><rect x="63.5" y="44.5" width="13" height="10.5" rx="2.5"/><path d="M56.5 49.5h7M43.5 48l-5.5-2M76.5 48l5.5-2"/></g>
+              <path d="M60 51q-2.5 5 0 7.5" fill="none" stroke="#6E3F16" stroke-width="2" stroke-linecap="round"/>
+              <path d="M52 63q8 6.5 16 0" fill="none" stroke="#3A230D" stroke-width="2.4" stroke-linecap="round"/>
+              <rect x="53" y="70" width="14" height="13" rx="5" fill="#74431B"/>
+              <path d="M14 124c2-26 22-38 46-38s44 12 46 38z" fill="#26262E"/>
+              <path d="M52 88l8 8 8-8-2-3H54z" fill="#F4ECE3"/>
+              <path d="M70 96l8 3-1 6-8-3z" fill="#C16E4F"/>
+            </g>
+          </svg>
+          <h3>Victor Lane</h3>
+          <p class="role">Lead Concierge Broker</p>
+          <p>Victor is the one broker on your deal from handoff to wire — he preps, lists, screens, negotiates, and writes your Friday note himself. His standing rule: the seller should never be the busiest person in their own exit.</p>
+          <a class="mail" href="mailto:victor@wexits.com">victor@wexits.com</a>
+        </article>
+        <article class="member reveal">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated portrait of Amara Diallo">
+            <defs><clipPath id="wx-av2"><circle cx="60" cy="60" r="58"/></clipPath></defs>
+            <circle cx="60" cy="60" r="58" fill="#F3E2D3"/>
+            <g clip-path="url(#wx-av2)">
+              <circle cx="37" cy="54" r="4.5" fill="#5C3B1E"/><circle cx="83" cy="54" r="4.5" fill="#5C3B1E"/>
+              <circle cx="60" cy="52" r="23" fill="#5C3B1E"/>
+              <path d="M36 52c-2-18 9-30 24-30s26 12 24 30c-2-9-5-14-8-16-4 3-10 5-16 5s-12-2-16-5c-3 2-6 7-8 16z" fill="#181210"/>
+              <path d="M34 49c-2-19 10-31 26-31s28 12 26 31" fill="none" stroke="#181210" stroke-width="10" stroke-linecap="round"/>
+              <path d="M40 36l6-5M50 29l5-5M62 27l4-6M73 31l3-7M81 38l5-6" stroke="#3A2B22" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="34" cy="49" r="3" fill="#C9A227"/><circle cx="86" cy="49" r="3" fill="#C9A227"/>
+              <path d="M46 44q4.5-2.6 9 0M65 44q4.5-2.6 9 0" fill="none" stroke="#16100A" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="51" cy="50" r="2.5" fill="#16100A"/><circle cx="69" cy="50" r="2.5" fill="#16100A"/>
+              <path d="M60 51q-2.4 5 0 7.5" fill="none" stroke="#42280F" stroke-width="2" stroke-linecap="round"/>
+              <path d="M52 63q8 6.5 16 0" fill="none" stroke="#2A1707" stroke-width="2.4" stroke-linecap="round"/>
+              <rect x="53" y="70" width="14" height="13" rx="5" fill="#4E311A"/>
+              <path d="M14 124c2-26 22-38 46-38s44 12 46 38z" fill="#C16E4F"/>
+              <path d="M50 90q10 7 20 0" fill="none" stroke="#F4ECE3" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="0.5 5.5"/>
+            </g>
+          </svg>
+          <h3>Amara Diallo</h3>
+          <p class="role">Seller Success Director</p>
+          <p>Amara designs the three moments we actually need you — the onboarding call, the approvals, the signature — so each takes minutes, not meetings. Between them, she makes sure you always know exactly where your deal stands.</p>
+          <a class="mail" href="mailto:amara@wexits.com">amara@wexits.com</a>
+        </article>
+        <article class="member reveal">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated portrait of Chris Paulsen">
+            <defs><clipPath id="wx-av3"><circle cx="60" cy="60" r="58"/></clipPath></defs>
+            <circle cx="60" cy="60" r="58" fill="#E7E9ED"/>
+            <g clip-path="url(#wx-av3)">
+              <circle cx="37" cy="53" r="4.5" fill="#F7D7B6"/><circle cx="83" cy="53" r="4.5" fill="#F7D7B6"/>
+              <circle cx="60" cy="52" r="23" fill="#F7D7B6"/>
+              <path d="M38 47c-1-15 9-24 22-24s23 9 22 24c-2-7-5-11-8-12-3 2-8 3-13 3-6 0-11-1-14-3-3 1-7 5-9 12z" fill="#E8C66B"/>
+              <path d="M44 33q6-4 12-3" fill="none" stroke="#D4AF4F" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M46 44q4.5-2.6 9 0M65 44q4.5-2.6 9 0" fill="none" stroke="#B08A3E" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="51" cy="50" r="2.5" fill="#39404C"/><circle cx="69" cy="50" r="2.5" fill="#39404C"/>
+              <path d="M60 51q-2.3 5 0 7.5" fill="none" stroke="#DEB088" stroke-width="2" stroke-linecap="round"/>
+              <path d="M52 63q8 6.5 16 0" fill="none" stroke="#A26A3F" stroke-width="2.4" stroke-linecap="round"/>
+              <circle cx="46" cy="58" r="3.4" fill="#E2917F" opacity=".26"/><circle cx="74" cy="58" r="3.4" fill="#E2917F" opacity=".26"/>
+              <rect x="53" y="70" width="14" height="13" rx="5" fill="#EBC49E"/>
+              <path d="M14 124c2-26 22-38 46-38s44 12 46 38z" fill="#3A3A44"/>
+              <path d="M60 88v10" stroke="#54545E" stroke-width="2"/>
+              <path d="M52 88l8 7 8-7-2-3H54z" fill="#54545E"/>
+            </g>
+          </svg>
+          <h3>Chris Paulsen</h3>
+          <p class="role">Buyer Outreach Manager</p>
+          <p>Chris builds the buyer side of every deal: outreach, NDAs, vetting, and proof-of-funds checks before anyone gets near your data. By the time a buyer asks a question, he usually has the answer already drafted.</p>
+          <a class="mail" href="mailto:chris@wexits.com">chris@wexits.com</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" aria-label="Frequently asked questions">
+    <div class="container">
+      <p class="eyebrow reveal">Before You Hand It Off</p>
+      <h2 class="reveal">The questions everyone asks on the first call</h2>
+      <div class="faq-wrap reveal">
+        <div class="faq-item">
+          <h3><button class="faq-q" aria-expanded="false" aria-controls="wx-faq1" id="wx-faq1-btn">Honestly — how much of my time does this take?<span class="chev" aria-hidden="true"></span></button></h3>
+          <div class="faq-a" id="wx-faq1" role="region" aria-labelledby="wx-faq1-btn"><div><p>About three hours across the whole engagement: the one-hour handoff call, a handful of approval replies, and the closing signature. Add two minutes each Friday if you read the progress note — which we recommend, because it's usually good news.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-q" aria-expanded="false" aria-controls="wx-faq2" id="wx-faq2-btn">Who actually talks to the buyers?<span class="chev" aria-hidden="true"></span></button></h3>
+          <div class="faq-a" id="wx-faq2" role="region" aria-labelledby="wx-faq2-btn"><div><p>We do — all of it. Cold enquiries never reach you, and screened buyers deal with your concierge broker, not your inbox. If you want to meet the finalist before accepting, we'll set that up; plenty of sellers choose to skip even that.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-q" aria-expanded="false" aria-controls="wx-faq3" id="wx-faq3-btn">What's in the Friday note?<span class="chev" aria-hidden="true"></span></button></h3>
+          <div class="faq-a" id="wx-faq3" role="region" aria-labelledby="wx-faq3-btn"><div><p>Four sections, every week: what moved, the state of the buyer pipeline, what's planned next, and any decisions we need from you. Most weeks that last section reads "none" — and when it doesn't, the decision arrives pre-summarized with our recommendation.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-q" aria-expanded="false" aria-controls="wx-faq4" id="wx-faq4-btn">What does the concierge service cost?<span class="chev" aria-hidden="true"></span></button></h3>
+          <div class="faq-a" id="wx-faq4" role="region" aria-labelledby="wx-faq4-btn"><div><p>A flat success fee, quoted at the handoff call and fixed in writing. No retainers, no hourly billing, no charge for the prep work if the deal doesn't close. We get paid when you exit — the incentives stay pointed the same direction as yours.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-q" aria-expanded="false" aria-controls="wx-faq5" id="wx-faq5-btn">Can the sale stay confidential?<span class="chev" aria-hidden="true"></span></button></h3>
+          <div class="faq-a" id="wx-faq5" role="region" aria-labelledby="wx-faq5-btn"><div><p>Yes — that's the default, not an upgrade. The listing is anonymized, buyers sign NDAs before learning your identity or seeing data, and your team, customers, and competitors hear about the sale when you decide they should.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band" aria-label="Call to action">
+    <div class="container reveal">
+      <h2>Ready to do <i>almost nothing?</i></h2>
+      <p>One call. We take it from there — and you'll hear from us every Friday until the wire lands.</p>
+      <a class="btn btn-copper" href="#contact">Hand it off</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-label="Contact">
+    <div class="container">
+      <p class="eyebrow reveal">Get In Touch</p>
+      <h2 class="reveal">One call starts the handoff</h2>
+      <p class="lede reveal">Tell us what you're selling and when you'd like to be done with it. We'll tell you how the concierge process would run for your deal — and quote the fee before you commit to anything.</p>
+      <div class="contact-grid">
+        <div class="c-card reveal">
+          <h3>Call</h3>
+          <a href="tel:+12137881919">213-788-1919</a>
+          <p>Weekdays, 9am–6pm Pacific. Ask for the concierge desk.</p>
+        </div>
+        <div class="c-card reveal">
+          <h3>Visit</h3>
+          <p>9461 Charleville Blvd<br>Beverly Hills, CA 90212</p>
+        </div>
+        <div class="c-card reveal">
+          <h3>Email</h3>
+          <a href="mailto:info@wexits.com">info@wexits.com</a>
+          <p>Two lines about the business is enough — we'll take it from there.</p>
+        </div>
+      </div>
+      <p class="forward-note reveal">All email forwards to info@emv.io.</p>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="foot-attr" href="https://emv.io">
+          <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><rect width="48" height="48" fill="#000"/><path d="M27 10l3 28M42 9L31.5 38" stroke="#fff" stroke-width="2.6" fill="none"/></svg>
+          <span>by EMV GLOBAL HOLDINGS</span>
+        </a>
+        <p class="foot-line">Wexits is the concierge brokerage for online business sellers. We prep, we list, we negotiate — you exit.</p>
+        <p class="foot-line">Part of the <a href="https://emv.io">Exchange Media Ventures</a> portfolio. Founded by <a href="https://sanjeevnachiappan.com">Sanjeev Nachiappan</a>.</p>
+      </div>
+      <nav aria-label="EMV Network">
+        <h3>EMV Network</h3>
+        <ul class="net-list">
+          <li><a href="https://emv.io">emv.io</a></li>
+          <li><a href="https://dexits.com">dexits.com</a></li>
+          <li><a href="https://scaleuni.com">scaleuni.com</a></li>
+          <li><a href="https://scaleverticals.com">scaleverticals.com</a></li>
+          <li><a href="https://scalifty.com">scalifty.com</a></li>
+          <li><a href="https://itscaled.com">itscaled.com</a></li>
+          <li><a href="https://exitwebsites.com">exitwebsites.com</a></li>
+          <li><a href="https://onlinexit.com">onlinexit.com</a></li>
+          <li><a href="https://wexits.com">wexits.com</a></li>
+          <li><a href="https://aquireonline.com">aquireonline.com</a></li>
+          <li><a href="https://aquirewebsites.com">aquirewebsites.com</a></li>
+          <li><a href="https://onlineaquisition.com">onlineaquisition.com</a></li>
+          <li><a href="https://sanjeevnachiappan.com">sanjeevnachiappan.com</a></li>
+        </ul>
+      </nav>
+      <div class="foot-contact">
+        <h3>Contact</h3>
+        <p>9461 Charleville Blvd<br>Beverly Hills, CA 90212</p>
+        <p><a href="tel:+12137881919">213-788-1919</a></p>
+        <p><a href="mailto:info@wexits.com">info@wexits.com</a></p>
+        <p>All email forwards to info@emv.io.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Wexits. An EMV Global Holdings company.</p>
+      <p><a href="#promise" style="color:inherit">Back to the promise ↑</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* mobile nav */
+  var toggle=document.querySelector('.nav-toggle'),menu=document.getElementById('nav-menu');
+  toggle.addEventListener('click',function(){
+    var open=document.body.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+  });
+  menu.addEventListener('click',function(e){
+    if(e.target.closest('a')){document.body.classList.remove('nav-open');toggle.setAttribute('aria-expanded','false');}
+  });
+
+  /* faq accordion */
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=btn.closest('.faq-item'),wasOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(i){
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+      });
+      if(!wasOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');}
+    });
+  });
+
+  /* intersection observer reveals */
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+      });
+    },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+  }
+
+  /* manifesto stagger */
+  document.querySelectorAll('.manifesto span').forEach(function(line,i){
+    line.style.transitionDelay=(i*90)+'ms';
+  });
+})();
+</script>
+
+<!-- ===== EMV Analytics Layer v1 (PostHog + Clarity) =====
+     Dormant until keys are set. To go live:
+     1. Replace phc_vs8vnsgAWgfqcH5BCYn85vNGr7rzCFLaKJvkGz7qJ9z3 with your PostHog project API key (SAME key on all 13 sites).
+     2. Replace CLARITY_REPLACE_ME with this site's Microsoft Clarity project ID (UNIQUE per site).
+     Docs: sites/analytics/TRACKING-SCHEMA.md -->
+<script>
+(function(){
+"use strict";
+try{
+var CFG={
+  site:"wexits.com",
+  category:"ma_seller",
+  posthogKey:"phc_vs8vnsgAWgfqcH5BCYn85vNGr7rzCFLaKJvkGz7qJ9z3",
+  posthogHost:"https://us.i.posthog.com",
+  clarityId:"CLARITY_REPLACE_ME",
+  conversions:[{"selector": "a[href^=\"mailto:info@wexits.com\"]", "event": "broker_contact", "value": 80}],
+  formRules:[]
+};
+var NETWORK={"emv.io":"hub","dexits.com":"saas","scaleuni.com":"consulting","scaleverticals.com":"consulting","scalifty.com":"consulting","itscaled.com":"consulting","exitwebsites.com":"ma_seller","onlinexit.com":"ma_seller","wexits.com":"ma_seller","aquireonline.com":"ma_buyer","aquirewebsites.com":"ma_buyer","onlineaquisition.com":"ma_buyer","sanjeevnachiappan.com":"personal"};
+var dormantPH=/REPLACE/.test(CFG.posthogKey);
+var dormantCL=/REPLACE/.test(CFG.clarityId);
+if(dormantPH){try{console.info("[EMV analytics] dormant - set PostHog key in EMV Analytics Layer snippet");}catch(e){}}
+
+function cap(ev,props){try{if(window.posthog&&!dormantPH){props=props||{};if(typeof props.value==="undefined"){props.value=0;}window.posthog.capture(ev,props);}}catch(e){}}
+function loc(el){try{if(el.closest("footer"))return "footer";if(el.closest("nav,header"))return "nav";if(el.closest(".ticker"))return "ticker";return "body";}catch(e){return "body";}}
+function txt(a){return ((a.textContent||"").replace(/\s+/g," ").trim()).slice(0,80);}
+
+/* --- PostHog loader (official array.js stub) --- */
+if(!dormantPH){
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+window.posthog.init(CFG.posthogKey,{
+  api_host:CFG.posthogHost,
+  autocapture:false,
+  capture_pageview:true,
+  capture_pageleave:true,
+  disable_session_recording:true,
+  persistence:"localStorage+cookie",
+  loaded:function(ph){
+    try{
+      ph.register({site:CFG.site,category:CFG.category});
+      var p=new URLSearchParams(location.search);
+      var did=p.get("ph_did");
+      if(did&&did!==ph.get_distinct_id()){ph.identify(did);}
+      if(did){p.delete("ph_did");var q=p.toString();history.replaceState(null,"",location.pathname+(q?"?"+q:"")+location.hash);}
+    }catch(e){}
+  }
+});
+}
+
+/* --- Microsoft Clarity loader --- */
+if(!dormantCL){
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script",CFG.clarityId);
+}
+
+/* --- cross-site decoration + click conversions --- */
+function decorateMaybe(a){
+  try{
+    var href=a.getAttribute("href")||"";
+    if(!/^https?:\/\//i.test(href))return;
+    var u=new URL(href);
+    var host=u.hostname.replace(/^www\./,"");
+    if(host===CFG.site||!(host in NETWORK))return;
+    cap("cross_site_click",{target_site:host,target_category:NETWORK[host],link_location:loc(a),link_text:txt(a),value:15});
+    if(window.posthog&&!dormantPH){
+      u.searchParams.set("utm_source","emv_network");
+      u.searchParams.set("utm_medium","cross_site");
+      u.searchParams.set("utm_campaign",CFG.site);
+      u.searchParams.set("utm_content",loc(a));
+      u.searchParams.set("ph_did",window.posthog.get_distinct_id());
+      a.href=u.toString();
+    }
+  }catch(e){}
+}
+document.addEventListener("click",function(e){
+  try{
+    var a=e.target&&e.target.closest?e.target.closest("a[href]"):null;
+    if(!a)return;
+    var href=a.getAttribute("href")||"";
+    for(var i=0;i<CFG.conversions.length;i++){
+      var c=CFG.conversions[i];
+      try{
+        if(a.matches(c.selector)){
+          cap(c.event,{value:c.value,link_location:loc(a),link_text:txt(a)});
+          decorateMaybe(a);
+          return;
+        }
+      }catch(err){}
+    }
+    if(/^mailto:/i.test(href)){cap("contact_email_click",{address:href.slice(7).split("?")[0],link_location:loc(a),value:5});return;}
+    if(/^tel:/i.test(href)){cap("phone_click",{link_location:loc(a),value:10});return;}
+    decorateMaybe(a);
+  }catch(err){}
+},true);
+
+/* --- forms: start + submit (with per-site renames) --- */
+document.addEventListener("submit",function(e){
+  try{
+    var f=e.target;
+    if(!f||f.tagName!=="FORM")return;
+    var name=f.id||f.getAttribute("aria-label")||"form";
+    for(var i=0;i<CFG.formRules.length;i++){
+      var r=CFG.formRules[i];
+      try{if(f.matches(r.selector)){cap(r.event,{form:name,value:r.value});return;}}catch(err){}
+    }
+    cap("lead_form_submit",{form:name,value:40});
+  }catch(err){}
+},true);
+document.addEventListener("focusin",function(e){
+  try{
+    var f=e.target&&e.target.form;
+    if(!f||f.__emvStarted)return;
+    f.__emvStarted=true;
+    cap("form_start",{form:f.id||f.getAttribute("aria-label")||"form",value:1});
+  }catch(err){}
+},true);
+
+/* --- engagement: one-shot 75% scroll --- */
+var fired75=false;
+window.addEventListener("scroll",function(){
+  try{
+    if(fired75)return;
+    var h=document.documentElement;
+    if(h.scrollHeight<=0)return;
+    if((h.scrollTop+window.innerHeight)/h.scrollHeight>=0.75){fired75=true;cap("scroll_depth_75",{value:2});}
+  }catch(e){}
+},{passive:true});
+
+/* --- escape hatch: any site JS can fire a conversion --- */
+document.addEventListener("emv:conversion",function(e){
+  try{
+    var d=(e&&e.detail)||{};
+    if(d.event){var p=d.props||{};if(typeof p.value==="undefined"){p.value=d.value||0;}cap(d.event,p);}
+  }catch(err){}
+});
+}catch(e){}
+})();
+</script>
+<!-- ===== /EMV Analytics Layer ===== -->
+
+</body>
+</html>

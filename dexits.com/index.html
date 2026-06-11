@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dexits — Daily Shopify Store Valuation &amp; AI Growth Playbook</title>
+<meta name="description" content="Dexits values your Shopify store every 24 hours and shows you exactly how to grow what it's worth. AI valuation tracking from $7/mo, plus a $100 deep-dive Pro Valuation with a 45-minute strategy call.">
+<link rel="canonical" href="https://dexits.com/">
+<meta property="og:title" content="Dexits — Know what your Shopify store is worth today. Grow it tomorrow.">
+<meta property="og:description" content="An AI assistant that tracks your store's valuation daily and surfaces the exact actions that increase what your business is worth.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dexits.com/">
+<meta property="og:site_name" content="Dexits">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dexits — Daily Shopify Store Valuation">
+<meta name="twitter:description" content="Know what your store is worth today. Grow it tomorrow. AI valuation tracking for Shopify, from $7/mo.">
+<meta name="theme-color" content="#06231A">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Dexits",
+  "url": "https://dexits.com/",
+  "description": "Dexits is a Shopify business valuation app. An AI assistant tracks your store's valuation every 24 hours and surfaces specific actions to increase what the business is worth.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web / Shopify",
+  "installUrl": "https://apps.shopify.com/dexits",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Tracker",
+      "price": "7.00",
+      "priceCurrency": "USD",
+      "description": "Daily AI valuation, trend alerts, and weekly growth tips. Billed monthly.",
+      "url": "https://dexits.com/#pricing"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pro Valuation",
+      "price": "100.00",
+      "priceCurrency": "USD",
+      "description": "One-time deep-dive human + AI valuation report, 45-minute strategy call, and exit-readiness roadmap.",
+      "url": "https://dexits.com/#pricing"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "EMV Global Holdings",
+    "url": "https://emv.io"
+  }
+}
+</script>
+<style>
+:root{
+  --ink:#06231A;
+  --emerald:#0C8F63;
+  --emerald-dark:#0A6B4B;
+  --paper:#F4FBF8;
+  --mint:#DCF3E9;
+  --white:#FFFFFF;
+  --line:rgba(6,35,26,.14);
+  --muted:#3D564C;
+  --shadow:0 18px 50px -18px rgba(6,35,26,.25);
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-padding-top:92px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.display{font-family:'Space Grotesk',sans-serif;line-height:1.12;letter-spacing:-.02em}
+img,svg{display:block;max-width:100%}
+a{color:var(--emerald-dark)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--emerald);outline-offset:3px;border-radius:4px}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.7rem 1.2rem;z-index:200;border-radius:0 0 8px 0}
+.skip-link:focus{left:0}
+.wrap{width:min(1140px,92%);margin-inline:auto}
+section{scroll-margin-top:92px}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--emerald-dark)}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--emerald);transform:skewX(-30deg)}
+.sec-title{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;margin:.6rem 0 .8rem}
+.sec-intro{max-width:56ch;color:var(--muted)}
+/* ---------- Nav ---------- */
+.nav{position:sticky;top:0;z-index:100;background:rgba(244,251,248,.92);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+.nav.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px -18px rgba(6,35,26,.4)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+.brand{display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.02em}
+.brand svg{flex:none}
+.nav-menu{display:flex;align-items:center;gap:1.6rem;list-style:none}
+.nav-menu a{text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem}
+.nav-menu a:hover{color:var(--emerald-dark)}
+.nav-cta{background:var(--emerald-dark);color:#fff !important;padding:.55rem 1.1rem;border-radius:10px;font-weight:600}
+.nav-cta:hover{background:var(--ink);color:#fff}
+.hamburger{display:none;background:none;border:0;cursor:pointer;padding:.55rem;border-radius:8px}
+.hamburger span{display:block;width:24px;height:2.5px;background:var(--ink);margin:5px 0;transition:transform .3s,opacity .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+@media (max-width:880px){
+  .hamburger{display:block}
+  .nav-menu{position:fixed;inset:64px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 4%;transform:translateY(-130%);transition:transform .35s ease;box-shadow:var(--shadow)}
+  .nav-menu.open{transform:translateY(0)}
+  .nav-menu li{border-bottom:1px solid var(--line)}
+  .nav-menu li:last-child{border-bottom:0;padding:1rem 0}
+  .nav-menu a{display:block;padding:.95rem .2rem;font-size:1.05rem}
+  .nav-cta{text-align:center}
+}
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:4.5rem 0 5.5rem;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40%;right:-12%;width:62%;height:170%;background:linear-gradient(160deg,var(--mint),rgba(220,243,233,0));transform:skewX(-12deg);z-index:0}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center}
+.hero h1{font-size:clamp(2.3rem,4.6vw,3.6rem);font-weight:700;margin:.9rem 0 1.1rem}
+.hero h1 em{font-style:normal;color:var(--emerald-dark);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.16em;background:var(--mint);z-index:-1;transform:skewX(-18deg)}
+.hero-sub{font-size:1.13rem;color:var(--muted);max-width:50ch;margin-bottom:1.8rem}
+.btn-row{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1rem;text-decoration:none;padding:.85rem 1.5rem;border-radius:12px;transition:transform .2s,background .2s,color .2s;border:2px solid transparent}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--emerald-dark);color:#fff}
+.btn-primary:hover{background:var(--ink)}
+.btn-ghost{border-color:var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.hero-note{margin-top:1rem;font-size:.88rem;color:var(--muted)}
+/* Dashboard mock */
+.dash-wrap{position:relative}
+.dash{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.4rem 1.5rem 1.5rem;transform:rotate(1.2deg)}
+.dash-top{display:flex;align-items:center;gap:.55rem;padding-bottom:.9rem;border-bottom:1px solid var(--line);font-size:.82rem;font-weight:600;color:var(--muted)}
+.dash-dot{width:9px;height:9px;border-radius:50%;background:var(--emerald)}
+.dash-tag{margin-left:auto;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:.12rem .6rem;font-size:.72rem;font-weight:600;color:var(--muted)}
+.dash-val{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;padding:1rem 0 .4rem}
+.dash-label{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.dash-num{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,4vw,2.7rem);font-weight:700;letter-spacing:-.03em}
+.pill{display:inline-flex;align-items:center;gap:.3rem;background:var(--mint);color:var(--emerald-dark);font-weight:600;font-size:.82rem;padding:.3rem .75rem;border-radius:999px;white-space:nowrap}
+.spark{width:100%;height:64px;margin:.4rem 0 .9rem}
+.dash-drivers{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:1rem}
+.driver{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.55rem .7rem;font-size:.78rem;color:var(--muted)}
+.driver strong{display:block;font-family:'Space Grotesk',sans-serif;font-size:1.05rem;color:var(--ink)}
+.driver em{font-style:normal;font-weight:600;font-size:.72rem}
+.driver .up{color:var(--emerald-dark)}
+.driver .flat{color:var(--muted)}
+.ai-chip{display:flex;gap:.8rem;align-items:flex-start;background:linear-gradient(135deg,#072E22,var(--ink));color:#E8F7F0;border-radius:12px;padding:.85rem 1rem;font-size:.9rem;line-height:1.45}
+.ai-chip strong{color:#7FE0B8}
+.ai-dot{flex:none;display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:var(--emerald);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.72rem}
+.float-chip{position:absolute;left:-1.2rem;bottom:-1.4rem;background:var(--white);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:.65rem 1rem;font-size:.8rem;font-weight:600;color:var(--muted);transform:rotate(-2.5deg)}
+.float-chip strong{font-family:'Space Grotesk',sans-serif;font-size:1.25rem;color:var(--ink);margin-right:.4rem}
+.float-chip strong span{font-size:.8rem;color:var(--muted)}
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:3rem}
+  .dash{transform:none}
+  .float-chip{left:auto;right:0;bottom:-1.2rem}
+}
+/* ---------- Slanted divider + trust strip ---------- */
+.slant{height:70px;background:var(--ink);clip-path:polygon(0 100%,100% 0,100% 100%)}
+.trust{background:var(--ink);color:var(--paper);padding:1.5rem 0 3.2rem}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.trust-item{border-left:2px solid var(--emerald);padding-left:1.1rem}
+.trust-item strong{display:block;font-family:'Space Grotesk',sans-serif;font-size:1.9rem;font-weight:700;color:#7FE0B8}
+.trust-item span{font-size:.88rem;color:rgba(244,251,248,.78)}
+@media (max-width:880px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.trust-grid{grid-template-columns:1fr}}
+/* ---------- How it works ---------- */
+.how{padding:5.5rem 0 4.5rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.4rem;counter-reset:step}
+.step{position:relative;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:2rem 1.6rem 1.8rem;counter-increment:step;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%)}
+.step::before{content:"0" counter(step);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.95rem;color:var(--emerald-dark);background:var(--mint);padding:.25rem .7rem;border-radius:8px;display:inline-block;margin-bottom:1rem}
+.step h3{font-size:1.18rem;margin-bottom:.5rem}
+.step p{font-size:.95rem;color:var(--muted)}
+@media (max-width:880px){.steps{grid-template-columns:1fr}}
+/* ---------- Features ---------- */
+.features{padding:4.5rem 0;background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:2.4rem}
+.feat{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 1.5rem;transition:transform .25s,box-shadow .25s}
+.feat:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.feat-icon{width:44px;height:44px;border-radius:11px;background:var(--ink);color:#7FE0B8;display:grid;place-items:center;margin-bottom:1rem}
+.feat h3{font-size:1.08rem;margin-bottom:.45rem}
+.feat p{font-size:.93rem;color:var(--muted)}
+@media (max-width:980px){.feat-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.feat-grid{grid-template-columns:1fr}}
+/* ---------- App callout ---------- */
+.appcall{padding:4.5rem 0}
+.appcall-card{display:flex;align-items:center;justify-content:space-between;gap:2rem;background:linear-gradient(120deg,var(--ink) 55%,#0B4A34);color:var(--paper);border-radius:20px;padding:2.6rem 2.8rem;position:relative;overflow:hidden}
+.appcall-card::after{content:"";position:absolute;right:-60px;top:-80px;width:240px;height:340px;background:rgba(12,143,99,.25);transform:rotate(24deg)}
+.appcall-card h2{font-size:clamp(1.5rem,2.8vw,2.1rem);margin-bottom:.6rem}
+.appcall-card p{color:rgba(244,251,248,.8);max-width:48ch}
+.appcall-meta{margin-top:.9rem;font-size:.84rem;color:rgba(244,251,248,.65)}
+.btn-light{background:var(--paper);color:var(--ink);position:relative;z-index:1}
+.btn-light:hover{background:#7FE0B8;color:var(--ink)}
+@media (max-width:880px){.appcall-card{flex-direction:column;align-items:flex-start}}
+/* ---------- Pricing ---------- */
+.pricing{padding:4.5rem 0;background:var(--white);border-top:1px solid var(--line)}
+.price-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;margin-top:2.4rem;max-width:880px}
+.plan{position:relative;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);padding:2.2rem 2rem;display:flex;flex-direction:column}
+.plan.featured{border-color:var(--emerald);background:var(--white);box-shadow:var(--shadow)}
+.plan-flag{position:absolute;top:-13px;left:1.8rem;background:var(--emerald-dark);color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .8rem;border-radius:999px}
+.plan h3{font-size:1.25rem}
+.plan-price{font-family:'Space Grotesk',sans-serif;font-size:2.6rem;font-weight:700;margin:.6rem 0 .2rem;letter-spacing:-.03em}
+.plan-price span{font-size:1rem;font-weight:500;color:var(--muted);letter-spacing:0}
+.plan-tag{font-size:.9rem;color:var(--muted);margin-bottom:1.2rem}
+.plan ul{list-style:none;margin-bottom:1.8rem;flex:1}
+.plan li{padding:.42rem 0 .42rem 1.7rem;position:relative;font-size:.94rem;color:var(--muted)}
+.plan li::before{content:"";position:absolute;left:0;top:.78em;width:11px;height:7px;border-left:2.5px solid var(--emerald-dark);border-bottom:2.5px solid var(--emerald-dark);transform:rotate(-50deg)}
+@media (max-width:760px){.price-grid{grid-template-columns:1fr}}
+/* ---------- Team ---------- */
+.team{padding:4.5rem 0}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.4rem}
+.member{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.9rem 1.6rem;text-align:center}
+.member svg{width:112px;height:112px;margin:0 auto 1.1rem;border-radius:50%}
+.member h3{font-size:1.12rem}
+.member .role{color:var(--emerald-dark);font-weight:600;font-size:.86rem;margin:.2rem 0 .7rem}
+.member p{font-size:.91rem;color:var(--muted);text-align:left}
+.member a{display:inline-block;margin-top:.8rem;font-size:.88rem;font-weight:600}
+@media (max-width:880px){.team-grid{grid-template-columns:1fr;max-width:460px;margin-inline:auto}}
+/* ---------- FAQ ---------- */
+.faq{padding:4.5rem 0;background:var(--white);border-top:1px solid var(--line)}
+.faq-list{max-width:760px;margin-top:2rem}
+.faq-item{border:1px solid var(--line);border-radius:12px;background:var(--paper);margin-bottom:.8rem;overflow:hidden}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1rem;background:none;border:0;cursor:pointer;text-align:left;font-family:'Space Grotesk',sans-serif;font-size:1.02rem;font-weight:600;color:var(--ink);padding:1.1rem 1.3rem}
+.faq-q .chev{flex:none;transition:transform .3s}
+.faq-item.open .chev{transform:rotate(180deg)}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.faq-item.open .faq-a{grid-template-rows:1fr}
+.faq-a-inner{overflow:hidden}
+.faq-a p{padding:0 1.3rem 1.2rem;color:var(--muted);font-size:.95rem}
+/* ---------- CTA band ---------- */
+.cta-band{background:var(--ink);color:var(--paper);padding:4.5rem 0;position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;left:-80px;bottom:-120px;width:280px;height:380px;background:rgba(12,143,99,.22);transform:rotate(-22deg)}
+.cta-inner{position:relative;text-align:center;max-width:680px;margin-inline:auto}
+.cta-inner h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:.8rem}
+.cta-inner p{color:rgba(244,251,248,.78);margin-bottom:1.8rem}
+.cta-inner .btn-row{justify-content:center}
+.btn-outline-light{border-color:var(--paper);color:var(--paper)}
+.btn-outline-light:hover{background:var(--paper);color:var(--ink)}
+/* ---------- Contact ---------- */
+.contact{padding:5rem 0}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:2.2rem}
+.contact-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 1.5rem}
+.contact-card h3{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--emerald-dark);margin-bottom:.6rem}
+.contact-card p,.contact-card a{font-size:1.02rem;font-weight:500;color:var(--ink);text-decoration:none}
+.contact-card a:hover{color:var(--emerald-dark);text-decoration:underline}
+.forward-note{margin-top:1.6rem;font-size:.92rem;color:var(--muted);border-left:3px solid var(--emerald);padding-left:.9rem}
+@media (max-width:880px){.contact-grid{grid-template-columns:1fr}}
+/* ---------- Footer ---------- */
+.footer{background:var(--ink);color:rgba(244,251,248,.82);padding:3.8rem 0 2rem;border-top:4px solid var(--emerald)}
+.footer a{color:rgba(244,251,248,.85);text-decoration:none}
+.footer a:hover{color:#7FE0B8;text-decoration:underline}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2.6rem;padding-bottom:2.4rem;border-bottom:1px solid rgba(244,251,248,.16)}
+.attribution{display:inline-flex;align-items:center;gap:.65rem;font-family:'Space Grotesk',sans-serif;font-weight:600;letter-spacing:.06em;font-size:.95rem;color:#fff;text-decoration:none}
+.attribution:hover{text-decoration:none;color:#7FE0B8}
+.portfolio-line{margin-top:1rem;font-size:.9rem;max-width:38ch}
+.footer h4{font-family:'Space Grotesk',sans-serif;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#7FE0B8;margin-bottom:1rem}
+.net-list{list-style:none;columns:2;column-gap:2rem}
+.net-list li{margin-bottom:.45rem;font-size:.9rem;break-inside:avoid}
+.footer-contact p{font-size:.9rem;margin-bottom:.5rem}
+.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;padding-top:1.6rem;font-size:.85rem;color:rgba(244,251,248,.6)}
+@media (max-width:880px){.footer-grid{grid-template-columns:1fr}.net-list{columns:2}}
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn,.feat,.faq-a,.nav-menu,.hamburger span{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Dexits home">
+      <svg viewBox="0 0 48 48" width="24" height="24" aria-hidden="true"><rect width="48" height="48" fill="#000"/><path d="M27 10l3 28M42 9L31.5 38" stroke="#fff" stroke-width="2.6" fill="none"/></svg>
+      Dexits
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cta" href="https://apps.shopify.com/dexits">Install the app</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-controls="navMenu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="reveal in">
+        <span class="eyebrow">Shopify business valuation, daily</span>
+        <h1 id="hero-title">Know what your store is worth <em>today</em>. Grow it <em>tomorrow</em>.</h1>
+        <p class="hero-sub">Dexits connects to your Shopify store and re-values it every 24 hours. An AI assistant watches the 12 drivers behind that number — then tells you the exact next move that makes your business worth more.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://apps.shopify.com/dexits">Install from the Shopify App Store</a>
+          <a class="btn btn-ghost" href="#pricing">See pricing</a>
+        </div>
+        <p class="hero-note">From $7/month · Connects in 2 minutes · Read-only access</p>
+      </div>
+      <div class="dash-wrap reveal d1">
+        <div class="dash">
+          <div class="dash-top">
+            <span class="dash-dot" aria-hidden="true"></span>
+            Dexits — Valuation dashboard
+            <span class="dash-tag">Sample store data</span>
+          </div>
+          <div class="dash-val">
+            <div>
+              <p class="dash-label">Current valuation</p>
+              <p class="dash-num">$128,400</p>
+            </div>
+            <span class="pill">▲ +2.3% this week</span>
+          </div>
+          <svg class="spark" viewBox="0 0 260 64" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="sparkfill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#0C8F63" stop-opacity=".28"/>
+                <stop offset="1" stop-color="#0C8F63" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0 50 L20 47 L40 49 L60 42 L80 44 L100 37 L120 40 L140 31 L160 34 L180 25 L200 28 L220 18 L240 21 L258 11 L258 64 L0 64 Z" fill="url(#sparkfill)"/>
+            <path d="M0 50 L20 47 L40 49 L60 42 L80 44 L100 37 L120 40 L140 31 L160 34 L180 25 L200 28 L220 18 L240 21 L258 11" fill="none" stroke="#0C8F63" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="258" cy="11" r="3.5" fill="#0C8F63"/>
+          </svg>
+          <div class="dash-drivers">
+            <div class="driver"><span>AOV</span><strong>$64.20</strong><em class="up">▲ 4.1%</em></div>
+            <div class="driver"><span>Repeat rate</span><strong>28%</strong><em class="up">▲ 1.8%</em></div>
+            <div class="driver"><span>Net margin</span><strong>22%</strong><em class="flat">→ 0.0%</em></div>
+          </div>
+          <div class="ai-chip">
+            <span class="ai-dot" aria-hidden="true">AI</span>
+            <p><strong>Raise AOV:</strong> bundle your top 2 SKUs → est. <strong>+$4,100</strong> valuation. Tap to add it to this week's playbook.</p>
+          </div>
+        </div>
+        <p class="float-chip"><strong>72<span>/100</span></strong> Exit-readiness score</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="slant" aria-hidden="true"></div>
+
+  <!-- Trust strip -->
+  <section class="trust" aria-label="Dexits capabilities">
+    <div class="wrap trust-grid">
+      <div class="trust-item reveal"><strong>Every 24h</strong><span>Your valuation is refreshed automatically from live Shopify data</span></div>
+      <div class="trust-item reveal d1"><strong>12</strong><span>Value drivers tracked on every store, from margin to traffic mix</span></div>
+      <div class="trust-item reveal d2"><strong>2 min</strong><span>To connect your store — no spreadsheets, no sales call</span></div>
+      <div class="trust-item reveal d3"><strong>0–100</strong><span>Exit-readiness score, recalculated as your business changes</span></div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <span class="eyebrow">How it works</span>
+      <h2 class="sec-title" id="how-title">From install to a growing valuation in three steps</h2>
+      <p class="sec-intro">No data exports, no consultants, no guesswork. Dexits plugs into the store you already run.</p>
+      <div class="steps">
+        <article class="step reveal">
+          <h3>Connect Shopify in 2 minutes</h3>
+          <p>Install the Dexits app from the Shopify App Store. It uses Shopify's secure OAuth flow with read-only scopes — you never share a password, and you can disconnect in one click.</p>
+        </article>
+        <article class="step reveal d1">
+          <h3>AI values your store daily</h3>
+          <p>Every 24 hours, Dexits re-runs your valuation across 12 value drivers — revenue quality, margins, repeat rate, traffic concentration, supplier risk and more — so the number moves when your business does.</p>
+        </article>
+        <article class="step reveal d2">
+          <h3>Follow the playbook to grow it</h3>
+          <p>The assistant turns every weak driver into a specific action with an estimated valuation impact. Ship the change, watch the line move, repeat next week.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <span class="eyebrow">Features</span>
+      <h2 class="sec-title" id="features-title">Everything you need to manage your store like an asset</h2>
+      <p class="sec-intro">Most merchants find out what their store is worth on the day they try to sell it. Dexits makes that number visible — and improvable — every single day.</p>
+      <div class="feat-grid">
+        <article class="feat reveal">
+          <span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h6v6"/></svg></span>
+          <h3>Daily valuation tracking</h3>
+          <p>A defensible estimate of what your store is worth, refreshed every 24 hours from live Shopify data — not a once-a-year guess.</p>
+        </article>
+        <article class="feat reveal d1">
+          <span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 4v4"/><circle cx="9.5" cy="13.5" r="1"/><circle cx="14.5" cy="13.5" r="1"/></svg></span>
+          <h3>AI assistant</h3>
+          <p>It watches every driver and surfaces the one action with the highest valuation impact this week — with the estimated dollar effect attached.</p>
+        </article>
+        <article class="feat reveal d2">
+          <span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h12M8 12h12M8 18h12"/><path d="M4 6h.01M4 12h.01M4 18h.01"/></svg></span>
+          <h3>Value-driver playbook</h3>
+          <p>Twelve drivers, each with concrete plays: bundles, subscriptions, margin fixes, channel diversification, owner-dependency cleanup.</p>
+        </article>
+        <article class="feat reveal">
+          <span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V10M12 20V4M19 20v-7"/></svg></span>
+          <h3>Benchmarks vs. similar stores</h3>
+          <p>See how your AOV, repeat rate, and margins stack up against stores in your category and size band — and where the gap is costing you value.</p>
+        </article>
+        <article class="feat reveal d1">
+          <span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19a9 9 0 1 1 14 0"/><path d="M12 14l4-5"/><circle cx="12" cy="15" r="1.6"/></svg></span>
+          <h3>Exit-readiness score</h3>
+          <p>A 0–100 score that tells you how sellable your store is today — and exactly which issues would scare a buyer or shrink your multiple.</p>
+        </article>
+        <article class="feat reveal d2">
+          <span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 3"/></svg></span>
+          <h3>Valuation history</h3>
+          <p>Every daily valuation is stored. Watch the line climb as you ship improvements — and bring the chart to any buyer or lender conversation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shopify App callout -->
+  <section class="appcall" aria-labelledby="appcall-title">
+    <div class="wrap">
+      <div class="appcall-card reveal">
+        <div>
+          <span class="eyebrow" style="color:#7FE0B8">Live on Shopify</span>
+          <h2 id="appcall-title">Dexits installs like any other Shopify app</h2>
+          <p>Find it in the Shopify App Store, click install, and approve read-only access. Your first valuation starts building immediately.</p>
+          <p class="appcall-meta">Free to install · Read-only data scopes · Disconnect anytime</p>
+        </div>
+        <a class="btn btn-light" href="https://apps.shopify.com/dexits">Install from the Shopify App Store →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <span class="eyebrow">Pricing</span>
+      <h2 class="sec-title" id="pricing-title">Two ways to know your number</h2>
+      <p class="sec-intro">Start with always-on tracking, or go deep with a one-time professional valuation. No contracts, no percentage fees.</p>
+      <div class="price-grid">
+        <article class="plan featured reveal">
+          <span class="plan-flag">Start here</span>
+          <h3>Tracker</h3>
+          <p class="plan-price">$7<span>/month</span></p>
+          <p class="plan-tag">Always-on AI valuation for your Shopify store.</p>
+          <ul>
+            <li>Daily AI valuation, refreshed every 24 hours</li>
+            <li>Trend alerts when your value moves meaningfully</li>
+            <li>Weekly growth tips from the AI assistant</li>
+            <li>12 value drivers tracked and scored</li>
+            <li>Valuation history and category benchmarks</li>
+            <li>Cancel anytime from your Shopify admin</li>
+          </ul>
+          <a class="btn btn-primary" href="https://apps.shopify.com/dexits">Start tracking — $7/mo</a>
+        </article>
+        <article class="plan reveal d1">
+          <h3>Pro Valuation</h3>
+          <p class="plan-price">$100<span> one-time</span></p>
+          <p class="plan-tag">A deep-dive human + AI valuation of your business.</p>
+          <ul>
+            <li>Line-by-line valuation report built by an analyst with the AI</li>
+            <li>Full value-driver audit with prioritized fixes</li>
+            <li>45-minute strategy call to walk the findings</li>
+            <li>Exit-readiness roadmap you can execute or hand to a broker</li>
+            <li>Comps against similar stores in your category</li>
+            <li>Delivered within 5 business days</li>
+          </ul>
+          <a class="btn btn-ghost" href="mailto:info@dexits.com?subject=Pro%20Valuation%20request">Book a Pro Valuation</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team" id="team" aria-labelledby="team-title">
+    <div class="wrap">
+      <span class="eyebrow">Team</span>
+      <h2 class="sec-title" id="team-title">The people behind your number</h2>
+      <p class="sec-intro">A small team obsessed with one question: what would make this store worth more next week than it is today?</p>
+      <div class="team-grid">
+        <article class="member reveal">
+          <svg viewBox="0 0 120 120" role="img" aria-label="Illustrated portrait of Maya Chen, a Chinese woman with a black bob haircut with bangs and rectangular glasses">
+            <defs><clipPath id="av-maya"><circle cx="60" cy="60" r="56"/></clipPath></defs>
+            <circle cx="60" cy="60" r="56" fill="#D8F0E5"/>
+            <g clip-path="url(#av-maya)">
+              <rect x="54" y="68" width="12" height="24" rx="5" fill="#F5D0A9"/>
+              <circle cx="60" cy="54" r="22" fill="#F5D0A9"/>
+              <path d="M36 72 Q33 70 35 63 L35 50 Q35 27 60 27 Q85 27 85 50 L85 63 Q87 70 84 72 Q78 75 78 66 L78 52 Q74 44 60 44 Q46 44 42 52 L42 66 Q42 75 36 72 Z" fill="#20242C"/>
+              <path d="M47 45.5 Q52 42.8 57 45.5" stroke="#20242C" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <path d="M63 45.5 Q68 42.8 73 45.5" stroke="#20242C" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <circle cx="52" cy="53.5" r="2.3" fill="#23272F"/>
+              <circle cx="68" cy="53.5" r="2.3" fill="#23272F"/>
+              <path d="M60 52 Q58 57 60.5 59" stroke="#D9A878" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <path d="M52.5 64.5 Q60 70 67.5 64.5" stroke="#A65D44" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+              <path d="M14 124 Q18 89 60 89 Q102 89 106 124 Z" fill="#0C8F63"/>
+              <rect x="44.5" y="48" width="13" height="10.5" rx="3" fill="none" stroke="#2E3440" stroke-width="1.8"/>
+              <rect x="62.5" y="48" width="13" height="10.5" rx="3" fill="none" stroke="#2E3440" stroke-width="1.8"/>
+              <path d="M57.5 52.5 H62.5 M44.5 51.5 L39 49.5 M75.5 51.5 L81 49.5" stroke="#2E3440" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <h3>Maya Chen</h3>
+          <p class="role">AI Product Lead</p>
+          <p>Maya builds the valuation model and the assistant that turns it into daily advice. She has spent her career shipping applied-AI products for commerce teams, and now obsesses over one question: which single action would raise this store's value this week?</p>
+          <a href="mailto:maya@dexits.com">maya@dexits.com</a>
+        </article>
+        <article class="member reveal d1">
+          <svg viewBox="0 0 120 120" role="img" aria-label="Illustrated portrait of Derek Okafor, a Nigerian man with a short fade haircut and trimmed beard">
+            <defs><clipPath id="av-derek"><circle cx="60" cy="60" r="56"/></clipPath></defs>
+            <circle cx="60" cy="60" r="56" fill="#CBEBDD"/>
+            <g clip-path="url(#av-derek)">
+              <rect x="54" y="68" width="12" height="24" rx="5" fill="#5C3B1E"/>
+              <circle cx="60" cy="54" r="22" fill="#5C3B1E"/>
+              <path d="M39 46 Q40 28 60 28 Q80 28 81 46 L81 49.5 L77.5 49.5 Q75.5 36.5 60 36.5 Q44.5 36.5 42.5 49.5 L39 49.5 Z" fill="#15100B"/>
+              <path d="M38.5 49.5 L38.5 56 Q39.5 57.5 41 56.5 L41 49.5 Z M81.5 49.5 L81.5 56 Q80.5 57.5 79 56.5 L79 49.5 Z" fill="#15100B"/>
+              <path d="M41 54 Q42 74 60 76 Q78 74 79 54 L76 54 Q74 67.5 60 69.5 Q46 67.5 44 54 Z" fill="#15100B"/>
+              <path d="M53 62.5 Q60 59.8 67 62.5 L67 64.6 Q60 62.2 53 64.6 Z" fill="#15100B"/>
+              <path d="M46.5 45.8 Q52 43.2 57 45.8" stroke="#120C07" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+              <path d="M63 45.8 Q68 43.2 73.5 45.8" stroke="#120C07" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+              <circle cx="52" cy="52.5" r="2.4" fill="#140D07"/>
+              <circle cx="68" cy="52.5" r="2.4" fill="#140D07"/>
+              <path d="M60 52 Q58 57.5 60.5 59.5" stroke="#3F2812" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <path d="M54.5 66.5 Q60 70 65.5 66.5" stroke="#2A1708" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+              <path d="M14 124 Q18 89 60 89 Q102 89 106 124 Z" fill="#06231A"/>
+              <path d="M52 90 L60 97 L68 90" stroke="#7FE0B8" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <h3>Derek Okafor</h3>
+          <p class="role">Head of Valuation Science</p>
+          <p>Derek owns the multiples, the comps, and the data pipeline behind every number Dexits shows. He has built pricing and risk models across e-commerce and fintech, and believes a valuation is only useful if you can defend it line by line.</p>
+          <a href="mailto:derek@dexits.com">derek@dexits.com</a>
+        </article>
+        <article class="member reveal d2">
+          <svg viewBox="0 0 120 120" role="img" aria-label="Illustrated portrait of Priya Raman, an Indian woman with a long dark braid and small gold earrings">
+            <defs><clipPath id="av-priya"><circle cx="60" cy="60" r="56"/></clipPath></defs>
+            <circle cx="60" cy="60" r="56" fill="#BFE6D6"/>
+            <g clip-path="url(#av-priya)">
+              <rect x="54" y="68" width="12" height="24" rx="5" fill="#A9714B"/>
+              <circle cx="37.5" cy="56" r="3.6" fill="#A9714B"/>
+              <circle cx="82.5" cy="56" r="3.6" fill="#A9714B"/>
+              <circle cx="60" cy="54" r="22" fill="#A9714B"/>
+              <path d="M35 64 Q33 62 35 58 L35 50 Q35 27 60 27 Q85 27 85 50 L85 58 Q87 62 85 64 Q81 67 81 60 L81 51 Q77 40.5 62.5 40.5 L60 45 L57.5 40.5 Q43 40.5 39 51 L39 60 Q39 67 35 64 Z" fill="#1A1A21"/>
+              <path d="M46.5 46 Q51.5 43.5 56.5 46" stroke="#14141A" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M63.5 46 Q68.5 43.5 73.5 46" stroke="#14141A" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <circle cx="52" cy="53" r="2.3" fill="#1C1410"/>
+              <circle cx="68" cy="53" r="2.3" fill="#1C1410"/>
+              <path d="M60 52 Q58 57 60.5 59" stroke="#7A4E2F" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <path d="M52.5 64.5 Q60 70.2 67.5 64.5" stroke="#5E3414" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+              <path d="M14 124 Q18 89 60 89 Q102 89 106 124 Z" fill="#0A4D68"/>
+              <circle cx="84" cy="68" r="5.6" fill="#1A1A21"/>
+              <circle cx="86.5" cy="78" r="5.1" fill="#1A1A21"/>
+              <circle cx="84" cy="88" r="4.7" fill="#1A1A21"/>
+              <circle cx="86.5" cy="98" r="4.3" fill="#1A1A21"/>
+              <circle cx="85" cy="107" r="3.8" fill="#1A1A21"/>
+              <rect x="82.5" y="111" width="5" height="4.5" rx="2" fill="#0C8F63"/>
+              <circle cx="37.5" cy="61.5" r="2" fill="#D9A441"/>
+              <circle cx="82.5" cy="61.5" r="2" fill="#D9A441"/>
+            </g>
+          </svg>
+          <h3>Priya Raman</h3>
+          <p class="role">Head of Customer Success</p>
+          <p>Priya helps merchants turn the playbook into shipped changes — bundles launched, margins fixed, subscriptions added. She coaches store owners through weekly action sprints and measures her own week in merchant wins.</p>
+          <a href="mailto:priya@dexits.com">priya@dexits.com</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="sec-title" id="faq-title">Questions merchants ask us</h2>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <h3><button class="faq-q" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">How does Dexits calculate my store's valuation?<svg class="chev" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></h3>
+          <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div class="faq-a-inner"><p>We apply market multiples to your trailing revenue and profit, then adjust across 12 value drivers — revenue quality, margin, traffic concentration, repeat rate, supplier risk and more — using live data from your Shopify store. The model re-runs every 24 hours, so the number moves when your business does.</p></div></div>
+        </div>
+        <div class="faq-item reveal">
+          <h3><button class="faq-q" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">Do I need to hand over my Shopify password?<svg class="chev" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></h3>
+          <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div class="faq-a-inner"><p>No. Dexits installs from the Shopify App Store like any other app, using Shopify's own secure OAuth flow with read-only data scopes. You can disconnect in one click from your Shopify admin, and data access ends immediately.</p></div></div>
+        </div>
+        <div class="faq-item reveal">
+          <h3><button class="faq-q" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">What's the difference between Tracker and the Pro Valuation?<svg class="chev" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></h3>
+          <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div class="faq-a-inner"><p>Tracker is software: a daily AI valuation, trend alerts, and weekly tips for $7/month. The Pro Valuation is a one-time $100 deep dive — an analyst works with the AI to produce a line-by-line report, then walks you through it on a 45-minute strategy call and leaves you with an exit-readiness roadmap.</p></div></div>
+        </div>
+        <div class="faq-item reveal">
+          <h3><button class="faq-q" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">Is the valuation the price my store would actually sell for?<svg class="chev" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></h3>
+          <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4"><div class="faq-a-inner"><p>It's a market-calibrated estimate, not an appraisal or a guarantee — real sale prices depend on negotiation, timing, and buyer fit. What Dexits gives you is a defensible baseline and, more importantly, the specific levers that raise it before you ever talk to a buyer.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="wrap cta-inner reveal">
+      <h2 id="cta-title">Your store's value moves every day. Stop guessing what it is.</h2>
+      <p>Install Dexits, see your number tomorrow morning, and get your first AI growth suggestion with it.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://apps.shopify.com/dexits">Track it for $7/mo</a>
+        <a class="btn btn-outline-light" href="mailto:info@dexits.com?subject=Pro%20Valuation%20request">Book a Pro Valuation — $100</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h2 class="sec-title" id="contact-title">Talk to the Dexits team</h2>
+      <p class="sec-intro">Questions about your valuation, the app, or a Pro Valuation? Reach us directly.</p>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>Call</h3>
+          <p><a href="tel:+12137881919">213-788-1919</a></p>
+        </div>
+        <div class="contact-card reveal d1">
+          <h3>Visit</h3>
+          <p>9461 Charleville Blvd<br>Beverly Hills, CA 90212</p>
+        </div>
+        <div class="contact-card reveal d2">
+          <h3>Email</h3>
+          <p><a href="mailto:info@dexits.com">info@dexits.com</a></p>
+        </div>
+      </div>
+      <p class="forward-note">All email forwards to info@emv.io.</p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="https://emv.io" class="attribution">
+          <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><rect width="48" height="48" fill="#000"/><path d="M27 10l3 28M42 9L31.5 38" stroke="#fff" stroke-width="2.6" fill="none"/></svg>
+          <span>by EMV GLOBAL HOLDINGS</span>
+        </a>
+        <p class="portfolio-line">Part of the <a href="https://emv.io">Exchange Media Ventures</a> portfolio. Founded by <a href="https://sanjeevnachiappan.com">Sanjeev Nachiappan</a>.</p>
+      </div>
+      <nav aria-label="EMV Network">
+        <h4>EMV Network</h4>
+        <ul class="net-list">
+          <li><a href="https://emv.io">emv.io</a></li>
+          <li><a href="https://dexits.com">dexits.com</a></li>
+          <li><a href="https://scaleuni.com">scaleuni.com</a></li>
+          <li><a href="https://scaleverticals.com">scaleverticals.com</a></li>
+          <li><a href="https://scalifty.com">scalifty.com</a></li>
+          <li><a href="https://itscaled.com">itscaled.com</a></li>
+          <li><a href="https://exitwebsites.com">exitwebsites.com</a></li>
+          <li><a href="https://onlinexit.com">onlinexit.com</a></li>
+          <li><a href="https://wexits.com">wexits.com</a></li>
+          <li><a href="https://aquireonline.com">aquireonline.com</a></li>
+          <li><a href="https://aquirewebsites.com">aquirewebsites.com</a></li>
+          <li><a href="https://onlineaquisition.com">onlineaquisition.com</a></li>
+          <li><a href="https://sanjeevnachiappan.com">sanjeevnachiappan.com</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="tel:+12137881919">213-788-1919</a></p>
+        <p>9461 Charleville Blvd<br>Beverly Hills, CA 90212</p>
+        <p><a href="mailto:info@dexits.com">info@dexits.com</a></p>
+        <p>All email forwards to info@emv.io.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Dexits. An EMV Global Holdings company.</p>
+      <p><a href="#top">Back to top ↑</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  // Mobile hamburger nav
+  var burger = document.getElementById("hamburger");
+  var menu = document.getElementById("navMenu");
+  burger.addEventListener("click", function(){
+    var open = menu.classList.toggle("open");
+    burger.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  menu.querySelectorAll("a").forEach(function(link){
+    link.addEventListener("click", function(){
+      menu.classList.remove("open");
+      burger.classList.remove("open");
+      burger.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  // Sticky nav shadow
+  var nav = document.querySelector(".nav");
+  window.addEventListener("scroll", function(){
+    nav.classList.toggle("scrolled", window.scrollY > 8);
+  }, { passive: true });
+
+  // IntersectionObserver reveals
+  var reveals = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add("in"); });
+  }
+
+  // FAQ accordion (one open at a time)
+  var items = document.querySelectorAll(".faq-item");
+  items.forEach(function(item){
+    var btn = item.querySelector(".faq-q");
+    btn.addEventListener("click", function(){
+      var isOpen = item.classList.contains("open");
+      items.forEach(function(other){
+        other.classList.remove("open");
+        other.querySelector(".faq-q").setAttribute("aria-expanded", "false");
+      });
+      if (!isOpen) {
+        item.classList.add("open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+})();
+</script>
+
+<!-- ===== EMV Analytics Layer v1 (PostHog + Clarity) =====
+     Dormant until keys are set. To go live:
+     1. Replace phc_vs8vnsgAWgfqcH5BCYn85vNGr7rzCFLaKJvkGz7qJ9z3 with your PostHog project API key (SAME key on all 13 sites).
+     2. Replace CLARITY_REPLACE_ME with this site's Microsoft Clarity project ID (UNIQUE per site).
+     Docs: sites/analytics/TRACKING-SCHEMA.md -->
+<script>
+(function(){
+"use strict";
+try{
+var CFG={
+  site:"dexits.com",
+  category:"saas",
+  posthogKey:"phc_vs8vnsgAWgfqcH5BCYn85vNGr7rzCFLaKJvkGz7qJ9z3",
+  posthogHost:"https://us.i.posthog.com",
+  clarityId:"CLARITY_REPLACE_ME",
+  conversions:[{"selector": "a[href*=\"apps.shopify.com\"]", "event": "app_install_click", "value": 30}, {"selector": "a[href*=\"Pro%20Valuation\"]", "event": "pro_valuation_request", "value": 60}],
+  formRules:[]
+};
+var NETWORK={"emv.io":"hub","dexits.com":"saas","scaleuni.com":"consulting","scaleverticals.com":"consulting","scalifty.com":"consulting","itscaled.com":"consulting","exitwebsites.com":"ma_seller","onlinexit.com":"ma_seller","wexits.com":"ma_seller","aquireonline.com":"ma_buyer","aquirewebsites.com":"ma_buyer","onlineaquisition.com":"ma_buyer","sanjeevnachiappan.com":"personal"};
+var dormantPH=/REPLACE/.test(CFG.posthogKey);
+var dormantCL=/REPLACE/.test(CFG.clarityId);
+if(dormantPH){try{console.info("[EMV analytics] dormant - set PostHog key in EMV Analytics Layer snippet");}catch(e){}}
+
+function cap(ev,props){try{if(window.posthog&&!dormantPH){props=props||{};if(typeof props.value==="undefined"){props.value=0;}window.posthog.capture(ev,props);}}catch(e){}}
+function loc(el){try{if(el.closest("footer"))return "footer";if(el.closest("nav,header"))return "nav";if(el.closest(".ticker"))return "ticker";return "body";}catch(e){return "body";}}
+function txt(a){return ((a.textContent||"").replace(/\s+/g," ").trim()).slice(0,80);}
+
+/* --- PostHog loader (official array.js stub) --- */
+if(!dormantPH){
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+window.posthog.init(CFG.posthogKey,{
+  api_host:CFG.posthogHost,
+  autocapture:false,
+  capture_pageview:true,
+  capture_pageleave:true,
+  disable_session_recording:true,
+  persistence:"localStorage+cookie",
+  loaded:function(ph){
+    try{
+      ph.register({site:CFG.site,category:CFG.category});
+      var p=new URLSearchParams(location.search);
+      var did=p.get("ph_did");
+      if(did&&did!==ph.get_distinct_id()){ph.identify(did);}
+      if(did){p.delete("ph_did");var q=p.toString();history.replaceState(null,"",location.pathname+(q?"?"+q:"")+location.hash);}
+    }catch(e){}
+  }
+});
+}
+
+/* --- Microsoft Clarity loader --- */
+if(!dormantCL){
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script",CFG.clarityId);
+}
+
+/* --- cross-site decoration + click conversions --- */
+function decorateMaybe(a){
+  try{
+    var href=a.getAttribute("href")||"";
+    if(!/^https?:\/\//i.test(href))return;
+    var u=new URL(href);
+    var host=u.hostname.replace(/^www\./,"");
+    if(host===CFG.site||!(host in NETWORK))return;
+    cap("cross_site_click",{target_site:host,target_category:NETWORK[host],link_location:loc(a),link_text:txt(a),value:15});
+    if(window.posthog&&!dormantPH){
+      u.searchParams.set("utm_source","emv_network");
+      u.searchParams.set("utm_medium","cross_site");
+      u.searchParams.set("utm_campaign",CFG.site);
+      u.searchParams.set("utm_content",loc(a));
+      u.searchParams.set("ph_did",window.posthog.get_distinct_id());
+      a.href=u.toString();
+    }
+  }catch(e){}
+}
+document.addEventListener("click",function(e){
+  try{
+    var a=e.target&&e.target.closest?e.target.closest("a[href]"):null;
+    if(!a)return;
+    var href=a.getAttribute("href")||"";
+    for(var i=0;i<CFG.conversions.length;i++){
+      var c=CFG.conversions[i];
+      try{
+        if(a.matches(c.selector)){
+          cap(c.event,{value:c.value,link_location:loc(a),link_text:txt(a)});
+          decorateMaybe(a);
+          return;
+        }
+      }catch(err){}
+    }
+    if(/^mailto:/i.test(href)){cap("contact_email_click",{address:href.slice(7).split("?")[0],link_location:loc(a),value:5});return;}
+    if(/^tel:/i.test(href)){cap("phone_click",{link_location:loc(a),value:10});return;}
+    decorateMaybe(a);
+  }catch(err){}
+},true);
+
+/* --- forms: start + submit (with per-site renames) --- */
+document.addEventListener("submit",function(e){
+  try{
+    var f=e.target;
+    if(!f||f.tagName!=="FORM")return;
+    var name=f.id||f.getAttribute("aria-label")||"form";
+    for(var i=0;i<CFG.formRules.length;i++){
+      var r=CFG.formRules[i];
+      try{if(f.matches(r.selector)){cap(r.event,{form:name,value:r.value});return;}}catch(err){}
+    }
+    cap("lead_form_submit",{form:name,value:40});
+  }catch(err){}
+},true);
+document.addEventListener("focusin",function(e){
+  try{
+    var f=e.target&&e.target.form;
+    if(!f||f.__emvStarted)return;
+    f.__emvStarted=true;
+    cap("form_start",{form:f.id||f.getAttribute("aria-label")||"form",value:1});
+  }catch(err){}
+},true);
+
+/* --- engagement: one-shot 75% scroll --- */
+var fired75=false;
+window.addEventListener("scroll",function(){
+  try{
+    if(fired75)return;
+    var h=document.documentElement;
+    if(h.scrollHeight<=0)return;
+    if((h.scrollTop+window.innerHeight)/h.scrollHeight>=0.75){fired75=true;cap("scroll_depth_75",{value:2});}
+  }catch(e){}
+},{passive:true});
+
+/* --- escape hatch: any site JS can fire a conversion --- */
+document.addEventListener("emv:conversion",function(e){
+  try{
+    var d=(e&&e.detail)||{};
+    if(d.event){var p=d.props||{};if(typeof p.value==="undefined"){p.value=d.value||0;}cap(d.event,p);}
+  }catch(err){}
+});
+}catch(e){}
+})();
+</script>
+<!-- ===== /EMV Analytics Layer ===== -->
+
+</body>
+</html>

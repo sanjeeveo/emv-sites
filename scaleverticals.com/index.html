@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScaleVerticals — Vertical-Specific Scaling &amp; Operational Optimization</title>
+<meta name="description" content="Specialists in your vertical, not generalists. ScaleVerticals runs a 10-day margin audit, rebuilds unit economics, and optimizes operations before a dollar of new ad spend goes out.">
+<link rel="canonical" href="https://scaleverticals.com/">
+<meta property="og:title" content="ScaleVerticals — Specialists in Your Vertical">
+<meta property="og:description" content="Six verticals, benchmarked deeply. Margin audits, tooling consolidation, and unit-economics rebuilds come first; ad spend earns its place after.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://scaleverticals.com/">
+<meta property="og:site_name" content="ScaleVerticals">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ScaleVerticals — Specialists in Your Vertical">
+<meta name="twitter:description" content="Operations-first scaling for six business models. Optimization before ad spend, benchmarked against your true peers.">
+<meta name="theme-color" content="#25323C">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ScaleVerticals",
+  "url": "https://scaleverticals.com/",
+  "description": "Vertical-specific scaling and operational optimization firm. Margin audits, tooling consolidation, fulfillment streamlining, and unit-economics rebuilds across six business-model verticals.",
+  "telephone": "+1-213-788-1919",
+  "email": "info@scaleverticals.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9461 Charleville Blvd",
+    "addressLocality": "Beverly Hills",
+    "addressRegion": "CA",
+    "postalCode": "90212",
+    "addressCountry": "US"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "EMV Global Holdings",
+    "url": "https://emv.io"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Sanjeev Nachiappan",
+    "url": "https://sanjeevnachiappan.com"
+  },
+  "areaServed": "Worldwide",
+  "knowsAbout": ["operational optimization", "margin audits", "unit economics", "e-commerce operations", "SaaS operations", "marketplace operations"]
+}
+</script>
+<style>
+:root{
+  --ink:#25323C;
+  --ink-deep:#1A242C;
+  --accent:#E8632B;
+  --accent-press:#C44E1D;
+  --bg:#F5F4F1;
+  --card:#FFFFFF;
+  --text:#39434C;
+  --muted:#67727C;
+  --line:#DDDAD2;
+  --band:#25323C;
+  --footer:#141D24;
+  --radius:6px;
+  --shadow:0 8px 26px rgba(37,50,60,.12);
+  --display:'Source Serif 4',Georgia,serif;
+  --body:'Source Sans 3',-apple-system,Segoe UI,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--body);background:var(--bg);color:var(--text);line-height:1.6;font-size:1.02rem}
+::selection{background:var(--accent);color:#fff}
+svg{display:block;max-width:100%}
+a{color:var(--ink);text-decoration-thickness:1.5px;text-underline-offset:3px}
+a:hover{color:var(--accent-press)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);color:var(--ink);line-height:1.12;font-weight:700}
+h1{font-size:clamp(2.2rem,5.4vw,3.7rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,3.4vw,2.45rem)}
+h3{font-size:1.18rem}
+section{padding:86px 0}
+section[id]{scroll-margin-top:84px}
+.container{width:min(1140px,92%);margin:0 auto}
+.kicker{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-press);margin-bottom:14px;border-left:4px solid var(--accent);padding:2px 0 2px 12px;transform:skewX(-8deg)}
+.kicker span{display:inline-block;transform:skewX(8deg)}
+.lede{font-size:1.1rem;max-width:64ch}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:10px 18px;z-index:200}
+.skip-link:focus{left:12px;top:12px}
+/* Buttons */
+.btn{display:inline-block;font-family:var(--body);font-weight:700;font-size:1rem;padding:14px 28px;border-radius:var(--radius);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-solid{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn-solid:hover{background:var(--accent-press);border-color:var(--accent-press);color:#fff}
+.btn-outline{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-outline:hover{border-color:var(--accent-press);color:var(--accent-press)}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-light:hover{background:var(--bg);color:var(--ink-deep)}
+/* Nav */
+.site-nav{position:sticky;top:0;z-index:100;background:rgba(245,244,241,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);transition:box-shadow .25s ease}
+.site-nav.scrolled{box-shadow:0 5px 20px rgba(37,50,60,.14)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
+.brand .wordmark{font-family:var(--display);font-weight:700;font-size:1.3rem;color:var(--ink)}
+.brand .wordmark b{color:var(--accent-press);font-weight:700}
+.nav-links{display:flex;align-items:center;gap:24px;list-style:none}
+.nav-links a:not(.btn){font-weight:600;font-size:.94rem;text-decoration:none;color:var(--ink);padding:6px 2px;position:relative}
+.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--accent);transform:skewX(-20deg);transition:width .2s ease}
+.nav-links a:not(.btn):hover::after{width:100%}
+.nav-links .btn{padding:10px 18px;font-size:.88rem}
+.menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;padding:10px;cursor:pointer}
+.menu-toggle span{width:25px;height:3px;background:var(--ink);transition:transform .25s ease,opacity .25s ease}
+.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+/* Hero */
+.hero{padding:92px 0 110px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:0;right:0;width:38%;height:8px;background:linear-gradient(90deg,transparent,var(--accent));transform:skewX(-30deg) translateX(20px)}
+.hero::after{content:"";position:absolute;bottom:54px;left:-60px;width:300px;height:10px;background:repeating-linear-gradient(-45deg,var(--ink) 0 12px,transparent 12px 26px);opacity:.16}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:54px;align-items:center}
+.hero h1 em{font-style:italic;color:var(--accent-press)}
+.hero p.sub{font-size:1.14rem;max-width:56ch;margin:22px 0 32px;color:var(--text)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+.vertical-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;list-style:none}
+.vertical-chips li{font-size:.78rem;font-weight:700;letter-spacing:.04em;color:var(--ink);background:#fff;border:1px solid var(--line);padding:5px 12px;clip-path:polygon(7px 0,100% 0,calc(100% - 7px) 100%,0 100%)}
+/* Readout card */
+.readout{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--accent);box-shadow:var(--shadow);padding:24px}
+.readout-head{display:flex;justify-content:space-between;align-items:center;font-weight:700;color:var(--ink);font-size:.95rem;margin-bottom:16px}
+.readout-head .day{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:var(--ink);color:#fff;padding:3px 9px}
+.readout ul{list-style:none;display:grid;gap:13px}
+.readout li{display:grid;grid-template-columns:1fr 70px;gap:10px;align-items:center;font-size:.86rem;color:var(--text)}
+.readout li .row-top{display:flex;justify-content:space-between;gap:8px}
+.readout .meter{grid-column:1 / -1;height:7px;background:#ECEAE4;overflow:hidden}
+.readout .meter i{display:block;height:100%;background:linear-gradient(90deg,var(--ink),#465866)}
+.readout .tag{justify-self:end;font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-press);border:1px solid var(--accent);padding:2px 7px}
+.readout-foot{margin-top:16px;font-size:.78rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
+/* Stats band */
+.stats{background:var(--band);clip-path:polygon(0 30px,100% 0,100% 100%,0 100%);padding:96px 0 56px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px}
+.stat{border-left:3px solid var(--accent);padding-left:18px}
+.stat-n{font-family:var(--display);font-weight:700;font-size:2.5rem;color:#fff;line-height:1}
+.stat-n small{font-size:1.1rem;color:var(--accent);font-family:var(--body);font-weight:700;margin-left:2px}
+.stat p{font-size:.92rem;color:#B9C2CA;margin-top:8px;line-height:1.5}
+/* Audience */
+.aud-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:42px}
+.aud-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;border-top:4px solid var(--ink);transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.aud-card:hover{border-top-color:var(--accent);transform:translateY(-4px);box-shadow:var(--shadow)}
+.aud-card h3{margin-bottom:10px}
+.aud-card p{font-size:.97rem}
+/* Process */
+.process{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{margin-top:46px;display:grid;gap:0}
+.step{display:grid;grid-template-columns:84px 1fr;gap:26px;padding:30px 0;border-top:1px dashed var(--line);position:relative}
+.step:first-of-type{border-top:0}
+.step-num{font-family:var(--display);font-style:italic;font-weight:700;font-size:2.4rem;color:var(--accent-press);line-height:1;text-align:right}
+.step-when{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:var(--bg);border:1px solid var(--line);color:var(--ink);padding:4px 11px;margin-bottom:10px;clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%)}
+.step h3{margin-bottom:8px}
+.step p{font-size:1rem;max-width:72ch}
+/* Benchmarks / difference */
+.bench-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.bench-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;position:relative;overflow:hidden}
+.bench-card::after{content:"";position:absolute;right:-18px;bottom:-18px;width:64px;height:64px;background:var(--accent);opacity:.12;transform:rotate(45deg)}
+.bench-card h3{margin-bottom:10px}
+.bench-card p{font-size:.95rem}
+.bench-note{margin-top:34px;background:var(--ink);color:#C9D1D8;border-radius:var(--radius);padding:26px 30px;display:flex;flex-wrap:wrap;gap:8px 26px;align-items:center}
+.bench-note strong{color:#fff;font-family:var(--display);font-size:1.06rem}
+.bench-note span{font-size:.9rem}
+.bench-metrics{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;width:100%}
+.bench-metrics li{font-size:.74rem;font-weight:700;letter-spacing:.05em;color:var(--ink-deep);background:var(--accent);padding:4px 10px;clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%)}
+/* Verticals */
+.verticals{background:#fff;border-top:1px solid var(--line)}
+.vert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.vert-card{background:var(--bg);border:1px solid var(--line);border-left:5px solid var(--ink);border-radius:var(--radius);padding:26px;transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.vert-card:hover{border-left-color:var(--accent);transform:translateY(-4px);box-shadow:var(--shadow)}
+.vert-card h3{margin-bottom:8px}
+.vert-card .practice{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-press);display:block;margin:12px 0 6px}
+.vert-card p{font-size:.93rem}
+/* Operations band */
+.operations{background:var(--band);clip-path:polygon(0 0,100% 34px,100% 100%,0 100%);padding:110px 0 90px;color:#C9D1D8}
+.operations h2{color:#fff}
+.operations .kicker{color:var(--accent);border-left-color:var(--accent)}
+.operations .lede{color:#B9C2CA}
+.ops-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:42px}
+.ops-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:26px}
+.ops-card h3{color:var(--accent);display:flex;align-items:baseline;gap:10px;margin-bottom:10px}
+.ops-card h3 .idx{font-family:var(--display);font-style:italic;font-size:.95rem;color:#8C99A4}
+.ops-card p{font-size:.95rem;color:#C9D1D8}
+/* Team */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.member{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;transition:transform .2s ease,box-shadow .2s ease}
+.member:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.avatar{width:116px;height:116px;margin-bottom:18px;border-radius:50%;overflow:hidden;border:3px solid var(--ink)}
+.member h3{padding-bottom:8px;border-bottom:3px solid var(--accent);display:inline-block;margin-bottom:8px}
+.member .role{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:13px}
+.member .bio{font-size:.94rem}
+.member-mail{display:inline-block;margin-top:15px;font-weight:700;font-size:.92rem;color:var(--accent-press)}
+/* CTA band */
+.cta-band{background:linear-gradient(120deg,var(--ink-deep),var(--ink) 60%);position:relative;overflow:hidden;text-align:center;padding:92px 0}
+.cta-band::before{content:"";position:absolute;top:0;bottom:0;right:-8%;width:34%;background:var(--accent);transform:skewX(-14deg);opacity:.92}
+.cta-inner{position:relative;z-index:2}
+.cta-band h2{color:#fff;max-width:21ch;margin:0 auto}
+.cta-band p{color:#C9D1D8;max-width:56ch;margin:16px auto 30px}
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:start}
+.contact-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px;position:relative;overflow:hidden}
+.contact-card::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(-45deg,var(--accent) 0 14px,var(--ink) 14px 28px)}
+.contact-card h3{margin:6px 0 18px}
+.contact-list{list-style:none;display:grid;gap:16px}
+.contact-list li{display:grid;grid-template-columns:80px 1fr;gap:12px;align-items:baseline}
+.contact-list .label{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.contact-list a{font-weight:700;font-size:1.04rem}
+.contact-list address{font-style:normal;font-size:.98rem}
+.forward-note{margin-top:20px;padding-top:15px;border-top:1px dashed var(--line);font-size:.88rem;color:var(--muted)}
+.fit-list{list-style:none;display:grid;gap:13px;margin-top:24px}
+.fit-list li{padding-left:28px;position:relative;font-size:.98rem}
+.fit-list li::before{content:"→";position:absolute;left:0;top:0;color:var(--accent-press);font-weight:700}
+/* Footer */
+.site-footer{background:var(--footer);color:#AEB9C2;padding:62px 0 26px;border-top:5px solid var(--accent)}
+.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:44px}
+.site-footer h3{color:#fff;font-size:.98rem;margin-bottom:15px}
+.site-footer a{color:#D5DCE2;text-decoration:none}
+.site-footer a:hover{color:var(--accent);text-decoration:underline}
+.emv-attrib{display:inline-flex;align-items:center;gap:12px;text-decoration:none;margin-bottom:18px}
+.emv-attrib svg{box-shadow:0 0 0 1px rgba(255,255,255,.28)}
+.emv-attrib span{font-weight:700;letter-spacing:.1em;font-size:.8rem;color:#fff}
+.portfolio-line{font-size:.92rem;max-width:36ch;line-height:1.7}
+.portfolio-line a{text-decoration:underline}
+.footer-net ul{list-style:none;columns:2;column-gap:26px}
+.footer-net li{margin-bottom:9px;font-size:.91rem;break-inside:avoid}
+.footer-contact p{font-size:.93rem;margin-bottom:10px}
+.footer-contact .fwd{font-size:.83rem;color:#7C8893}
+.footer-bottom{margin-top:46px;padding-top:20px;border-top:1px solid rgba(255,255,255,.13);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:.85rem;color:#7C8893}
+.footer-bottom a{color:#9AA6B0}
+/* Reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in-view{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+/* Responsive */
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .readout{max-width:500px}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:28px}
+  .bench-grid,.vert-grid,.team-grid{grid-template-columns:1fr 1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  section{padding:60px 0}
+  .hero{padding:60px 0 80px}
+  .stats{clip-path:polygon(0 18px,100% 0,100% 100%,0 100%);padding:70px 0 48px}
+  .operations{clip-path:polygon(0 0,100% 18px,100% 100%,0 100%);padding:80px 0 64px}
+  .stats-grid,.aud-grid,.bench-grid,.vert-grid,.team-grid,.ops-grid,.footer-grid{grid-template-columns:1fr}
+  .step{grid-template-columns:1fr;gap:8px}
+  .step-num{text-align:left}
+  .menu-toggle{display:flex}
+  .nav-links{position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:10px 4%;display:none;box-shadow:0 16px 28px rgba(37,50,60,.16)}
+  .nav-links.open{display:flex}
+  .nav-links li{border-bottom:1px solid var(--line)}
+  .nav-links li:last-child{border-bottom:0;padding:14px 0 8px}
+  .nav-links a:not(.btn){display:block;padding:14px 2px}
+  .nav-links .btn{display:block;text-align:center}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-nav" id="top">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="ScaleVerticals home">
+      <svg viewBox="0 0 48 48" width="24" height="24" aria-hidden="true"><rect width="48" height="48" fill="#000"/><path d="M27 10l3 28M42 9L31.5 38" stroke="#fff" stroke-width="2.6" fill="none"/></svg>
+      <span class="wordmark">Scale<b>Verticals</b></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#audience">Who It's For</a></li>
+        <li><a href="#process">Engagements</a></li>
+        <li><a href="#difference">Benchmarks</a></li>
+        <li><a href="#verticals">Verticals</a></li>
+        <li><a href="#operations">Operations</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn btn-solid" href="#contact">Request a Margin Audit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="container hero-grid">
+      <div>
+        <p class="kicker"><span>Vertical-specific scaling · operations first</span></p>
+        <h1 id="hero-h">Your vertical has its own <em>physics</em>. We scale by them.</h1>
+        <p class="sub">ScaleVerticals pairs you with operators who work in your business model every single week. The margin engine gets fixed first; new ad spend has to earn its way in afterward.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-solid" href="#contact">Request a Margin Audit</a>
+          <a class="btn btn-outline" href="#process">How Engagements Run</a>
+        </div>
+        <ul class="vertical-chips" aria-label="The six verticals we serve">
+          <li>DTC / E-commerce</li>
+          <li>SaaS</li>
+          <li>Content &amp; Media</li>
+          <li>Service Businesses</li>
+          <li>Marketplaces</li>
+          <li>Newsletters</li>
+        </ul>
+      </div>
+      <aside class="readout" aria-hidden="true">
+        <p class="readout-head">Margin audit — sample readout <span class="day">Day 10</span></p>
+        <ul>
+          <li>
+            <span class="row-top">Tooling spend</span><span class="tag">Consolidate</span>
+            <span class="meter"><i style="width:78%"></i></span>
+          </li>
+          <li>
+            <span class="row-top">Fulfillment cost per order</span><span class="tag">Renegotiate</span>
+            <span class="meter"><i style="width:64%"></i></span>
+          </li>
+          <li>
+            <span class="row-top">Pricing &amp; unit economics</span><span class="tag">Rebuild</span>
+            <span class="meter"><i style="width:52%"></i></span>
+          </li>
+          <li>
+            <span class="row-top">Paid channel mix</span><span class="tag">Hold spend</span>
+            <span class="meter"><i style="width:38%"></i></span>
+          </li>
+        </ul>
+        <p class="readout-foot">Every line benchmarked against your vertical's file — fixes sequenced by payback.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Capability at a glance">
+    <div class="container stats-grid">
+      <div class="stat reveal"><p class="stat-n">10<small>days</small></p><p>from kickoff to a complete margin-audit readout</p></div>
+      <div class="stat reveal d1"><p class="stat-n">6</p><p>verticals we practice in — and the number we refuse to exceed</p></div>
+      <div class="stat reveal d2"><p class="stat-n">0</p><p>long-term contracts; each quarter has to earn the next</p></div>
+      <div class="stat reveal d3"><p class="stat-n">1</p><p>dedicated vertical lead embedded in every engagement</p></div>
+    </div>
+  </section>
+
+  <section id="audience" aria-labelledby="audience-h">
+    <div class="container">
+      <div class="reveal">
+        <p class="kicker"><span>Who it's for</span></p>
+        <h2 id="audience-h">For operators who suspect the problem isn't traffic</h2>
+        <p class="lede">More spend papers over an inefficient model — until it can't. We work with the people who would rather repair the model.</p>
+      </div>
+      <div class="aud-grid">
+        <article class="aud-card reveal">
+          <h3>Operators outspending their margin</h3>
+          <p>Topline keeps climbing while contribution shrinks, and every proposal on your desk says "more budget." We reverse the order: margin first, budget after.</p>
+        </article>
+        <article class="aud-card reveal d1">
+          <h3>Owners with a stack they can't explain</h3>
+          <p>Subscriptions nobody remembers buying, three tools quietly doing one job. The audit names every line item and makes each one defend itself.</p>
+        </article>
+        <article class="aud-card reveal d2">
+          <h3>Acquirers inheriting someone else's ops</h3>
+          <p>The revenue transferred; the inefficiency came along with it. We benchmark the model against its vertical and rebuild it to spec under your ownership.</p>
+        </article>
+        <article class="aud-card reveal d3">
+          <h3>Finance-led teams that want proof before spend</h3>
+          <p>If your CFO asks "why will this dollar come back?", you're our kind of client. Budget scales only as payback clears the bar we set together.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="process" aria-labelledby="process-h">
+    <div class="container">
+      <div class="reveal">
+        <p class="kicker"><span>How engagements run</span></p>
+        <h2 id="process-h">Audit. Optimize. Then — and only then — scale.</h2>
+      </div>
+      <div class="steps">
+        <article class="step reveal">
+          <p class="step-num">01</p>
+          <div>
+            <span class="step-when">Days 1–10</span>
+            <h3>Audit</h3>
+            <p>The margin audit goes line by line through unit economics, tooling spend, fulfillment costs, and channel efficiency — then maps every finding against our benchmark file for your vertical. You see exactly where the model leaks and what each leak costs per month.</p>
+          </div>
+        </article>
+        <article class="step reveal d1">
+          <p class="step-num">02</p>
+          <div>
+            <span class="step-when">Weeks 3–8</span>
+            <h3>Optimize</h3>
+            <p>Fixes are sized by payback and sequenced before anything scales: consolidate the stack, renegotiate fulfillment, reprice where the math demands it, and rebuild the unit economics into a model your team steers by. No new ad dollars until the engine holds pressure.</p>
+          </div>
+        </article>
+        <article class="step reveal d2">
+          <p class="step-num">03</p>
+          <div>
+            <span class="step-when">Quarter two</span>
+            <h3>Scale</h3>
+            <p>With margins rebuilt, proven channels get budget — released in stages as targets clear. Your vertical's benchmarks set the pace, so growth compounds on a base that can actually carry it.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="difference" aria-labelledby="difference-h">
+    <div class="container">
+      <div class="reveal">
+        <p class="kicker"><span>Why depth wins</span></p>
+        <h2 id="difference-h">Depth per vertical beats breadth across everything</h2>
+        <p class="lede">Most consultancies take any business that can pay. We work in six business models, full stop — because the pattern recognition that makes optimization fast only develops when you see the same model again and again.</p>
+      </div>
+      <div class="bench-grid">
+        <article class="bench-card reveal">
+          <h3>A living benchmark file per vertical</h3>
+          <p>Tooling cost as a share of revenue, fulfillment cost per order, payback windows, margin structure — we maintain what "good" looks like in your model and refresh it quarterly from active work.</p>
+        </article>
+        <article class="bench-card reveal d1">
+          <h3>Specialist leads, not account managers</h3>
+          <p>Your engagement is led by the person who runs that vertical's practice. You will never spend a kickoff explaining your own business model to your own consultant.</p>
+        </article>
+        <article class="bench-card reveal d2">
+          <h3>Plans that start from your reality</h3>
+          <p>Generic frameworks average away exactly the variables that decide your P&amp;L. We start from your vertical's physics and tune from there — not the other way around.</p>
+        </article>
+      </div>
+      <div class="bench-note reveal">
+        <strong>Tracked in every vertical file:</strong>
+        <span>the operating metrics your model lives or dies by, refreshed each quarter.</span>
+        <ul class="bench-metrics" aria-label="Benchmark metric categories">
+          <li>CAC payback window</li>
+          <li>Contribution margin after fulfillment</li>
+          <li>Tooling spend % of revenue</li>
+          <li>Repeat / retention economics</li>
+          <li>Capacity &amp; utilization</li>
+          <li>Channel efficiency mix</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="verticals" class="verticals" aria-labelledby="verticals-h">
+    <div class="container">
+      <div class="reveal">
+        <p class="kicker"><span>The six verticals</span></p>
+        <h2 id="verticals-h">Six models. Studied deeply. Nothing else.</h2>
+      </div>
+      <div class="vert-grid">
+        <article class="vert-card reveal">
+          <h3>DTC &amp; E-commerce</h3>
+          <span class="practice">Optimization in practice</span>
+          <p>Reworking 3PL terms and packaging specs to recover shipping margin — before a single new ad dollar goes out the door.</p>
+        </article>
+        <article class="vert-card reveal d1">
+          <h3>SaaS</h3>
+          <span class="practice">Optimization in practice</span>
+          <p>Cutting onboarding time-to-value so trial conversion rises without buying another demo or another seat of anything.</p>
+        </article>
+        <article class="vert-card reveal d2">
+          <h3>Content &amp; Media</h3>
+          <span class="practice">Optimization in practice</span>
+          <p>Restructuring ad inventory and affiliate mix so revenue per session climbs without waiting on a traffic spike.</p>
+        </article>
+        <article class="vert-card reveal">
+          <h3>Service Businesses</h3>
+          <span class="practice">Optimization in practice</span>
+          <p>Productizing scope and pricing so margin stops leaking through "small" custom requests that were never costed.</p>
+        </article>
+        <article class="vert-card reveal d1">
+          <h3>Marketplaces</h3>
+          <span class="practice">Optimization in practice</span>
+          <p>Rebalancing take rate against liquidity so supply growth stops outrunning the demand that pays for it.</p>
+        </article>
+        <article class="vert-card reveal d2">
+          <h3>Newsletters</h3>
+          <span class="practice">Optimization in practice</span>
+          <p>Rebuilding sponsorship packaging and list hygiene so CPMs rise with deliverability instead of despite it.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="operations" class="operations" aria-labelledby="operations-h">
+    <div class="container">
+      <div class="reveal">
+        <p class="kicker"><span>Operations &amp; cost discipline</span></p>
+        <h2 id="operations-h">Optimization before ad spend, every time</h2>
+        <p class="lede">The cheapest growth is the money you stop wasting. Four disciplines do most of that work.</p>
+      </div>
+      <div class="ops-grid">
+        <article class="ops-card reveal">
+          <h3><span class="idx">i.</span>Margin audits</h3>
+          <p>Ten days, every line item, no sacred cows. The readout shows what each inefficiency costs per month and what fixing it is worth — sequenced by payback, not by ease.</p>
+        </article>
+        <article class="ops-card reveal d1">
+          <h3><span class="idx">ii.</span>Tooling consolidation</h3>
+          <p>Overlapping subscriptions get merged, zombie seats get cut, and the surviving stack gets renegotiated. Most stacks we open are paying two or three times for the same job.</p>
+        </article>
+        <article class="ops-card reveal d2">
+          <h3><span class="idx">iii.</span>Fulfillment streamlining</h3>
+          <p>Carrier terms, packaging specs, warehouse workflow, returns handling — the unglamorous line items that quietly decide whether an order was worth shipping.</p>
+        </article>
+        <article class="ops-card reveal d3">
+          <h3><span class="idx">iv.</span>Unit-economics rebuilds</h3>
+          <p>Pricing, COGS, contribution margin, payback windows — rebuilt into a working model your team steers by weekly, not a spreadsheet that gets opened once a quarter.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" aria-labelledby="team-h">
+    <div class="container">
+      <div class="reveal">
+        <p class="kicker"><span>The team</span></p>
+        <h2 id="team-h">Led by people who run one model deeply</h2>
+        <p class="lede">No bench of generalists, no rotating account staff. Each practice is owned by an operator who has lived inside that vertical's P&amp;L.</p>
+      </div>
+      <div class="team-grid">
+        <article class="member reveal">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated portrait of Tom Iverson">
+            <circle cx="60" cy="60" r="58" fill="#DEE5EA"/>
+            <rect x="53" y="72" width="14" height="20" rx="6" fill="#F1C27D"/>
+            <circle cx="60" cy="57" r="23" fill="#F1C27D"/>
+            <path d="M37 52c0-14 10-24 23-24s23 10 23 24l-2 2c-2-10-9-15-21-15s-19 5-21 15z" fill="#8E969C"/>
+            <path d="M36 54c-1 4-1 9 0 12M84 54c1 4 1 9 0 12" stroke="#8E969C" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M45 48c3-2 7-2 9 0M66 48c3-2 7-2 9 0" stroke="#6B6258" stroke-width="2.3" fill="none" stroke-linecap="round"/>
+            <rect x="41" y="52" width="15" height="11" rx="2.5" fill="none" stroke="#3A444C" stroke-width="2.4"/>
+            <rect x="64" y="52" width="15" height="11" rx="2.5" fill="none" stroke="#3A444C" stroke-width="2.4"/>
+            <path d="M56 56h8" stroke="#3A444C" stroke-width="2.4"/>
+            <circle cx="48.5" cy="57.5" r="2.4" fill="#2B2118"/>
+            <circle cx="71.5" cy="57.5" r="2.4" fill="#2B2118"/>
+            <path d="M60 60c0 3-1 5-3 6" stroke="#C28E4C" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <path d="M52 70c5 4.5 11 4.5 16 0" stroke="#9C6B33" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+            <path d="M22 120c5-21 19-31 38-31s33 10 38 31z" fill="#25323C"/>
+            <path d="M44 103l6-8 4 9z" fill="#E8632B"/>
+          </svg>
+          <h3>Tom Iverson</h3>
+          <p class="role">Vertical Strategy Director</p>
+          <p class="bio">Tom decides what "good" looks like in each of our six verticals and keeps the benchmark files honest. He has spent two decades inside operating businesses rather than beside them, and he turns down work outside our verticals without ceremony. Strategy, for Tom, starts with knowing which numbers your model lives or dies by.</p>
+          <a class="member-mail" href="mailto:tom@scaleverticals.com">tom@scaleverticals.com</a>
+        </article>
+        <article class="member reveal d1">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated portrait of Grace Liu">
+            <circle cx="60" cy="60" r="58" fill="#FBE4D6"/>
+            <path d="M60 16C40 16 28 30 28 50v36c0 6 7 9 13 7l1-33h36l1 33c6 2 13-1 13-7V50c0-20-12-34-32-34z" fill="#181210"/>
+            <rect x="53" y="72" width="14" height="20" rx="6" fill="#F5D0A9"/>
+            <circle cx="60" cy="57" r="22" fill="#F5D0A9"/>
+            <path d="M38 51c0-13 10-22 22-22s22 9 22 22c0 1.6-1.2 2.6-2.8 2.6H40.8c-1.6 0-2.8-1-2.8-2.6z" fill="#181210"/>
+            <path d="M38 54c-1 5-1 11 0 16M82 54c1 5 1 11 0 16" stroke="#181210" stroke-width="6" stroke-linecap="round"/>
+            <path d="M46 56.5c3-1.5 6-1.5 8 0M66 56.5c3-1.5 6-1.5 8 0" stroke="#2A211C" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <circle cx="50" cy="61" r="2.4" fill="#1C1410"/>
+            <circle cx="70" cy="61" r="2.4" fill="#1C1410"/>
+            <path d="M60 63c0 3-1 4-2 5" stroke="#D6A375" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <path d="M53 72c4 4 10 4 14 0" stroke="#B05A3A" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+            <path d="M22 120c5-21 19-31 38-31s33 10 38 31z" fill="#E8632B"/>
+            <path d="M52 91l8 8 8-8" fill="#FBE4D6"/>
+          </svg>
+          <h3>Grace Liu</h3>
+          <p class="role">Operations &amp; Cost Analysis Lead</p>
+          <p class="bio">Grace leads the ten-day margin audit that opens every engagement. She reads tooling invoices, fulfillment contracts, and unit economics the way an editor reads a rough draft — line by line, cutting whatever can't justify itself. Most clients meet their own cost structure for the first time in her readout.</p>
+          <a class="member-mail" href="mailto:grace@scaleverticals.com">grace@scaleverticals.com</a>
+        </article>
+        <article class="member reveal d2">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Illustrated portrait of Rafael Mendes">
+            <circle cx="60" cy="60" r="58" fill="#EDE6DA"/>
+            <circle cx="35" cy="50" r="8" fill="#221610"/>
+            <circle cx="85" cy="50" r="8" fill="#221610"/>
+            <rect x="53" y="72" width="14" height="20" rx="6" fill="#C68642"/>
+            <circle cx="60" cy="58" r="23" fill="#C68642"/>
+            <path d="M37.8 64A22.2 22.2 0 0 0 82.2 64z" fill="#1A1008" opacity=".22"/>
+            <circle cx="43" cy="38" r="9" fill="#221610"/>
+            <circle cx="55" cy="32" r="10" fill="#221610"/>
+            <circle cx="68" cy="33" r="10" fill="#221610"/>
+            <circle cx="78" cy="40" r="9" fill="#221610"/>
+            <circle cx="37" cy="45" r="7" fill="#221610"/>
+            <circle cx="83" cy="47" r="7" fill="#221610"/>
+            <path d="M46 50c3-3 8-3 10 0M64 50c2-3 7-3 10 0" stroke="#1A1008" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <circle cx="51" cy="57" r="2.6" fill="#1A1008"/>
+            <circle cx="69" cy="57" r="2.6" fill="#1A1008"/>
+            <path d="M60 59c0 3-1 5-3 6" stroke="#9C6228" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <path d="M52 70c5 4.5 11 4.5 16 0" stroke="#3F2410" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+            <path d="M22 120c5-21 19-31 38-31s33 10 38 31z" fill="#46555F"/>
+            <path d="M52 91l8 8 8-8" fill="#EDE6DA"/>
+          </svg>
+          <h3>Rafael Mendes</h3>
+          <p class="role">E-commerce Vertical Lead</p>
+          <p class="bio">Rafael runs our DTC and e-commerce practice, where he lives in 3PL contracts, packaging specs, and repeat-purchase economics. He believes most stores don't have a traffic problem — they have a contribution-margin problem wearing a traffic costume. His fixes usually pay for themselves before the scaling phase even starts.</p>
+          <a class="member-mail" href="mailto:rafael@scaleverticals.com">rafael@scaleverticals.com</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" aria-labelledby="cta-h">
+    <div class="container cta-inner reveal">
+      <h2 id="cta-h">Raise your margin before you raise your budget.</h2>
+      <p>Ten days from now you could know exactly where the model leaks, what every fix is worth, and which channel deserves the next dollar.</p>
+      <a class="btn btn-light" href="#contact">Request a Margin Audit</a>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="kicker"><span>Contact</span></p>
+        <h2 id="contact-h">The audit starts with a call</h2>
+        <p class="lede">Bring your P&amp;L questions; we'll bring the benchmark file for your vertical. If the fit isn't there, we'll say so on that first call.</p>
+        <ul class="fit-list">
+          <li>Tell us your vertical, your rough revenue band, and the metric that worries you.</li>
+          <li>We confirm scope and timeline for the ten-day audit in writing — fixed fee, no surprises.</li>
+          <li>You keep the full readout either way; what you do with it is up to you.</li>
+        </ul>
+      </div>
+      <div class="contact-card reveal d1">
+        <h3>Reach the team</h3>
+        <ul class="contact-list">
+          <li><span class="label">Phone</span><a href="tel:+12137881919">213-788-1919</a></li>
+          <li><span class="label">Email</span><a href="mailto:info@scaleverticals.com">info@scaleverticals.com</a></li>
+          <li><span class="label">Office</span><address>9461 Charleville Blvd, Beverly Hills, CA 90212</address></li>
+        </ul>
+        <p class="forward-note">All email forwards to info@emv.io.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="emv-attrib" href="https://emv.io">
+        <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><rect width="48" height="48" fill="#000"/><path d="M27 10l3 28M42 9L31.5 38" stroke="#fff" stroke-width="2.6" fill="none"/></svg>
+        <span>by EMV GLOBAL HOLDINGS</span>
+      </a>
+      <p class="portfolio-line">Part of the <a href="https://emv.io">Exchange Media Ventures</a> portfolio. Founded by <a href="https://sanjeevnachiappan.com">Sanjeev Nachiappan</a>.</p>
+    </div>
+    <nav class="footer-net" aria-label="EMV Network">
+      <h3>EMV Network</h3>
+      <ul>
+        <li><a href="https://emv.io">emv.io</a></li>
+        <li><a href="https://dexits.com">dexits.com</a></li>
+        <li><a href="https://scaleuni.com">scaleuni.com</a></li>
+        <li><a href="https://scaleverticals.com">scaleverticals.com</a></li>
+        <li><a href="https://scalifty.com">scalifty.com</a></li>
+        <li><a href="https://itscaled.com">itscaled.com</a></li>
+        <li><a href="https://exitwebsites.com">exitwebsites.com</a></li>
+        <li><a href="https://onlinexit.com">onlinexit.com</a></li>
+        <li><a href="https://wexits.com">wexits.com</a></li>
+        <li><a href="https://aquireonline.com">aquireonline.com</a></li>
+        <li><a href="https://aquirewebsites.com">aquirewebsites.com</a></li>
+        <li><a href="https://onlineaquisition.com">onlineaquisition.com</a></li>
+        <li><a href="https://sanjeevnachiappan.com">sanjeevnachiappan.com</a></li>
+      </ul>
+    </nav>
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p><a href="tel:+12137881919">213-788-1919</a></p>
+      <p>9461 Charleville Blvd<br>Beverly Hills, CA 90212</p>
+      <p><a href="mailto:info@scaleverticals.com">info@scaleverticals.com</a></p>
+      <p class="fwd">All email forwards to info@emv.io.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 ScaleVerticals. An EMV Global Holdings company.</p>
+    <p><a href="#top">Back to top ↑</a></p>
+  </div>
+</footer>
+<script>
+(function(){
+  var toggle=document.querySelector('.menu-toggle');
+  var links=document.getElementById('nav-links');
+  toggle.addEventListener('click',function(){
+    var open=links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+    });
+  });
+  var header=document.querySelector('.site-nav');
+  window.addEventListener('scroll',function(){
+    header.classList.toggle('scrolled',window.scrollY>8);
+  },{passive:true});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){e.target.classList.add('in-view');io.unobserve(e.target);}
+      });
+    },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in-view');});
+  }
+})();
+</script>
+
+<!-- ===== EMV Analytics Layer v1 (PostHog + Clarity) =====
+     Dormant until keys are set. To go live:
+     1. Replace phc_vs8vnsgAWgfqcH5BCYn85vNGr7rzCFLaKJvkGz7qJ9z3 with your PostHog project API key (SAME key on all 13 sites).
+     2. Replace CLARITY_REPLACE_ME with this site's Microsoft Clarity project ID (UNIQUE per site).
+     Docs: sites/analytics/TRACKING-SCHEMA.md -->
+<script>
+(function(){
+"use strict";
+try{
+var CFG={
+  site:"scaleverticals.com",
+  category:"consulting",
+  posthogKey:"phc_vs8vnsgAWgfqcH5BCYn85vNGr7rzCFLaKJvkGz7qJ9z3",
+  posthogHost:"https://us.i.posthog.com",
+  clarityId:"CLARITY_REPLACE_ME",
+  conversions:[{"selector": "a[href^=\"mailto:info@scaleverticals.com\"]", "event": "lead_email_click", "value": 40}, {"selector": "a[href*=\"calendly\"]", "event": "call_booked", "value": 70}],
+  formRules:[]
+};
+var NETWORK={"emv.io":"hub","dexits.com":"saas","scaleuni.com":"consulting","scaleverticals.com":"consulting","scalifty.com":"consulting","itscaled.com":"consulting","exitwebsites.com":"ma_seller","onlinexit.com":"ma_seller","wexits.com":"ma_seller","aquireonline.com":"ma_buyer","aquirewebsites.com":"ma_buyer","onlineaquisition.com":"ma_buyer","sanjeevnachiappan.com":"personal"};
+var dormantPH=/REPLACE/.test(CFG.posthogKey);
+var dormantCL=/REPLACE/.test(CFG.clarityId);
+if(dormantPH){try{console.info("[EMV analytics] dormant - set PostHog key in EMV Analytics Layer snippet");}catch(e){}}
+
+function cap(ev,props){try{if(window.posthog&&!dormantPH){props=props||{};if(typeof props.value==="undefined"){props.value=0;}window.posthog.capture(ev,props);}}catch(e){}}
+function loc(el){try{if(el.closest("footer"))return "footer";if(el.closest("nav,header"))return "nav";if(el.closest(".ticker"))return "ticker";return "body";}catch(e){return "body";}}
+function txt(a){return ((a.textContent||"").replace(/\s+/g," ").trim()).slice(0,80);}
+
+/* --- PostHog loader (official array.js stub) --- */
+if(!dormantPH){
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+window.posthog.init(CFG.posthogKey,{
+  api_host:CFG.posthogHost,
+  autocapture:false,
+  capture_pageview:true,
+  capture_pageleave:true,
+  disable_session_recording:true,
+  persistence:"localStorage+cookie",
+  loaded:function(ph){
+    try{
+      ph.register({site:CFG.site,category:CFG.category});
+      var p=new URLSearchParams(location.search);
+      var did=p.get("ph_did");
+      if(did&&did!==ph.get_distinct_id()){ph.identify(did);}
+      if(did){p.delete("ph_did");var q=p.toString();history.replaceState(null,"",location.pathname+(q?"?"+q:"")+location.hash);}
+    }catch(e){}
+  }
+});
+}
+
+/* --- Microsoft Clarity loader --- */
+if(!dormantCL){
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script",CFG.clarityId);
+}
+
+/* --- cross-site decoration + click conversions --- */
+function decorateMaybe(a){
+  try{
+    var href=a.getAttribute("href")||"";
+    if(!/^https?:\/\//i.test(href))return;
+    var u=new URL(href);
+    var host=u.hostname.replace(/^www\./,"");
+    if(host===CFG.site||!(host in NETWORK))return;
+    cap("cross_site_click",{target_site:host,target_category:NETWORK[host],link_location:loc(a),link_text:txt(a),value:15});
+    if(window.posthog&&!dormantPH){
+      u.searchParams.set("utm_source","emv_network");
+      u.searchParams.set("utm_medium","cross_site");
+      u.searchParams.set("utm_campaign",CFG.site);
+      u.searchParams.set("utm_content",loc(a));
+      u.searchParams.set("ph_did",window.posthog.get_distinct_id());
+      a.href=u.toString();
+    }
+  }catch(e){}
+}
+document.addEventListener("click",function(e){
+  try{
+    var a=e.target&&e.target.closest?e.target.closest("a[href]"):null;
+    if(!a)return;
+    var href=a.getAttribute("href")||"";
+    for(var i=0;i<CFG.conversions.length;i++){
+      var c=CFG.conversions[i];
+      try{
+        if(a.matches(c.selector)){
+          cap(c.event,{value:c.value,link_location:loc(a),link_text:txt(a)});
+          decorateMaybe(a);
+          return;
+        }
+      }catch(err){}
+    }
+    if(/^mailto:/i.test(href)){cap("contact_email_click",{address:href.slice(7).split("?")[0],link_location:loc(a),value:5});return;}
+    if(/^tel:/i.test(href)){cap("phone_click",{link_location:loc(a),value:10});return;}
+    decorateMaybe(a);
+  }catch(err){}
+},true);
+
+/* --- forms: start + submit (with per-site renames) --- */
+document.addEventListener("submit",function(e){
+  try{
+    var f=e.target;
+    if(!f||f.tagName!=="FORM")return;
+    var name=f.id||f.getAttribute("aria-label")||"form";
+    for(var i=0;i<CFG.formRules.length;i++){
+      var r=CFG.formRules[i];
+      try{if(f.matches(r.selector)){cap(r.event,{form:name,value:r.value});return;}}catch(err){}
+    }
+    cap("lead_form_submit",{form:name,value:40});
+  }catch(err){}
+},true);
+document.addEventListener("focusin",function(e){
+  try{
+    var f=e.target&&e.target.form;
+    if(!f||f.__emvStarted)return;
+    f.__emvStarted=true;
+    cap("form_start",{form:f.id||f.getAttribute("aria-label")||"form",value:1});
+  }catch(err){}
+},true);
+
+/* --- engagement: one-shot 75% scroll --- */
+var fired75=false;
+window.addEventListener("scroll",function(){
+  try{
+    if(fired75)return;
+    var h=document.documentElement;
+    if(h.scrollHeight<=0)return;
+    if((h.scrollTop+window.innerHeight)/h.scrollHeight>=0.75){fired75=true;cap("scroll_depth_75",{value:2});}
+  }catch(e){}
+},{passive:true});
+
+/* --- escape hatch: any site JS can fire a conversion --- */
+document.addEventListener("emv:conversion",function(e){
+  try{
+    var d=(e&&e.detail)||{};
+    if(d.event){var p=d.props||{};if(typeof p.value==="undefined"){p.value=d.value||0;}cap(d.event,p);}
+  }catch(err){}
+});
+}catch(e){}
+})();
+</script>
+<!-- ===== /EMV Analytics Layer ===== -->
+
+</body>
+</html>
